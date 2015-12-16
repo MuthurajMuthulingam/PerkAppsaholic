@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A8E0F671C2104A300EC19D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F661C2104A300EC19D6 /* main.m */; };
+		6A8E0F6A1C2104A300EC19D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F691C2104A300EC19D6 /* AppDelegate.m */; };
+		6A8E0F6D1C2104A300EC19D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F6C1C2104A300EC19D6 /* ViewController.m */; };
+		6A8E0F701C2104A300EC19D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A8E0F6E1C2104A300EC19D6 /* Main.storyboard */; };
+		6A8E0F731C2104A300EC19D6 /* PerkAppsaholic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F711C2104A300EC19D6 /* PerkAppsaholic.xcdatamodeld */; };
+		6A8E0F751C2104A300EC19D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A8E0F741C2104A300EC19D6 /* Assets.xcassets */; };
+		6A8E0F781C2104A300EC19D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A8E0F761C2104A300EC19D6 /* LaunchScreen.storyboard */; };
+		6A8E0F831C2104A300EC19D6 /* PerkAppsaholicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F821C2104A300EC19D6 /* PerkAppsaholicTests.m */; };
+		6A8E0F8E1C2104A300EC19D6 /* PerkAppsaholicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F8D1C2104A300EC19D6 /* PerkAppsaholicUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A8E0F7F1C2104A300EC19D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A8E0F5A1C2104A300EC19D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A8E0F611C2104A300EC19D6;
+			remoteInfo = PerkAppsaholic;
+		};
+		6A8E0F8A1C2104A300EC19D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A8E0F5A1C2104A300EC19D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A8E0F611C2104A300EC19D6;
+			remoteInfo = PerkAppsaholic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6A8E0F621C2104A300EC19D6 /* PerkAppsaholic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerkAppsaholic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8E0F661C2104A300EC19D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6A8E0F681C2104A300EC19D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6A8E0F691C2104A300EC19D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6A8E0F6B1C2104A300EC19D6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6A8E0F6C1C2104A300EC19D6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6A8E0F6F1C2104A300EC19D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A8E0F721C2104A300EC19D6 /* PerkAppsaholic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PerkAppsaholic.xcdatamodel; sourceTree = "<group>"; };
+		6A8E0F741C2104A300EC19D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A8E0F771C2104A300EC19D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A8E0F791C2104A300EC19D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A8E0F7E1C2104A300EC19D6 /* PerkAppsaholicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerkAppsaholicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8E0F821C2104A300EC19D6 /* PerkAppsaholicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerkAppsaholicTests.m; sourceTree = "<group>"; };
+		6A8E0F841C2104A300EC19D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A8E0F891C2104A300EC19D6 /* PerkAppsaholicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerkAppsaholicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8E0F8D1C2104A300EC19D6 /* PerkAppsaholicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerkAppsaholicUITests.m; sourceTree = "<group>"; };
+		6A8E0F8F1C2104A300EC19D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A8E0F5F1C2104A300EC19D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8E0F7B1C2104A300EC19D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8E0F861C2104A300EC19D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A8E0F591C2104A300EC19D6 = {
+			isa = PBXGroup;
+			children = (
+				6A8E0F641C2104A300EC19D6 /* PerkAppsaholic */,
+				6A8E0F811C2104A300EC19D6 /* PerkAppsaholicTests */,
+				6A8E0F8C1C2104A300EC19D6 /* PerkAppsaholicUITests */,
+				6A8E0F631C2104A300EC19D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A8E0F631C2104A300EC19D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A8E0F621C2104A300EC19D6 /* PerkAppsaholic.app */,
+				6A8E0F7E1C2104A300EC19D6 /* PerkAppsaholicTests.xctest */,
+				6A8E0F891C2104A300EC19D6 /* PerkAppsaholicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A8E0F641C2104A300EC19D6 /* PerkAppsaholic */ = {
+			isa = PBXGroup;
+			children = (
+				6A8E0F681C2104A300EC19D6 /* AppDelegate.h */,
+				6A8E0F691C2104A300EC19D6 /* AppDelegate.m */,
+				6A8E0F6B1C2104A300EC19D6 /* ViewController.h */,
+				6A8E0F6C1C2104A300EC19D6 /* ViewController.m */,
+				6A8E0F6E1C2104A300EC19D6 /* Main.storyboard */,
+				6A8E0F741C2104A300EC19D6 /* Assets.xcassets */,
+				6A8E0F761C2104A300EC19D6 /* LaunchScreen.storyboard */,
+				6A8E0F791C2104A300EC19D6 /* Info.plist */,
+				6A8E0F711C2104A300EC19D6 /* PerkAppsaholic.xcdatamodeld */,
+				6A8E0F651C2104A300EC19D6 /* Supporting Files */,
+			);
+			path = PerkAppsaholic;
+			sourceTree = "<group>";
+		};
+		6A8E0F651C2104A300EC19D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A8E0F661C2104A300EC19D6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A8E0F811C2104A300EC19D6 /* PerkAppsaholicTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A8E0F821C2104A300EC19D6 /* PerkAppsaholicTests.m */,
+				6A8E0F841C2104A300EC19D6 /* Info.plist */,
+			);
+			path = PerkAppsaholicTests;
+			sourceTree = "<group>";
+		};
+		6A8E0F8C1C2104A300EC19D6 /* PerkAppsaholicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6A8E0F8D1C2104A300EC19D6 /* PerkAppsaholicUITests.m */,
+				6A8E0F8F1C2104A300EC19D6 /* Info.plist */,
+			);
+			path = PerkAppsaholicUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A8E0F611C2104A300EC19D6 /* PerkAppsaholic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A8E0F921C2104A300EC19D6 /* Build configuration list for PBXNativeTarget "PerkAppsaholic" */;
+			buildPhases = (
+				6A8E0F5E1C2104A300EC19D6 /* Sources */,
+				6A8E0F5F1C2104A300EC19D6 /* Frameworks */,
+				6A8E0F601C2104A300EC19D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PerkAppsaholic;
+			productName = PerkAppsaholic;
+			productReference = 6A8E0F621C2104A300EC19D6 /* PerkAppsaholic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A8E0F7D1C2104A300EC19D6 /* PerkAppsaholicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A8E0F951C2104A300EC19D6 /* Build configuration list for PBXNativeTarget "PerkAppsaholicTests" */;
+			buildPhases = (
+				6A8E0F7A1C2104A300EC19D6 /* Sources */,
+				6A8E0F7B1C2104A300EC19D6 /* Frameworks */,
+				6A8E0F7C1C2104A300EC19D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A8E0F801C2104A300EC19D6 /* PBXTargetDependency */,
+			);
+			name = PerkAppsaholicTests;
+			productName = PerkAppsaholicTests;
+			productReference = 6A8E0F7E1C2104A300EC19D6 /* PerkAppsaholicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6A8E0F881C2104A300EC19D6 /* PerkAppsaholicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A8E0F981C2104A300EC19D6 /* Build configuration list for PBXNativeTarget "PerkAppsaholicUITests" */;
+			buildPhases = (
+				6A8E0F851C2104A300EC19D6 /* Sources */,
+				6A8E0F861C2104A300EC19D6 /* Frameworks */,
+				6A8E0F871C2104A300EC19D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A8E0F8B1C2104A300EC19D6 /* PBXTargetDependency */,
+			);
+			name = PerkAppsaholicUITests;
+			productName = PerkAppsaholicUITests;
+			productReference = 6A8E0F891C2104A300EC19D6 /* PerkAppsaholicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A8E0F5A1C2104A300EC19D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Muthuraj Muthulingam";
+				TargetAttributes = {
+					6A8E0F611C2104A300EC19D6 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					6A8E0F7D1C2104A300EC19D6 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 6A8E0F611C2104A300EC19D6;
+					};
+					6A8E0F881C2104A300EC19D6 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 6A8E0F611C2104A300EC19D6;
+					};
+				};
+			};
+			buildConfigurationList = 6A8E0F5D1C2104A300EC19D6 /* Build configuration list for PBXProject "PerkAppsaholic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A8E0F591C2104A300EC19D6;
+			productRefGroup = 6A8E0F631C2104A300EC19D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A8E0F611C2104A300EC19D6 /* PerkAppsaholic */,
+				6A8E0F7D1C2104A300EC19D6 /* PerkAppsaholicTests */,
+				6A8E0F881C2104A300EC19D6 /* PerkAppsaholicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A8E0F601C2104A300EC19D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A8E0F781C2104A300EC19D6 /* LaunchScreen.storyboard in Resources */,
+				6A8E0F751C2104A300EC19D6 /* Assets.xcassets in Resources */,
+				6A8E0F701C2104A300EC19D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8E0F7C1C2104A300EC19D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8E0F871C2104A300EC19D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A8E0F5E1C2104A300EC19D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A8E0F6D1C2104A300EC19D6 /* ViewController.m in Sources */,
+				6A8E0F731C2104A300EC19D6 /* PerkAppsaholic.xcdatamodeld in Sources */,
+				6A8E0F6A1C2104A300EC19D6 /* AppDelegate.m in Sources */,
+				6A8E0F671C2104A300EC19D6 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8E0F7A1C2104A300EC19D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A8E0F831C2104A300EC19D6 /* PerkAppsaholicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8E0F851C2104A300EC19D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A8E0F8E1C2104A300EC19D6 /* PerkAppsaholicUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A8E0F801C2104A300EC19D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A8E0F611C2104A300EC19D6 /* PerkAppsaholic */;
+			targetProxy = 6A8E0F7F1C2104A300EC19D6 /* PBXContainerItemProxy */;
+		};
+		6A8E0F8B1C2104A300EC19D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A8E0F611C2104A300EC19D6 /* PerkAppsaholic */;
+			targetProxy = 6A8E0F8A1C2104A300EC19D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6A8E0F6E1C2104A300EC19D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A8E0F6F1C2104A300EC19D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A8E0F761C2104A300EC19D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A8E0F771C2104A300EC19D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A8E0F901C2104A300EC19D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6A8E0F911C2104A300EC19D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A8E0F931C2104A300EC19D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PerkAppsaholic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = muthuraj.PerkAppsaholic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6A8E0F941C2104A300EC19D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PerkAppsaholic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = muthuraj.PerkAppsaholic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6A8E0F961C2104A300EC19D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PerkAppsaholicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = muthuraj.PerkAppsaholicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PerkAppsaholic.app/PerkAppsaholic";
+			};
+			name = Debug;
+		};
+		6A8E0F971C2104A300EC19D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PerkAppsaholicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = muthuraj.PerkAppsaholicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PerkAppsaholic.app/PerkAppsaholic";
+			};
+			name = Release;
+		};
+		6A8E0F991C2104A300EC19D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PerkAppsaholicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = muthuraj.PerkAppsaholicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PerkAppsaholic;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		6A8E0F9A1C2104A300EC19D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PerkAppsaholicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = muthuraj.PerkAppsaholicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PerkAppsaholic;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A8E0F5D1C2104A300EC19D6 /* Build configuration list for PBXProject "PerkAppsaholic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A8E0F901C2104A300EC19D6 /* Debug */,
+				6A8E0F911C2104A300EC19D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A8E0F921C2104A300EC19D6 /* Build configuration list for PBXNativeTarget "PerkAppsaholic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A8E0F931C2104A300EC19D6 /* Debug */,
+				6A8E0F941C2104A300EC19D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6A8E0F951C2104A300EC19D6 /* Build configuration list for PBXNativeTarget "PerkAppsaholicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A8E0F961C2104A300EC19D6 /* Debug */,
+				6A8E0F971C2104A300EC19D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6A8E0F981C2104A300EC19D6 /* Build configuration list for PBXNativeTarget "PerkAppsaholicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A8E0F991C2104A300EC19D6 /* Debug */,
+				6A8E0F9A1C2104A300EC19D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6A8E0F711C2104A300EC19D6 /* PerkAppsaholic.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6A8E0F721C2104A300EC19D6 /* PerkAppsaholic.xcdatamodel */,
+			);
+			currentVersion = 6A8E0F721C2104A300EC19D6 /* PerkAppsaholic.xcdatamodel */;
+			path = PerkAppsaholic.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6A8E0F5A1C2104A300EC19D6 /* Project object */;
+}
