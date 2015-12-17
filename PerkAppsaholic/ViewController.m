@@ -7,16 +7,31 @@
 //
 
 #import "ViewController.h"
+#import "MyView.h"
 
 @interface ViewController ()
+
+@property (nonatomic,strong) MyView *myView;
 
 @end
 
 @implementation ViewController
 
+- (void)createViews {
+    [super createViews];
+    self.view.backgroundColor = [UIColor greenColor];
+    self.myView = [[MyView alloc] init];
+    [self.view addSubview:self.myView];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    self.myView.frame = self.view.bounds;
 }
 
 - (void)didReceiveMemoryWarning {
