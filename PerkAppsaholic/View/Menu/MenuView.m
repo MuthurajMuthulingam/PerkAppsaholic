@@ -28,6 +28,7 @@
 
 - (void)createSubViews {
     self.menuTable = [[UITableView alloc] init];
+    self.menuTable.backgroundColor = [UIColor grayColor];
     self.menuTable.dataSource = self;
     self.menuTable.delegate = self;
     [self addSubview:self.menuTable];

@@ -5,7 +5,7 @@
 
 target 'PerkAppsaholic' do
 
-pod 'AppsaholicSDK', :path => '../AppsaholicUniversalSDK'
+pod 'AppsaholicSDK', :path => 'AppsaholicUniversalSDK'
 
 end
 
