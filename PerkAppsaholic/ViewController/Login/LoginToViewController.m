@@ -1,21 +1,21 @@
 //
-//  LoginViewController.m
+//  LoginToViewController.m
 //  PerkAppsaholic
 //
 //  Created by Muthuraj Muthulingam on 12/18/15.
 //  Copyright © 2015 Muthuraj Muthulingam. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "LoginToViewController.h"
 #import "LoginView.h"
 
-@interface LoginViewController ()<LoginViewDelegate>
+@interface LoginToViewController ()<LoginViewDelegate>
 
 @property (nonatomic,strong) LoginView *loginView;
 
 @end
 
-@implementation LoginViewController
+@implementation LoginToViewController
 
 - (void)createViews {
     [super createViews];

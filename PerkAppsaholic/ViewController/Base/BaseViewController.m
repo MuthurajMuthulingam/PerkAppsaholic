@@ -6,11 +6,11 @@
 //  Copyright © 2015 Muthuraj Muthulingam. All rights reserved.
 //
 
+#import <AppsaholicSDK/AppsaholicSDK.h>
 #import "BaseViewController.h"
 #import "BaseView.h"
 
 @interface BaseViewController ()
-
 
 @end
 
@@ -31,7 +31,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+        
     // Do any additional setup after loading the view.
+    
+    ((AppsaholicSDK *)[AppsaholicSDK sharedManager]).appsaholic_rootViewController = self;
     
     self.navigationController.navigationBarHidden = YES;
 }

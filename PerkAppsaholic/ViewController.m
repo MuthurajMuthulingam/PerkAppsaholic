@@ -6,6 +6,7 @@
 //  Copyright © 2015 Muthuraj Muthulingam. All rights reserved.
 //
 
+#import <AppsaholicSDK/AppsaholicSDK.h>
 #import "ViewController.h"
 #import "MyView.h"
 
@@ -27,6 +28,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    ((AppsaholicSDK *)[AppsaholicSDK sharedManager]).appsaholic_rootViewController  = self;
+
 }
 
 - (void)viewWillLayoutSubviews {

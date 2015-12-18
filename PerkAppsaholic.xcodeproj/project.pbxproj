@@ -1,1702 +1,732 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>05455CACC165109E5C831191</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-PerkAppsaholic.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-PerkAppsaholic/Pods-PerkAppsaholic.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0A30401D44C3B9E59DC26A5F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-PerkAppsaholic.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>5A10DA938B264707587D13ED</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-PerkAppsaholic/Pods-PerkAppsaholic-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>6A58C9654FC3D66620A97FD4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-PerkAppsaholic/Pods-PerkAppsaholic-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>6A7D2A041C23A86D00B81F60</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6A7D2A061C23A89C00B81F60</string>
-				<string>6A7D2A071C23A89C00B81F60</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Login</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A7D2A061C23A89C00B81F60</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>LoginView.h</string>
-			<key>path</key>
-			<string>View/Login/LoginView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A7D2A071C23A89C00B81F60</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>LoginView.m</string>
-			<key>path</key>
-			<string>View/Login/LoginView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A7D2A081C23A89C00B81F60</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A7D2A071C23A89C00B81F60</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A7D2A091C23AA7300B81F60</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AppConstants.h</string>
-			<key>path</key>
-			<string>Utilities/AppConstants.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A7D2A0A1C23ACEF00B81F60</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6A7D2A0B1C23AD1900B81F60</string>
-				<string>6A7D2A0C1C23AD1900B81F60</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Login</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A7D2A0B1C23AD1900B81F60</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>LoginViewController.h</string>
-			<key>path</key>
-			<string>ViewController/Login/LoginViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A7D2A0C1C23AD1900B81F60</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>LoginViewController.m</string>
-			<key>path</key>
-			<string>ViewController/Login/LoginViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A7D2A0D1C23AD1900B81F60</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A7D2A0C1C23AD1900B81F60</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A8E0F591C2104A300EC19D6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6A8E0F641C2104A300EC19D6</string>
-				<string>6A8E0F811C2104A300EC19D6</string>
-				<string>6A8E0F8C1C2104A300EC19D6</string>
-				<string>6A8E0F631C2104A300EC19D6</string>
-				<string>B1919A390A4468EAF7FFE7E3</string>
-				<string>DDCCD5A36182CD1A5D7E8175</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F5A1C2104A300EC19D6</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0710</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Muthuraj Muthulingam</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>6A8E0F611C2104A300EC19D6</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.1</string>
-					</dict>
-					<key>6A8E0F7D1C2104A300EC19D6</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.1</string>
-						<key>TestTargetID</key>
-						<string>6A8E0F611C2104A300EC19D6</string>
-					</dict>
-					<key>6A8E0F881C2104A300EC19D6</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.1</string>
-						<key>TestTargetID</key>
-						<string>6A8E0F611C2104A300EC19D6</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>6A8E0F5D1C2104A300EC19D6</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>6A8E0F591C2104A300EC19D6</string>
-			<key>productRefGroup</key>
-			<string>6A8E0F631C2104A300EC19D6</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>6A8E0F611C2104A300EC19D6</string>
-				<string>6A8E0F7D1C2104A300EC19D6</string>
-				<string>6A8E0F881C2104A300EC19D6</string>
-			</array>
-		</dict>
-		<key>6A8E0F5D1C2104A300EC19D6</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6A8E0F901C2104A300EC19D6</string>
-				<string>6A8E0F911C2104A300EC19D6</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>6A8E0F5E1C2104A300EC19D6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6A8E0F6D1C2104A300EC19D6</string>
-				<string>6A94AD5C1C2257320093DFF3</string>
-				<string>6A8E0F9D1C21080C00EC19D6</string>
-				<string>6A94AD651C225B590093DFF3</string>
-				<string>6A7D2A0D1C23AD1900B81F60</string>
-				<string>6A94AD661C225B590093DFF3</string>
-				<string>6A8E0F731C2104A300EC19D6</string>
-				<string>6A8E0F6A1C2104A300EC19D6</string>
-				<string>6A8E0F671C2104A300EC19D6</string>
-				<string>6A8E0FAA1C210BEA00EC19D6</string>
-				<string>6A94AD671C225B590093DFF3</string>
-				<string>6A8E0FA41C210A1100EC19D6</string>
-				<string>6A7D2A081C23A89C00B81F60</string>
-				<string>6A8E0FA71C210AA000EC19D6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6A8E0F5F1C2104A300EC19D6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>736776B6440ED4FBF636EE35</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6A8E0F601C2104A300EC19D6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6A8E0F781C2104A300EC19D6</string>
-				<string>6A8E0F751C2104A300EC19D6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6A8E0F611C2104A300EC19D6</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>6A8E0F921C2104A300EC19D6</string>
-			<key>buildPhases</key>
-			<array>
-				<string>A24D7662772029447E4D0CAF</string>
-				<string>6A8E0F5E1C2104A300EC19D6</string>
-				<string>6A8E0F5F1C2104A300EC19D6</string>
-				<string>6A8E0F601C2104A300EC19D6</string>
-				<string>5A10DA938B264707587D13ED</string>
-				<string>6A58C9654FC3D66620A97FD4</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>PerkAppsaholic</string>
-			<key>productName</key>
-			<string>PerkAppsaholic</string>
-			<key>productReference</key>
-			<string>6A8E0F621C2104A300EC19D6</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>6A8E0F621C2104A300EC19D6</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>PerkAppsaholic.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>6A8E0F631C2104A300EC19D6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6A8E0F621C2104A300EC19D6</string>
-				<string>6A8E0F7E1C2104A300EC19D6</string>
-				<string>6A8E0F891C2104A300EC19D6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F641C2104A300EC19D6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6A94AD5D1C225B340093DFF3</string>
-				<string>6A8E0FA01C2109E700EC19D6</string>
-				<string>6A8E0F9E1C21081200EC19D6</string>
-				<string>6A8E0F681C2104A300EC19D6</string>
-				<string>6A8E0F691C2104A300EC19D6</string>
-				<string>6A8E0F6B1C2104A300EC19D6</string>
-				<string>6A8E0F6C1C2104A300EC19D6</string>
-				<string>6A8E0F741C2104A300EC19D6</string>
-				<string>6A8E0F761C2104A300EC19D6</string>
-				<string>6A8E0F791C2104A300EC19D6</string>
-				<string>6A8E0F711C2104A300EC19D6</string>
-				<string>6A8E0F651C2104A300EC19D6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>PerkAppsaholic</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F651C2104A300EC19D6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6A8E0F661C2104A300EC19D6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F661C2104A300EC19D6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F671C2104A300EC19D6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A8E0F661C2104A300EC19D6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A8E0F681C2104A300EC19D6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F691C2104A300EC19D6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F6A1C2104A300EC19D6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A8E0F691C2104A300EC19D6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A8E0F6B1C2104A300EC19D6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F6C1C2104A300EC19D6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F6D1C2104A300EC19D6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A8E0F6C1C2104A300EC19D6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A8E0F711C2104A300EC19D6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6A8E0F721C2104A300EC19D6</string>
-			</array>
-			<key>currentVersion</key>
-			<string>6A8E0F721C2104A300EC19D6</string>
-			<key>isa</key>
-			<string>XCVersionGroup</string>
-			<key>path</key>
-			<string>PerkAppsaholic.xcdatamodeld</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-			<key>versionGroupType</key>
-			<string>wrapper.xcdatamodel</string>
-		</dict>
-		<key>6A8E0F721C2104A300EC19D6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.xcdatamodel</string>
-			<key>path</key>
-			<string>PerkAppsaholic.xcdatamodel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F731C2104A300EC19D6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A8E0F711C2104A300EC19D6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A8E0F741C2104A300EC19D6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F751C2104A300EC19D6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A8E0F741C2104A300EC19D6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A8E0F761C2104A300EC19D6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6A8E0F771C2104A300EC19D6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F771C2104A300EC19D6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F781C2104A300EC19D6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A8E0F761C2104A300EC19D6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A8E0F791C2104A300EC19D6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F7A1C2104A300EC19D6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6A8E0F831C2104A300EC19D6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6A8E0F7B1C2104A300EC19D6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6A8E0F7C1C2104A300EC19D6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6A8E0F7D1C2104A300EC19D6</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>6A8E0F951C2104A300EC19D6</string>
-			<key>buildPhases</key>
-			<array>
-				<string>6A8E0F7A1C2104A300EC19D6</string>
-				<string>6A8E0F7B1C2104A300EC19D6</string>
-				<string>6A8E0F7C1C2104A300EC19D6</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>6A8E0F801C2104A300EC19D6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>PerkAppsaholicTests</string>
-			<key>productName</key>
-			<string>PerkAppsaholicTests</string>
-			<key>productReference</key>
-			<string>6A8E0F7E1C2104A300EC19D6</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>6A8E0F7E1C2104A300EC19D6</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>PerkAppsaholicTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>6A8E0F7F1C2104A300EC19D6</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>6A8E0F5A1C2104A300EC19D6</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>6A8E0F611C2104A300EC19D6</string>
-			<key>remoteInfo</key>
-			<string>PerkAppsaholic</string>
-		</dict>
-		<key>6A8E0F801C2104A300EC19D6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>6A8E0F611C2104A300EC19D6</string>
-			<key>targetProxy</key>
-			<string>6A8E0F7F1C2104A300EC19D6</string>
-		</dict>
-		<key>6A8E0F811C2104A300EC19D6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6A8E0F821C2104A300EC19D6</string>
-				<string>6A8E0F841C2104A300EC19D6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>PerkAppsaholicTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F821C2104A300EC19D6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>PerkAppsaholicTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F831C2104A300EC19D6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A8E0F821C2104A300EC19D6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A8E0F841C2104A300EC19D6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F851C2104A300EC19D6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6A8E0F8E1C2104A300EC19D6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6A8E0F861C2104A300EC19D6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6A8E0F871C2104A300EC19D6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>6A8E0F881C2104A300EC19D6</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>6A8E0F981C2104A300EC19D6</string>
-			<key>buildPhases</key>
-			<array>
-				<string>6A8E0F851C2104A300EC19D6</string>
-				<string>6A8E0F861C2104A300EC19D6</string>
-				<string>6A8E0F871C2104A300EC19D6</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>6A8E0F8B1C2104A300EC19D6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>PerkAppsaholicUITests</string>
-			<key>productName</key>
-			<string>PerkAppsaholicUITests</string>
-			<key>productReference</key>
-			<string>6A8E0F891C2104A300EC19D6</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>6A8E0F891C2104A300EC19D6</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>PerkAppsaholicUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>6A8E0F8A1C2104A300EC19D6</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>6A8E0F5A1C2104A300EC19D6</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>6A8E0F611C2104A300EC19D6</string>
-			<key>remoteInfo</key>
-			<string>PerkAppsaholic</string>
-		</dict>
-		<key>6A8E0F8B1C2104A300EC19D6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>6A8E0F611C2104A300EC19D6</string>
-			<key>targetProxy</key>
-			<string>6A8E0F8A1C2104A300EC19D6</string>
-		</dict>
-		<key>6A8E0F8C1C2104A300EC19D6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6A8E0F8D1C2104A300EC19D6</string>
-				<string>6A8E0F8F1C2104A300EC19D6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>PerkAppsaholicUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F8D1C2104A300EC19D6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>PerkAppsaholicUITests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F8E1C2104A300EC19D6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A8E0F8D1C2104A300EC19D6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A8E0F8F1C2104A300EC19D6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F901C2104A300EC19D6</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>6A8E0F911C2104A300EC19D6</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6A8E0F921C2104A300EC19D6</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6A8E0F931C2104A300EC19D6</string>
-				<string>6A8E0F941C2104A300EC19D6</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>6A8E0F931C2104A300EC19D6</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>05455CACC165109E5C831191</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>PerkAppsaholic/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>muthuraj.PerkAppsaholic</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>6A8E0F941C2104A300EC19D6</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>DBBD4F0A62C83A2499DEFAA6</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>PerkAppsaholic/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>muthuraj.PerkAppsaholic</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6A8E0F951C2104A300EC19D6</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6A8E0F961C2104A300EC19D6</string>
-				<string>6A8E0F971C2104A300EC19D6</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>6A8E0F961C2104A300EC19D6</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>PerkAppsaholicTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>muthuraj.PerkAppsaholicTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/PerkAppsaholic.app/PerkAppsaholic</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>6A8E0F971C2104A300EC19D6</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>PerkAppsaholicTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>muthuraj.PerkAppsaholicTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/PerkAppsaholic.app/PerkAppsaholic</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6A8E0F981C2104A300EC19D6</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6A8E0F991C2104A300EC19D6</string>
-				<string>6A8E0F9A1C2104A300EC19D6</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>6A8E0F991C2104A300EC19D6</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>PerkAppsaholicUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>muthuraj.PerkAppsaholicUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>PerkAppsaholic</string>
-				<key>USES_XCTRUNNER</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>6A8E0F9A1C2104A300EC19D6</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>PerkAppsaholicUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>muthuraj.PerkAppsaholicUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>PerkAppsaholic</string>
-				<key>USES_XCTRUNNER</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>6A8E0F9B1C21080C00EC19D6</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>BaseViewController.h</string>
-			<key>path</key>
-			<string>ViewController/Base/BaseViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F9C1C21080C00EC19D6</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>BaseViewController.m</string>
-			<key>path</key>
-			<string>ViewController/Base/BaseViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F9D1C21080C00EC19D6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A8E0F9C1C21080C00EC19D6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A8E0F9E1C21081200EC19D6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6A7D2A0A1C23ACEF00B81F60</string>
-				<string>6A8E0F9F1C21081C00EC19D6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ViewController</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0F9F1C21081C00EC19D6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6A8E0F9B1C21080C00EC19D6</string>
-				<string>6A8E0F9C1C21080C00EC19D6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0FA01C2109E700EC19D6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6A7D2A041C23A86D00B81F60</string>
-				<string>6A8E0FA11C2109ED00EC19D6</string>
-				<string>6A8E0FA51C210AA000EC19D6</string>
-				<string>6A8E0FA61C210AA000EC19D6</string>
-				<string>6A94AD5A1C2257320093DFF3</string>
-				<string>6A94AD5B1C2257320093DFF3</string>
-				<string>6A8E0FA81C210BEA00EC19D6</string>
-				<string>6A8E0FA91C210BEA00EC19D6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Views</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0FA11C2109ED00EC19D6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6A8E0FA21C210A1100EC19D6</string>
-				<string>6A8E0FA31C210A1100EC19D6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0FA21C210A1100EC19D6</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>BaseView.h</string>
-			<key>path</key>
-			<string>View/Base/BaseView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0FA31C210A1100EC19D6</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>BaseView.m</string>
-			<key>path</key>
-			<string>View/Base/BaseView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0FA41C210A1100EC19D6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A8E0FA31C210A1100EC19D6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A8E0FA51C210AA000EC19D6</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MyView.h</string>
-			<key>path</key>
-			<string>View/MyView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0FA61C210AA000EC19D6</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>MyView.m</string>
-			<key>path</key>
-			<string>View/MyView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0FA71C210AA000EC19D6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A8E0FA61C210AA000EC19D6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A8E0FA81C210BEA00EC19D6</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MenuView.h</string>
-			<key>path</key>
-			<string>View/Menu/MenuView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0FA91C210BEA00EC19D6</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>MenuView.m</string>
-			<key>path</key>
-			<string>View/Menu/MenuView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A8E0FAA1C210BEA00EC19D6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A8E0FA91C210BEA00EC19D6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A94AD5A1C2257320093DFF3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>HeaderView.h</string>
-			<key>path</key>
-			<string>View/Header/HeaderView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A94AD5B1C2257320093DFF3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>HeaderView.m</string>
-			<key>path</key>
-			<string>View/Header/HeaderView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A94AD5C1C2257320093DFF3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A94AD5B1C2257320093DFF3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A94AD5D1C225B340093DFF3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6A94AD5E1C225B3D0093DFF3</string>
-				<string>6A7D2A091C23AA7300B81F60</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Utilities</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A94AD5E1C225B3D0093DFF3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6A94AD5F1C225B590093DFF3</string>
-				<string>6A94AD601C225B590093DFF3</string>
-				<string>6A94AD611C225B590093DFF3</string>
-				<string>6A94AD621C225B590093DFF3</string>
-				<string>6A94AD631C225B590093DFF3</string>
-				<string>6A94AD641C225B590093DFF3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>UI Catagories</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A94AD5F1C225B590093DFF3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UIButton+MyButton.h</string>
-			<key>path</key>
-			<string>UI Catagories/UIButton+MyButton.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A94AD601C225B590093DFF3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UIButton+MyButton.m</string>
-			<key>path</key>
-			<string>UI Catagories/UIButton+MyButton.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A94AD611C225B590093DFF3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UILabel+MyLabel.h</string>
-			<key>path</key>
-			<string>UI Catagories/UILabel+MyLabel.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A94AD621C225B590093DFF3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UILabel+MyLabel.m</string>
-			<key>path</key>
-			<string>UI Catagories/UILabel+MyLabel.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A94AD631C225B590093DFF3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>UITextField+MyTextField.h</string>
-			<key>path</key>
-			<string>UI Catagories/UITextField+MyTextField.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A94AD641C225B590093DFF3</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>UITextField+MyTextField.m</string>
-			<key>path</key>
-			<string>UI Catagories/UITextField+MyTextField.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6A94AD651C225B590093DFF3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A94AD601C225B590093DFF3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A94AD661C225B590093DFF3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A94AD621C225B590093DFF3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6A94AD671C225B590093DFF3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A94AD641C225B590093DFF3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>736776B6440ED4FBF636EE35</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0A30401D44C3B9E59DC26A5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A24D7662772029447E4D0CAF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>B1919A390A4468EAF7FFE7E3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>05455CACC165109E5C831191</string>
-				<string>DBBD4F0A62C83A2499DEFAA6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DBBD4F0A62C83A2499DEFAA6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-PerkAppsaholic.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-PerkAppsaholic/Pods-PerkAppsaholic.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DDCCD5A36182CD1A5D7E8175</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0A30401D44C3B9E59DC26A5F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>6A8E0F5A1C2104A300EC19D6</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A7D2A081C23A89C00B81F60 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7D2A071C23A89C00B81F60 /* LoginView.m */; };
+		6A7D2A0D1C23AD1900B81F60 /* LoginToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7D2A0C1C23AD1900B81F60 /* LoginToViewController.m */; };
+		6A8E0F671C2104A300EC19D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F661C2104A300EC19D6 /* main.m */; };
+		6A8E0F6A1C2104A300EC19D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F691C2104A300EC19D6 /* AppDelegate.m */; };
+		6A8E0F6D1C2104A300EC19D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F6C1C2104A300EC19D6 /* ViewController.m */; };
+		6A8E0F731C2104A300EC19D6 /* PerkAppsaholic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F711C2104A300EC19D6 /* PerkAppsaholic.xcdatamodeld */; };
+		6A8E0F751C2104A300EC19D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A8E0F741C2104A300EC19D6 /* Assets.xcassets */; };
+		6A8E0F781C2104A300EC19D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A8E0F761C2104A300EC19D6 /* LaunchScreen.storyboard */; };
+		6A8E0F831C2104A300EC19D6 /* PerkAppsaholicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F821C2104A300EC19D6 /* PerkAppsaholicTests.m */; };
+		6A8E0F8E1C2104A300EC19D6 /* PerkAppsaholicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F8D1C2104A300EC19D6 /* PerkAppsaholicUITests.m */; };
+		6A8E0F9D1C21080C00EC19D6 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F9C1C21080C00EC19D6 /* BaseViewController.m */; };
+		6A8E0FA41C210A1100EC19D6 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0FA31C210A1100EC19D6 /* BaseView.m */; };
+		6A8E0FA71C210AA000EC19D6 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0FA61C210AA000EC19D6 /* MyView.m */; };
+		6A8E0FAA1C210BEA00EC19D6 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0FA91C210BEA00EC19D6 /* MenuView.m */; };
+		6A94AD5C1C2257320093DFF3 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A94AD5B1C2257320093DFF3 /* HeaderView.m */; };
+		6A94AD651C225B590093DFF3 /* UIButton+MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A94AD601C225B590093DFF3 /* UIButton+MyButton.m */; };
+		6A94AD661C225B590093DFF3 /* UILabel+MyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A94AD621C225B590093DFF3 /* UILabel+MyLabel.m */; };
+		6A94AD671C225B590093DFF3 /* UITextField+MyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A94AD641C225B590093DFF3 /* UITextField+MyTextField.m */; };
+		736776B6440ED4FBF636EE35 /* libPods-PerkAppsaholic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A30401D44C3B9E59DC26A5F /* libPods-PerkAppsaholic.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A8E0F7F1C2104A300EC19D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A8E0F5A1C2104A300EC19D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A8E0F611C2104A300EC19D6;
+			remoteInfo = PerkAppsaholic;
+		};
+		6A8E0F8A1C2104A300EC19D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A8E0F5A1C2104A300EC19D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A8E0F611C2104A300EC19D6;
+			remoteInfo = PerkAppsaholic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05455CACC165109E5C831191 /* Pods-PerkAppsaholic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerkAppsaholic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PerkAppsaholic/Pods-PerkAppsaholic.debug.xcconfig"; sourceTree = "<group>"; };
+		0A30401D44C3B9E59DC26A5F /* libPods-PerkAppsaholic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PerkAppsaholic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A7D2A061C23A89C00B81F60 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginView.h; path = View/Login/LoginView.h; sourceTree = "<group>"; };
+		6A7D2A071C23A89C00B81F60 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginView.m; path = View/Login/LoginView.m; sourceTree = "<group>"; };
+		6A7D2A091C23AA7300B81F60 /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppConstants.h; path = Utilities/AppConstants.h; sourceTree = "<group>"; };
+		6A7D2A0B1C23AD1900B81F60 /* LoginToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginToViewController.h; path = ViewController/Login/LoginToViewController.h; sourceTree = "<group>"; };
+		6A7D2A0C1C23AD1900B81F60 /* LoginToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginToViewController.m; path = ViewController/Login/LoginToViewController.m; sourceTree = "<group>"; };
+		6A8E0F621C2104A300EC19D6 /* PerkAppsaholic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerkAppsaholic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8E0F661C2104A300EC19D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6A8E0F681C2104A300EC19D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6A8E0F691C2104A300EC19D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6A8E0F6B1C2104A300EC19D6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6A8E0F6C1C2104A300EC19D6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6A8E0F721C2104A300EC19D6 /* PerkAppsaholic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PerkAppsaholic.xcdatamodel; sourceTree = "<group>"; };
+		6A8E0F741C2104A300EC19D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A8E0F771C2104A300EC19D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A8E0F791C2104A300EC19D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A8E0F7E1C2104A300EC19D6 /* PerkAppsaholicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerkAppsaholicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8E0F821C2104A300EC19D6 /* PerkAppsaholicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerkAppsaholicTests.m; sourceTree = "<group>"; };
+		6A8E0F841C2104A300EC19D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A8E0F891C2104A300EC19D6 /* PerkAppsaholicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerkAppsaholicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8E0F8D1C2104A300EC19D6 /* PerkAppsaholicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerkAppsaholicUITests.m; sourceTree = "<group>"; };
+		6A8E0F8F1C2104A300EC19D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A8E0F9B1C21080C00EC19D6 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseViewController.h; path = ViewController/Base/BaseViewController.h; sourceTree = "<group>"; };
+		6A8E0F9C1C21080C00EC19D6 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = ViewController/Base/BaseViewController.m; sourceTree = "<group>"; };
+		6A8E0FA21C210A1100EC19D6 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseView.h; path = View/Base/BaseView.h; sourceTree = "<group>"; };
+		6A8E0FA31C210A1100EC19D6 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseView.m; path = View/Base/BaseView.m; sourceTree = "<group>"; };
+		6A8E0FA51C210AA000EC19D6 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyView.h; path = View/MyView.h; sourceTree = "<group>"; };
+		6A8E0FA61C210AA000EC19D6 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyView.m; path = View/MyView.m; sourceTree = "<group>"; };
+		6A8E0FA81C210BEA00EC19D6 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuView.h; path = View/Menu/MenuView.h; sourceTree = "<group>"; };
+		6A8E0FA91C210BEA00EC19D6 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuView.m; path = View/Menu/MenuView.m; sourceTree = "<group>"; };
+		6A94AD5A1C2257320093DFF3 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderView.h; path = View/Header/HeaderView.h; sourceTree = "<group>"; };
+		6A94AD5B1C2257320093DFF3 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderView.m; path = View/Header/HeaderView.m; sourceTree = "<group>"; };
+		6A94AD5F1C225B590093DFF3 /* UIButton+MyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+MyButton.h"; path = "UI Catagories/UIButton+MyButton.h"; sourceTree = "<group>"; };
+		6A94AD601C225B590093DFF3 /* UIButton+MyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+MyButton.m"; path = "UI Catagories/UIButton+MyButton.m"; sourceTree = "<group>"; };
+		6A94AD611C225B590093DFF3 /* UILabel+MyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+MyLabel.h"; path = "UI Catagories/UILabel+MyLabel.h"; sourceTree = "<group>"; };
+		6A94AD621C225B590093DFF3 /* UILabel+MyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+MyLabel.m"; path = "UI Catagories/UILabel+MyLabel.m"; sourceTree = "<group>"; };
+		6A94AD631C225B590093DFF3 /* UITextField+MyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextField+MyTextField.h"; path = "UI Catagories/UITextField+MyTextField.h"; sourceTree = "<group>"; };
+		6A94AD641C225B590093DFF3 /* UITextField+MyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextField+MyTextField.m"; path = "UI Catagories/UITextField+MyTextField.m"; sourceTree = "<group>"; };
+		DBBD4F0A62C83A2499DEFAA6 /* Pods-PerkAppsaholic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerkAppsaholic.release.xcconfig"; path = "Pods/Target Support Files/Pods-PerkAppsaholic/Pods-PerkAppsaholic.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A8E0F5F1C2104A300EC19D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				736776B6440ED4FBF636EE35 /* libPods-PerkAppsaholic.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8E0F7B1C2104A300EC19D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8E0F861C2104A300EC19D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A7D2A041C23A86D00B81F60 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6A7D2A061C23A89C00B81F60 /* LoginView.h */,
+				6A7D2A071C23A89C00B81F60 /* LoginView.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		6A7D2A0A1C23ACEF00B81F60 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6A7D2A0B1C23AD1900B81F60 /* LoginToViewController.h */,
+				6A7D2A0C1C23AD1900B81F60 /* LoginToViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		6A8E0F591C2104A300EC19D6 = {
+			isa = PBXGroup;
+			children = (
+				6A8E0F641C2104A300EC19D6 /* PerkAppsaholic */,
+				6A8E0F811C2104A300EC19D6 /* PerkAppsaholicTests */,
+				6A8E0F8C1C2104A300EC19D6 /* PerkAppsaholicUITests */,
+				6A8E0F631C2104A300EC19D6 /* Products */,
+				B1919A390A4468EAF7FFE7E3 /* Pods */,
+				DDCCD5A36182CD1A5D7E8175 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6A8E0F631C2104A300EC19D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A8E0F621C2104A300EC19D6 /* PerkAppsaholic.app */,
+				6A8E0F7E1C2104A300EC19D6 /* PerkAppsaholicTests.xctest */,
+				6A8E0F891C2104A300EC19D6 /* PerkAppsaholicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A8E0F641C2104A300EC19D6 /* PerkAppsaholic */ = {
+			isa = PBXGroup;
+			children = (
+				6A94AD5D1C225B340093DFF3 /* Utilities */,
+				6A8E0FA01C2109E700EC19D6 /* Views */,
+				6A8E0F9E1C21081200EC19D6 /* ViewController */,
+				6A8E0F681C2104A300EC19D6 /* AppDelegate.h */,
+				6A8E0F691C2104A300EC19D6 /* AppDelegate.m */,
+				6A8E0F6B1C2104A300EC19D6 /* ViewController.h */,
+				6A8E0F6C1C2104A300EC19D6 /* ViewController.m */,
+				6A8E0F741C2104A300EC19D6 /* Assets.xcassets */,
+				6A8E0F761C2104A300EC19D6 /* LaunchScreen.storyboard */,
+				6A8E0F791C2104A300EC19D6 /* Info.plist */,
+				6A8E0F711C2104A300EC19D6 /* PerkAppsaholic.xcdatamodeld */,
+				6A8E0F651C2104A300EC19D6 /* Supporting Files */,
+			);
+			path = PerkAppsaholic;
+			sourceTree = "<group>";
+		};
+		6A8E0F651C2104A300EC19D6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A8E0F661C2104A300EC19D6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A8E0F811C2104A300EC19D6 /* PerkAppsaholicTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A8E0F821C2104A300EC19D6 /* PerkAppsaholicTests.m */,
+				6A8E0F841C2104A300EC19D6 /* Info.plist */,
+			);
+			path = PerkAppsaholicTests;
+			sourceTree = "<group>";
+		};
+		6A8E0F8C1C2104A300EC19D6 /* PerkAppsaholicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6A8E0F8D1C2104A300EC19D6 /* PerkAppsaholicUITests.m */,
+				6A8E0F8F1C2104A300EC19D6 /* Info.plist */,
+			);
+			path = PerkAppsaholicUITests;
+			sourceTree = "<group>";
+		};
+		6A8E0F9E1C21081200EC19D6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6A7D2A0A1C23ACEF00B81F60 /* Login */,
+				6A8E0F9F1C21081C00EC19D6 /* Base */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		6A8E0F9F1C21081C00EC19D6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6A8E0F9B1C21080C00EC19D6 /* BaseViewController.h */,
+				6A8E0F9C1C21080C00EC19D6 /* BaseViewController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		6A8E0FA01C2109E700EC19D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6A7D2A041C23A86D00B81F60 /* Login */,
+				6A8E0FA11C2109ED00EC19D6 /* Base */,
+				6A8E0FA51C210AA000EC19D6 /* MyView.h */,
+				6A8E0FA61C210AA000EC19D6 /* MyView.m */,
+				6A94AD5A1C2257320093DFF3 /* HeaderView.h */,
+				6A94AD5B1C2257320093DFF3 /* HeaderView.m */,
+				6A8E0FA81C210BEA00EC19D6 /* MenuView.h */,
+				6A8E0FA91C210BEA00EC19D6 /* MenuView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6A8E0FA11C2109ED00EC19D6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6A8E0FA21C210A1100EC19D6 /* BaseView.h */,
+				6A8E0FA31C210A1100EC19D6 /* BaseView.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		6A94AD5D1C225B340093DFF3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6A94AD5E1C225B3D0093DFF3 /* UI Catagories */,
+				6A7D2A091C23AA7300B81F60 /* AppConstants.h */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		6A94AD5E1C225B3D0093DFF3 /* UI Catagories */ = {
+			isa = PBXGroup;
+			children = (
+				6A94AD5F1C225B590093DFF3 /* UIButton+MyButton.h */,
+				6A94AD601C225B590093DFF3 /* UIButton+MyButton.m */,
+				6A94AD611C225B590093DFF3 /* UILabel+MyLabel.h */,
+				6A94AD621C225B590093DFF3 /* UILabel+MyLabel.m */,
+				6A94AD631C225B590093DFF3 /* UITextField+MyTextField.h */,
+				6A94AD641C225B590093DFF3 /* UITextField+MyTextField.m */,
+			);
+			name = "UI Catagories";
+			sourceTree = "<group>";
+		};
+		B1919A390A4468EAF7FFE7E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05455CACC165109E5C831191 /* Pods-PerkAppsaholic.debug.xcconfig */,
+				DBBD4F0A62C83A2499DEFAA6 /* Pods-PerkAppsaholic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DDCCD5A36182CD1A5D7E8175 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A30401D44C3B9E59DC26A5F /* libPods-PerkAppsaholic.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A8E0F611C2104A300EC19D6 /* PerkAppsaholic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A8E0F921C2104A300EC19D6 /* Build configuration list for PBXNativeTarget "PerkAppsaholic" */;
+			buildPhases = (
+				A24D7662772029447E4D0CAF /* Check Pods Manifest.lock */,
+				6A8E0F5E1C2104A300EC19D6 /* Sources */,
+				6A8E0F5F1C2104A300EC19D6 /* Frameworks */,
+				6A8E0F601C2104A300EC19D6 /* Resources */,
+				5A10DA938B264707587D13ED /* Embed Pods Frameworks */,
+				6A58C9654FC3D66620A97FD4 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PerkAppsaholic;
+			productName = PerkAppsaholic;
+			productReference = 6A8E0F621C2104A300EC19D6 /* PerkAppsaholic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A8E0F7D1C2104A300EC19D6 /* PerkAppsaholicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A8E0F951C2104A300EC19D6 /* Build configuration list for PBXNativeTarget "PerkAppsaholicTests" */;
+			buildPhases = (
+				6A8E0F7A1C2104A300EC19D6 /* Sources */,
+				6A8E0F7B1C2104A300EC19D6 /* Frameworks */,
+				6A8E0F7C1C2104A300EC19D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A8E0F801C2104A300EC19D6 /* PBXTargetDependency */,
+			);
+			name = PerkAppsaholicTests;
+			productName = PerkAppsaholicTests;
+			productReference = 6A8E0F7E1C2104A300EC19D6 /* PerkAppsaholicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6A8E0F881C2104A300EC19D6 /* PerkAppsaholicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A8E0F981C2104A300EC19D6 /* Build configuration list for PBXNativeTarget "PerkAppsaholicUITests" */;
+			buildPhases = (
+				6A8E0F851C2104A300EC19D6 /* Sources */,
+				6A8E0F861C2104A300EC19D6 /* Frameworks */,
+				6A8E0F871C2104A300EC19D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A8E0F8B1C2104A300EC19D6 /* PBXTargetDependency */,
+			);
+			name = PerkAppsaholicUITests;
+			productName = PerkAppsaholicUITests;
+			productReference = 6A8E0F891C2104A300EC19D6 /* PerkAppsaholicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A8E0F5A1C2104A300EC19D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Muthuraj Muthulingam";
+				TargetAttributes = {
+					6A8E0F611C2104A300EC19D6 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					6A8E0F7D1C2104A300EC19D6 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 6A8E0F611C2104A300EC19D6;
+					};
+					6A8E0F881C2104A300EC19D6 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 6A8E0F611C2104A300EC19D6;
+					};
+				};
+			};
+			buildConfigurationList = 6A8E0F5D1C2104A300EC19D6 /* Build configuration list for PBXProject "PerkAppsaholic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A8E0F591C2104A300EC19D6;
+			productRefGroup = 6A8E0F631C2104A300EC19D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A8E0F611C2104A300EC19D6 /* PerkAppsaholic */,
+				6A8E0F7D1C2104A300EC19D6 /* PerkAppsaholicTests */,
+				6A8E0F881C2104A300EC19D6 /* PerkAppsaholicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A8E0F601C2104A300EC19D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A8E0F781C2104A300EC19D6 /* LaunchScreen.storyboard in Resources */,
+				6A8E0F751C2104A300EC19D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8E0F7C1C2104A300EC19D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8E0F871C2104A300EC19D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A10DA938B264707587D13ED /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PerkAppsaholic/Pods-PerkAppsaholic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A58C9654FC3D66620A97FD4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PerkAppsaholic/Pods-PerkAppsaholic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A24D7662772029447E4D0CAF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A8E0F5E1C2104A300EC19D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A8E0F6D1C2104A300EC19D6 /* ViewController.m in Sources */,
+				6A94AD5C1C2257320093DFF3 /* HeaderView.m in Sources */,
+				6A8E0F9D1C21080C00EC19D6 /* BaseViewController.m in Sources */,
+				6A94AD651C225B590093DFF3 /* UIButton+MyButton.m in Sources */,
+				6A7D2A0D1C23AD1900B81F60 /* LoginToViewController.m in Sources */,
+				6A94AD661C225B590093DFF3 /* UILabel+MyLabel.m in Sources */,
+				6A8E0F731C2104A300EC19D6 /* PerkAppsaholic.xcdatamodeld in Sources */,
+				6A8E0F6A1C2104A300EC19D6 /* AppDelegate.m in Sources */,
+				6A8E0F671C2104A300EC19D6 /* main.m in Sources */,
+				6A8E0FAA1C210BEA00EC19D6 /* MenuView.m in Sources */,
+				6A94AD671C225B590093DFF3 /* UITextField+MyTextField.m in Sources */,
+				6A8E0FA41C210A1100EC19D6 /* BaseView.m in Sources */,
+				6A7D2A081C23A89C00B81F60 /* LoginView.m in Sources */,
+				6A8E0FA71C210AA000EC19D6 /* MyView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8E0F7A1C2104A300EC19D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A8E0F831C2104A300EC19D6 /* PerkAppsaholicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8E0F851C2104A300EC19D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A8E0F8E1C2104A300EC19D6 /* PerkAppsaholicUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A8E0F801C2104A300EC19D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A8E0F611C2104A300EC19D6 /* PerkAppsaholic */;
+			targetProxy = 6A8E0F7F1C2104A300EC19D6 /* PBXContainerItemProxy */;
+		};
+		6A8E0F8B1C2104A300EC19D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A8E0F611C2104A300EC19D6 /* PerkAppsaholic */;
+			targetProxy = 6A8E0F8A1C2104A300EC19D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6A8E0F761C2104A300EC19D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A8E0F771C2104A300EC19D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A8E0F901C2104A300EC19D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6A8E0F911C2104A300EC19D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A8E0F931C2104A300EC19D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05455CACC165109E5C831191 /* Pods-PerkAppsaholic.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PerkAppsaholic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = muthuraj.PerkAppsaholic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6A8E0F941C2104A300EC19D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBBD4F0A62C83A2499DEFAA6 /* Pods-PerkAppsaholic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PerkAppsaholic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = muthuraj.PerkAppsaholic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6A8E0F961C2104A300EC19D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PerkAppsaholicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = muthuraj.PerkAppsaholicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PerkAppsaholic.app/PerkAppsaholic";
+			};
+			name = Debug;
+		};
+		6A8E0F971C2104A300EC19D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PerkAppsaholicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = muthuraj.PerkAppsaholicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PerkAppsaholic.app/PerkAppsaholic";
+			};
+			name = Release;
+		};
+		6A8E0F991C2104A300EC19D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PerkAppsaholicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = muthuraj.PerkAppsaholicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PerkAppsaholic;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		6A8E0F9A1C2104A300EC19D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PerkAppsaholicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = muthuraj.PerkAppsaholicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PerkAppsaholic;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A8E0F5D1C2104A300EC19D6 /* Build configuration list for PBXProject "PerkAppsaholic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A8E0F901C2104A300EC19D6 /* Debug */,
+				6A8E0F911C2104A300EC19D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A8E0F921C2104A300EC19D6 /* Build configuration list for PBXNativeTarget "PerkAppsaholic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A8E0F931C2104A300EC19D6 /* Debug */,
+				6A8E0F941C2104A300EC19D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A8E0F951C2104A300EC19D6 /* Build configuration list for PBXNativeTarget "PerkAppsaholicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A8E0F961C2104A300EC19D6 /* Debug */,
+				6A8E0F971C2104A300EC19D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A8E0F981C2104A300EC19D6 /* Build configuration list for PBXNativeTarget "PerkAppsaholicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A8E0F991C2104A300EC19D6 /* Debug */,
+				6A8E0F9A1C2104A300EC19D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6A8E0F711C2104A300EC19D6 /* PerkAppsaholic.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6A8E0F721C2104A300EC19D6 /* PerkAppsaholic.xcdatamodel */,
+			);
+			currentVersion = 6A8E0F721C2104A300EC19D6 /* PerkAppsaholic.xcdatamodel */;
+			path = PerkAppsaholic.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6A8E0F5A1C2104A300EC19D6 /* Project object */;
+}

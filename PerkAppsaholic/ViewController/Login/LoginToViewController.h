@@ -1,5 +1,5 @@
 //
-//  LoginViewController.h
+//  LoginToViewController.h
 //  PerkAppsaholic
 //
 //  Created by Muthuraj Muthulingam on 12/18/15.
@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface LoginViewController : BaseViewController
+@interface LoginToViewController : BaseViewController
 
 @end
