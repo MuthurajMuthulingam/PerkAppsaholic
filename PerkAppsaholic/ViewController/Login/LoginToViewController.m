@@ -34,6 +34,10 @@
 
 - (void)loginView:(LoginView *)loginView userName:(NSString *)userName password:(NSString *)password {
     NSLog(@"Entered user Name : %@ and Password : %@",userName,password);
+    
+    [[AppsaholicSDK sharedManager] trackEvent:@"ba9c033948020fa049c93f57a216bcb0674e5a4a" withSubID:@"nil" notificationType:NO withController:self withSuccess:^(BOOL success, NSString *notificationtext, NSNumber *pointEarned) {
+        NSLog(@"Achivement !!! Points Earned : %d,NotificationText %@",pointEarned.intValue,notificationtext);
+    }];
 }
 
 - (void)viewWillLayoutSubviews {

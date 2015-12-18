@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AppsaholicSDK/AppsaholicSDK.h>
 
 @interface BaseViewController : UIViewController
 

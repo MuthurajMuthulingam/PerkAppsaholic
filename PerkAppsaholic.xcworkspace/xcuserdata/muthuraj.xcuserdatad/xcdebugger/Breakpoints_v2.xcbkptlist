@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PerkAppsaholic/ViewController/Login/LoginToViewController.m"
+            timestampString = "472140249.083711"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "-loginView:userName:password:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LoginToViewController loginView:userName:password:]"
+                  moduleName = "PerkAppsaholic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Muthuraj/Development/Apps/iOS/Tried%20Samples/PerkAppsaholic/PerkAppsaholic/ViewController/Login/LoginToViewController.m"
+                  timestampString = "472140249.117469"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "126">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__53-[LoginToViewController loginView:userName:password:]_block_invoke"
+                  moduleName = "PerkAppsaholic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Muthuraj/Development/Apps/iOS/Tried%20Samples/PerkAppsaholic/PerkAppsaholic/ViewController/Login/LoginToViewController.m"
+                  timestampString = "472140249.11892"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "78">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
