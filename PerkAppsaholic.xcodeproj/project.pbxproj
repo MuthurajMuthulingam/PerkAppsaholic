@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A7D2A081C23A89C00B81F60 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7D2A071C23A89C00B81F60 /* LoginView.m */; };
+		6A7D2A0D1C23AD1900B81F60 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7D2A0C1C23AD1900B81F60 /* LoginViewController.m */; };
 		6A8E0F671C2104A300EC19D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F661C2104A300EC19D6 /* main.m */; };
 		6A8E0F6A1C2104A300EC19D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F691C2104A300EC19D6 /* AppDelegate.m */; };
 		6A8E0F6D1C2104A300EC19D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F6C1C2104A300EC19D6 /* ViewController.m */; };
@@ -43,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A7D2A061C23A89C00B81F60 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginView.h; path = View/Login/LoginView.h; sourceTree = "<group>"; };
+		6A7D2A071C23A89C00B81F60 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginView.m; path = View/Login/LoginView.m; sourceTree = "<group>"; };
+		6A7D2A091C23AA7300B81F60 /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppConstants.h; path = Utilities/AppConstants.h; sourceTree = "<group>"; };
+		6A7D2A0B1C23AD1900B81F60 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ViewController/Login/LoginViewController.h; sourceTree = "<group>"; };
+		6A7D2A0C1C23AD1900B81F60 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ViewController/Login/LoginViewController.m; sourceTree = "<group>"; };
 		6A8E0F621C2104A300EC19D6 /* PerkAppsaholic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerkAppsaholic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8E0F661C2104A300EC19D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A8E0F681C2104A300EC19D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -102,6 +109,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A7D2A041C23A86D00B81F60 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6A7D2A061C23A89C00B81F60 /* LoginView.h */,
+				6A7D2A071C23A89C00B81F60 /* LoginView.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		6A7D2A0A1C23ACEF00B81F60 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6A7D2A0B1C23AD1900B81F60 /* LoginViewController.h */,
+				6A7D2A0C1C23AD1900B81F60 /* LoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		6A8E0F591C2104A300EC19D6 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +195,7 @@
 		6A8E0F9E1C21081200EC19D6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6A7D2A0A1C23ACEF00B81F60 /* Login */,
 				6A8E0F9F1C21081C00EC19D6 /* Base */,
 			);
 			name = ViewController;
@@ -187,6 +213,7 @@
 		6A8E0FA01C2109E700EC19D6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6A7D2A041C23A86D00B81F60 /* Login */,
 				6A8E0FA11C2109ED00EC19D6 /* Base */,
 				6A8E0FA51C210AA000EC19D6 /* MyView.h */,
 				6A8E0FA61C210AA000EC19D6 /* MyView.m */,
@@ -211,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				6A94AD5E1C225B3D0093DFF3 /* UI Catagories */,
+				6A7D2A091C23AA7300B81F60 /* AppConstants.h */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -361,6 +389,7 @@
 				6A94AD5C1C2257320093DFF3 /* HeaderView.m in Sources */,
 				6A8E0F9D1C21080C00EC19D6 /* BaseViewController.m in Sources */,
 				6A94AD651C225B590093DFF3 /* UIButton+MyButton.m in Sources */,
+				6A7D2A0D1C23AD1900B81F60 /* LoginViewController.m in Sources */,
 				6A94AD661C225B590093DFF3 /* UILabel+MyLabel.m in Sources */,
 				6A8E0F731C2104A300EC19D6 /* PerkAppsaholic.xcdatamodeld in Sources */,
 				6A8E0F6A1C2104A300EC19D6 /* AppDelegate.m in Sources */,
@@ -368,6 +397,7 @@
 				6A8E0FAA1C210BEA00EC19D6 /* MenuView.m in Sources */,
 				6A94AD671C225B590093DFF3 /* UITextField+MyTextField.m in Sources */,
 				6A8E0FA41C210A1100EC19D6 /* BaseView.m in Sources */,
+				6A7D2A081C23A89C00B81F60 /* LoginView.m in Sources */,
 				6A8E0FA71C210AA000EC19D6 /* MyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

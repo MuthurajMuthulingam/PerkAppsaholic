@@ -16,6 +16,7 @@
         self.text = textString;
         self.textAlignment = textAlignment;
         self.textColor = textColor;
+        self.placeholder = textString;
         self.font = textFont;
     }
     return self;
