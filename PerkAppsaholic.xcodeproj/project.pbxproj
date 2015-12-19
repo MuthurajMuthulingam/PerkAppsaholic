@@ -805,7 +805,7 @@
 					"$(PROJECT_DIR)/PerkAppsaholic",
 					"$(PROJECT_DIR)/PerkAppsaholic/Framework",
 				);
-				GCC_PREFIX_HEADER = "/Muthuraj/Development/Apps/iOS/Tried Samples/PerkAppsaholic/PerkAppsaholic/PerkAppsaholic-preFixHeader.pch";
+				GCC_PREFIX_HEADER = "../PerkAppsaholic/PerkAppsaholic/PerkAppsaholic-preFixHeader.pch";
 				INFOPLIST_FILE = PerkAppsaholic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -825,7 +825,7 @@
 					"$(PROJECT_DIR)/PerkAppsaholic",
 					"$(PROJECT_DIR)/PerkAppsaholic/Framework",
 				);
-				GCC_PREFIX_HEADER = "/Muthuraj/Development/Apps/iOS/Tried Samples/PerkAppsaholic/PerkAppsaholic/PerkAppsaholic-preFixHeader.pch";
+				GCC_PREFIX_HEADER = "../PerkAppsaholic/PerkAppsaholic/PerkAppsaholic-preFixHeader.pch";
 				INFOPLIST_FILE = PerkAppsaholic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
