@@ -7,35 +7,37 @@
 //
 
 #import <AppsaholicSDK/AppsaholicSDK.h>
-#import "ViewController.h"
-#import "MyView.h"
+#import "LandingViewController.h"
+#import "LandingView.h"
 
-@interface ViewController ()
+@interface LandingViewController ()
 
-@property (nonatomic,strong) MyView *myView;
+@property (nonatomic,strong) LandingView *view;
 
 @end
 
-@implementation ViewController
+@implementation LandingViewController
+
+@dynamic view;
 
 - (void)createViews {
     [super createViews];
+    
     self.view.backgroundColor = [UIColor greenColor];
-    self.myView = [[MyView alloc] init];
-    [self.view addSubview:self.myView];
+    self.view = [[LandingView alloc] init];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    ((AppsaholicSDK *)[AppsaholicSDK sharedManager]).appsaholic_rootViewController  = self;
+//    ((AppsaholicSDK *)[AppsaholicSDK sharedManager]).appsaholic_rootViewController  = self;
 
 }
 
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];
-    self.myView.frame = self.view.bounds;
+    self.view.frame = self.view.bounds;
 }
 
 - (void)didReceiveMemoryWarning {
