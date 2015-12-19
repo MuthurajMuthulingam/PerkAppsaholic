@@ -34,11 +34,11 @@
     self.appImage.backgroundColor = [UIColor grayColor];
     [self addSubview:self.appImage];
     
-    self.userName = [[UITextField alloc] initWithFrame:CGRectZero andText:@"UserName" font:[UIFont fontWithName:FontName size:19.0] textColor:[UIColor blackColor] textAlignment:NSTextAlignmentLeft];
+    self.userName = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 10, 20) andText:@"UserName" font:[UIFont fontWithName:FontName size:19.0] textColor:[UIColor blackColor] textAlignment:NSTextAlignmentLeft];
     self.userName.backgroundColor = [UIColor purpleColor];
     [self addSubview:self.userName];
     
-    self.password = [[UITextField alloc] initWithFrame:CGRectZero andText:@"Password" font:[UIFont fontWithName:FontName size:19.0] textColor:[UIColor blackColor] textAlignment:NSTextAlignmentLeft];
+    self.password = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 10, 20) andText:@"Password" font:[UIFont fontWithName:FontName size:19.0] textColor:[UIColor blackColor] textAlignment:NSTextAlignmentLeft];
     self.password.backgroundColor = [UIColor yellowColor];
     [self addSubview:self.password];
     

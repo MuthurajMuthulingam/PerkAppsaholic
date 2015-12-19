@@ -11,7 +11,8 @@
 @implementation UITextField (MyTextField)
 
 - (instancetype)initWithFrame:(CGRect)frame andText:(NSString *)textString font:(UIFont *)textFont textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment {
-    self = [super initWithFrame:frame];
+    self = [super init];
+    
     if (self) {
         self.text = textString;
         self.textAlignment = textAlignment;
