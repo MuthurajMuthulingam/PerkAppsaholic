@@ -6,9 +6,6 @@
 //  Copyright © 2015 Muthuraj Muthulingam. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-
 @interface Utilities : NSObject
 
 + (UIFont *)regularFontHeaderOne;

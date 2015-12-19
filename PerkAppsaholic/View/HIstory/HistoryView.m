@@ -14,6 +14,8 @@
 @interface HistoryView ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UISegmentedControl *segment;
+@property (nonatomic, strong) NSArray *dataArray;
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 
@@ -23,7 +25,7 @@
     self = [super init];
     
     if (self) {
-        self.dataArray = [[NSMutableArray alloc] init];
+        self.dataArray = [NSArray array];
         [self createViews];
     }
     
@@ -113,6 +115,16 @@
     if ([self.delegate respondsToSelector:@selector(segmentChangedToIndex:)]) {
         [self.delegate segmentChangedToIndex:(HistoryType)self.segment.selectedSegmentIndex];
     }
+}
+
+#pragma mark - reloading Data Table
+
+- (void)reloadDataWithData:(NSArray *)dataArray {
+    __weak HistoryView *weakHistoryView = self;
+    self.dataArray = dataArray;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [weakHistoryView.tableView reloadData];
+    });
 }
 
 @end

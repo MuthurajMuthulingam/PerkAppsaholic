@@ -13,6 +13,8 @@
 
 @property (nonatomic, strong) HistoryView *view;
 
+@property (nonatomic,strong)NSArray *dataArray;
+
 @end
 
 @implementation HistoryViewController
@@ -29,6 +31,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.dataArray = [NSArray array];
+    
     [self segmentChangedToIndex:kHistoryUpcoming];
 }
 
@@ -39,28 +43,26 @@
 #pragma mark HistoryViewDelegate Methods
 - (void)segmentChangedToIndex:(HistoryType)historyType {
     NSLog(@"segement changed to index %d",historyType);
-    
-    [self.view.dataArray removeAllObjects];
-    
+    NSArray *dataArray = [NSArray array];
     switch (historyType) {
         case kHistoryPast: {
             
-            [self.view.dataArray addObjectsFromArray:@[@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About"]];
-        }
+            dataArray = @[@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About"];
+            }
             break;
         case kHistoryUpcoming: {
-            [self.view.dataArray addObjectsFromArray:@[@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About"]];
+            dataArray = @[@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About"];
         }
             break;
         case kHistoryCanceled: {
-            [self.view.dataArray addObjectsFromArray:@[@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About"]];
+            dataArray = @[@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About"];
         }
             break;
             
         default:
             break;
     }
-    [self.view.tableView reloadData];
+    [self.view reloadDataWithData:dataArray];
 }
 
 @end
