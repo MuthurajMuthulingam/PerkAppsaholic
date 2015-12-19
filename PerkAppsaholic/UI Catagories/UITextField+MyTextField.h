@@ -6,9 +6,6 @@
 //  Copyright © 2015 Muthuraj Muthulingam. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
-
 @interface UITextField (MyTextField)
 
 - (instancetype)initWithFrame:(CGRect)frame andText:(NSString *)textString font:(UIFont *)textFont textColor:(UIColor *)textColor textAlignment:(NSTextAlignment)textAlignment;

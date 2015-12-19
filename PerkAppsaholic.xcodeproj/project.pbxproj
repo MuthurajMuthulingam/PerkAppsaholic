@@ -72,6 +72,7 @@
 		0A30401D44C3B9E59DC26A5F /* libPods-PerkAppsaholic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PerkAppsaholic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A54C3B01C258D5B00FD22A3 /* DataParserOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataParserOperation.h; path = Utilities/DataParser/DataParserOperation.h; sourceTree = "<group>"; };
 		6A54C3B11C258D5B00FD22A3 /* DataParserOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataParserOperation.m; path = Utilities/DataParser/DataParserOperation.m; sourceTree = "<group>"; };
+		6A78DD131C25A48700E6C80C /* PerkAppsaholic-preFixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PerkAppsaholic-preFixHeader.pch"; path = "PerkAppsaholic/PerkAppsaholic-preFixHeader.pch"; sourceTree = "<group>"; };
 		6A7B49281C2596F50077C044 /* ServiceHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServiceHandler.h; path = "Utilities/Service Handler/ServiceHandler.h"; sourceTree = "<group>"; };
 		6A7B49291C2596F50077C044 /* ServiceHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceHandler.m; path = "Utilities/Service Handler/ServiceHandler.m"; sourceTree = "<group>"; };
 		6A7B492C1C25970B0077C044 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = Utilities/MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
@@ -194,6 +195,13 @@
 			name = "New Group";
 			sourceTree = "<group>";
 		};
+		6A78DD111C259F2500E6C80C /* BookedHistory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = BookedHistory;
+			sourceTree = "<group>";
+		};
 		6A7B49271C2596E60077C044 /* ServiceHandler */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +241,7 @@
 		6A8E0F591C2104A300EC19D6 = {
 			isa = PBXGroup;
 			children = (
+				6A78DD131C25A48700E6C80C /* PerkAppsaholic-preFixHeader.pch */,
 				6A8E0F641C2104A300EC19D6 /* PerkAppsaholic */,
 				6A8E0F811C2104A300EC19D6 /* PerkAppsaholicTests */,
 				6A8E0F8C1C2104A300EC19D6 /* PerkAppsaholicUITests */,
@@ -301,6 +310,7 @@
 		6A8E0F9E1C21081200EC19D6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6A78DD111C259F2500E6C80C /* BookedHistory */,
 				6A54C3B31C25915600FD22A3 /* BusSearch */,
 				6A7D2A0A1C23ACEF00B81F60 /* Login */,
 				6A8E0F9F1C21081C00EC19D6 /* Base */,
@@ -771,6 +781,7 @@
 					"$(PROJECT_DIR)/PerkAppsaholic",
 					"$(PROJECT_DIR)/PerkAppsaholic/Framework",
 				);
+				GCC_PREFIX_HEADER = "/Muthuraj/Development/Apps/iOS/Tried Samples/PerkAppsaholic/PerkAppsaholic/PerkAppsaholic-preFixHeader.pch";
 				INFOPLIST_FILE = PerkAppsaholic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -790,6 +801,7 @@
 					"$(PROJECT_DIR)/PerkAppsaholic",
 					"$(PROJECT_DIR)/PerkAppsaholic/Framework",
 				);
+				GCC_PREFIX_HEADER = "/Muthuraj/Development/Apps/iOS/Tried Samples/PerkAppsaholic/PerkAppsaholic/PerkAppsaholic-preFixHeader.pch";
 				INFOPLIST_FILE = PerkAppsaholic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

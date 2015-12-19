@@ -6,8 +6,6 @@
 //  Copyright © 2015 Muthuraj Muthulingam. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 typedef enum {
     kHistoryPast,
     kHistoryUpcoming,
@@ -22,9 +20,8 @@ typedef enum {
 
 @interface HistoryView : UIView
 
-@property (nonatomic, strong) NSMutableArray *dataArray;
-@property (nonatomic, strong) UITableView *tableView;
-
 @property (nonatomic, weak) id <HistoryViewDelegate> delegate;
+
+- (void)reloadDataWithData:(NSArray *)dataArray;
 
 @end
