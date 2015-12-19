@@ -11,7 +11,7 @@
 #import "Utilities.h"
 #import "HistoryCell.h"
 
-@interface HistoryView ()<UITableViewDelegate, UITableViewDataSource>
+@interface HistoryView ()<UITableViewDelegate, UITableViewDataSource,UIAlertViewDelegate>
 
 @property (nonatomic, strong) UISegmentedControl *segment;
 @property (nonatomic, strong) NSArray *dataArray;
@@ -103,15 +103,35 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.layoutMargins = UIEdgeInsetsZero;
     cell.separatorInset = UIEdgeInsetsMake(0, 20, 0, 20);
-//    [cell layoutIfNeeded];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    
+    if (self.segment.selectedSegmentIndex == 1) {
+        HistoryCell *cell = (HistoryCell*)[self tableView:self.tableView cellForRowAtIndexPath:indexPath];
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:cell.lblFromTo.text
+                                                        message:[NSString stringWithFormat:@"Cancel the tickets for this bus departing at %@ on %@ %@",cell.lblTime.text,cell.lblDate.text,cell.lblYear.text]
+                                                       delegate:self
+                                              cancelButtonTitle:@"No"
+                                              otherButtonTitles:@"YES", nil];
+        [alert show];
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    if (buttonIndex == 1) {
+        NSLog(@"ticket booked");
+    }
 }
 
 - (void)segmentChanged {
     
     NSLog(@"segmentChanged");
     
-//    [self.tableView setContentOffset:CGPointZero animated:YES];
     if ([self.delegate respondsToSelector:@selector(segmentChangedToIndex:)]) {
         [self.delegate segmentChangedToIndex:(HistoryType)self.segment.selectedSegmentIndex];
     }
