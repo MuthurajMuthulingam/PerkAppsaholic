@@ -34,5 +34,34 @@ Technical feature of our Product :
          Sharing feature (and referal Program, if time Permits).
          
   
-         
+  Implemented Technical Concepts :
+  
+      Supported OS version : iOS 8.0
+      Orientation          : Portrait
+      Base SDK for developement : iOS 9.1
+      
+      Languages Used : Objective C
+      
+      Backend Technology Stack :  PHP,MySQL (XAMP setup)
+      
+      Architectural Pattern : MVC (Massive View controller (Kidding))
+      
+      Design Patterns : 
+      
+        1. decorator Pattern
+            - delegation, Catagories, Observer Pattern, Singleton
+            
+      Frameworks Used :
+      
+           1. AppsaholicSDK (Rewarding Moments) - to rewarding user
+           2. iOS standard Tasks - Custom Framework for General iOS Tasks (network Calls,Local Storage)
+           3. Cocoapods as dependancy manager.
+           4. Facebook SDK for login,Share functionality.
+           
+  Application Usage Flow :
+  
+      1. Initially, After Launching application, User directed to Login Page.
+      2. Where user enter their Login Details,(Dummy login, due to Time Contrains) or can use FB instead to login.
+      3. After Successful Login,
+      
          
