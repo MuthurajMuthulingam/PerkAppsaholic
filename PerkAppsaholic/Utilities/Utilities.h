@@ -13,5 +13,7 @@
 + (UIFont *)regularFontHeaderThree;
 + (UIFont *)regularFontHeaderFour;
 + (UIFont *)regularFontofSize:(CGFloat)size;
++ (void)showAlert;
++ (NSString *)getDateStringFromDate:(NSDate *)date;
 
 @end

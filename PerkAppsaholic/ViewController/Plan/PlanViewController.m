@@ -11,7 +11,7 @@
 #import "DataParserOperation.h"
 #import "ServiceHandler.h"
 
-@interface PlanViewController ()<ServiceHandlerDelegate,DataParserDelegate>
+@interface PlanViewController ()<ServiceHandlerDelegate,DataParserDelegate,planViewDelegate>
 
 @property (nonatomic, strong) PlanView *view;
 
@@ -24,16 +24,12 @@
 - (void)loadView {
     
     self.view = [[PlanView alloc] init];
+    self.view.delegate = self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    ServiceHandler *serviceHandler = [[ServiceHandler alloc] initWithURL:@"www.google.com" withRequestParameter:@"" andRequestType:@"GET" andTimeout:20 andPostDict:nil];
-    serviceHandler.delegate = self;
-    [serviceHandler start];
-    
 }
 
 //- (id)readDataFromLocal {
@@ -53,11 +49,22 @@
 //}
 
 
+#pragma mark - Plan View delegate
+
+- (void)planView:(PlanView *)planView selectedDictDetails:(NSDictionary *)selectedDataDict {
+    
+    NSString *requestParameterString = [NSString stringWithFormat:@"startPoint=%@&endPoint=%@&date=%@",[selectedDataDict objectForKey:@"StartPoint"],[selectedDataDict objectForKey:@"ToPoint"],[selectedDataDict objectForKey:@"Date"]];
+    
+    ServiceHandler *serviceHandler = [[ServiceHandler alloc] initWithURL:@"http://localhost//BusServices/" withRequestParameter:requestParameterString andRequestType:@"GET" andTimeout:20 andPostDict:nil];
+    serviceHandler.delegate = self;
+    [serviceHandler start];
+}
+
 #pragma mark - Service Handler Delegate 
 
 - (void)serviceHandler:(ServiceHandler *)serverHandler andRequestStatus:(BOOL)status andReponseData:(id)responseData andErrorMessage:(NSString *)errorMessage {
     NSLog(@"Server Response %@",responseData);
-//    responseData = [self readDataFromLocal];
+    //responseData = [self readDataFromLocal];
     if (responseData) {
         DataParserOperation *dataOperation = [[DataParserOperation alloc] initWithRawData:responseData];
         dataOperation.delegate = self;
@@ -69,6 +76,7 @@
 
 - (void)dataParser:(DataParserOperation *)dataParser parsedData:(NSArray *)parsedData {
     NSLog(@"response Data after Parsing %@",parsedData);
+    [self.view reloadTableData:parsedData];
 }
 
 

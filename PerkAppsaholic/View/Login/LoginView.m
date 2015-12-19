@@ -11,13 +11,14 @@
 #import "UIButton+MyButton.h"
 #import "AppConstants.h"
 #import "Utilities.h"
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
-@interface LoginView ()<UITextFieldDelegate>
+@interface LoginView ()<UITextFieldDelegate,FBSDKLoginButtonDelegate>
 
 @property (nonatomic, strong) UIView *bgView;
 
 @property (nonatomic, strong) UILabel *lblOR;
-@property (nonatomic, strong) UIButton *btnFB;
+@property (nonatomic, strong) FBSDKLoginButton *btnFB;
 
 @property (nonatomic,strong) UIButton *loginBtn;
 
@@ -84,18 +85,21 @@
     [self addSubview:self.loginBtn];
     
     
-    self.btnFB = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.btnFB.backgroundColor = UIColorFromRGB(0x374d90);
-    [self.btnFB.titleLabel setFont:[Utilities regularFontHeaderTwo]];
-    [self.btnFB setTitleColor:UIAppThemeWhiteColor forState:UIControlStateNormal];
-    [self.btnFB setTitleColor:UIAppThemeWhiteColor forState:UIControlStateDisabled];
-    [self.btnFB setTitle:@"Login with Facebook" forState:UIControlStateNormal];
-    self.btnFB.layer.cornerRadius = 4.0f;
-    self.btnFB.layer.shadowOffset = CGSizeMake(0, 0.5);
-    self.btnFB.layer.shadowColor = [[UIColor blackColor] CGColor];
-    self.btnFB.layer.shadowRadius = 0.5;
-    self.btnFB.layer.shadowOpacity = .25;
-    [self.btnFB addTarget:self action:@selector(loginClicked:) forControlEvents:UIControlEventTouchUpInside];
+    self.btnFB = [[FBSDKLoginButton alloc] init];
+    self.btnFB.readPermissions = @[@"public_profile", @"email", @"user_friends"];
+    self.btnFB.delegate = self;
+//    [UIButton buttonWithType:UIButtonTypeCustom];
+//    self.btnFB.backgroundColor = UIColorFromRGB(0x374d90);
+//    [self.btnFB.titleLabel setFont:[Utilities regularFontHeaderTwo]];
+//    [self.btnFB setTitleColor:UIAppThemeWhiteColor forState:UIControlStateNormal];
+//    [self.btnFB setTitleColor:UIAppThemeWhiteColor forState:UIControlStateDisabled];
+//    [self.btnFB setTitle:@"Login with Facebook" forState:UIControlStateNormal];
+//    self.btnFB.layer.cornerRadius = 4.0f;
+//    self.btnFB.layer.shadowOffset = CGSizeMake(0, 0.5);
+//    self.btnFB.layer.shadowColor = [[UIColor blackColor] CGColor];
+//    self.btnFB.layer.shadowRadius = 0.5;
+//    self.btnFB.layer.shadowOpacity = .25;
+//    [self.btnFB addTarget:self action:@selector(loginClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:self.btnFB];
     
     
@@ -139,6 +143,16 @@
     
     self.userName.text = @"user1";
     self.password.text = @"123456";
+}
+
+#pragma mark - FB Login
+
+- (void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error {
+    NSLog(@"FB Login Status %@",result);
+}
+
+- (void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton {
+    NSLog(@"FB Logout Status ");
 }
 
 #pragma mark - Login Event

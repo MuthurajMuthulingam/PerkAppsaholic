@@ -16,5 +16,6 @@
 @property (nonatomic, strong) UILabel *lblPerkPoints;
 
 + (NSString *)reuseIdentifier;
+- (void)updateCellWithData:(NSDictionary *)dataDictionary;
 
 @end

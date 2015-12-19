@@ -45,7 +45,14 @@
     NSData *requestData = nil;
     id data = nil;
     
-    NSURL *url = [NSURL URLWithString:self.urlString];
+    NSURL *url;
+    if ([self.requestType isEqualToString:@"GET"]) {
+        NSString *finalURLString = [NSString stringWithFormat:@"%@?%@",self.urlString,self.requestParamers];
+        url = [NSURL URLWithString:finalURLString];
+    } else {
+        url = [NSURL URLWithString:self.urlString];
+    }
+    NSLog(@"URL : %@",url);
     NSMutableURLRequest *urlrequest = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:self.timout];
     
     if ([self.requestType isEqualToString:@"POST"]) {
@@ -57,15 +64,12 @@
         [urlrequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
         [urlrequest setHTTPBody:requestData];
         
-    }else if ([self.requestType isEqualToString:@"GET"]){
-        
-        [urlrequest setHTTPMethod:self.requestType];
-        requestData = [self.requestParamers dataUsingEncoding:NSUTF8StringEncoding];
-        [urlrequest setHTTPBody:requestData];
     }
     
     data = [NSURLConnection sendSynchronousRequest:urlrequest returningResponse:&responseData error:&error];
     
+    NSString* newStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"newStr %@", newStr);
     if (!error && data) {
         id jsonData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
         if (jsonData && !error) {

@@ -155,4 +155,16 @@
     self.lblPerkPoints.frame = CGRectMake(CGRectGetMaxX(self.imgPerk.frame)+5, CGRectGetMaxY(self.lblName.frame), CGRectGetWidth(self.bgView.frame)-(CGRectGetMaxX(self.imgPerk.frame)+10), 20);
 }
 
+#pragma mark - Update Cell With Data
+
+- (void)updateCellWithData:(NSDictionary *)dataDictionary {
+    if (dataDictionary) {
+        self.lblDate.text = @"19 Dec";
+        self.lblYear.text = @"2015";
+        self.lblFromTo.text = [dataDictionary objectForKey:@"StartPoint"];
+        self.lblName.text = [dataDictionary objectForKey:@"TravelsName"];
+        self.lblPerkPoints.text = [NSString stringWithFormat:@"%@",[dataDictionary objectForKey:@"PerkPoints"]];
+    }
+}
+
 @end
