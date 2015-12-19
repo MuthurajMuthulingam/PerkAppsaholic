@@ -1,0 +1,34 @@
+ [
+  {
+  "BusID": "1",
+  "TravelsAgent": "Universal",
+  "StartPoint": "Chennai",
+  "EndPoint": "Bangalore",
+  "TravelDate": "2015-12-19",
+  "PerkPoints": "1"
+  },
+  {
+  "BusID": "2",
+  "TravelsAgent": "Parveen",
+  "StartPoint": "Chennai",
+  "EndPoint": "Bangalore",
+  "TravelDate": "2015-12-19",
+  "PerkPoints": "1"
+  },
+  {
+  "BusID": "3",
+  "TravelsAgent": "KPN",
+  "StartPoint": "Chennai",
+  "EndPoint": "Bangalore",
+  "TravelDate": "2015-12-19",
+  "PerkPoints": "1"
+  },
+  {
+  "BusID": "4",
+  "TravelsAgent": "Vivegam",
+  "StartPoint": "Chennai",
+  "EndPoint": "Bangalore",
+  "TravelDate": "2015-12-19",
+  "PerkPoints": "3"
+  }
+  ]

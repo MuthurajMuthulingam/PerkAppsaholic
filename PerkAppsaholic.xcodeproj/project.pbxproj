@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A54C3B21C258D5B00FD22A3 /* DataParserOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A54C3B11C258D5B00FD22A3 /* DataParserOperation.m */; };
+		6A7B492A1C2596F50077C044 /* ServiceHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7B49291C2596F50077C044 /* ServiceHandler.m */; };
+		6A7B492E1C25970B0077C044 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7B492D1C25970B0077C044 /* MBProgressHUD.m */; };
+		6A7B49301C2597F40077C044 /* Buses.json in Resources */ = {isa = PBXBuildFile; fileRef = 6A7B492F1C2597F40077C044 /* Buses.json */; };
 		6A7D2A081C23A89C00B81F60 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7D2A071C23A89C00B81F60 /* LoginView.m */; };
 		6A7D2A0D1C23AD1900B81F60 /* LoginToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7D2A0C1C23AD1900B81F60 /* LoginToViewController.m */; };
 		6A8E0F671C2104A300EC19D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F661C2104A300EC19D6 /* main.m */; };
@@ -34,7 +38,6 @@
 		AE5E11C61C256E3000C5A473 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11BD1C256E3000C5A473 /* Logo.png */; };
 		AE5E11C71C256E3000C5A473 /* Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11BE1C256E3000C5A473 /* Logo@2x.png */; };
 		AE5E11C81C256E3000C5A473 /* Logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11BF1C256E3000C5A473 /* Logo@3x.png */; };
-		AE5E11CA1C256FBC00C5A473 /* iOSStandardTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5E11C91C256FBC00C5A473 /* iOSStandardTasks.framework */; };
 		AE5E11CE1C2570A800C5A473 /* Ham.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11CB1C2570A800C5A473 /* Ham.png */; };
 		AE5E11CF1C2570A800C5A473 /* Ham@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11CC1C2570A800C5A473 /* Ham@2x.png */; };
 		AE5E11D01C2570A800C5A473 /* Ham@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11CD1C2570A800C5A473 /* Ham@3x.png */; };
@@ -66,6 +69,13 @@
 /* Begin PBXFileReference section */
 		05455CACC165109E5C831191 /* Pods-PerkAppsaholic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerkAppsaholic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PerkAppsaholic/Pods-PerkAppsaholic.debug.xcconfig"; sourceTree = "<group>"; };
 		0A30401D44C3B9E59DC26A5F /* libPods-PerkAppsaholic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PerkAppsaholic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A54C3B01C258D5B00FD22A3 /* DataParserOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataParserOperation.h; path = Utilities/DataParser/DataParserOperation.h; sourceTree = "<group>"; };
+		6A54C3B11C258D5B00FD22A3 /* DataParserOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataParserOperation.m; path = Utilities/DataParser/DataParserOperation.m; sourceTree = "<group>"; };
+		6A7B49281C2596F50077C044 /* ServiceHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServiceHandler.h; path = "Utilities/Service Handler/ServiceHandler.h"; sourceTree = "<group>"; };
+		6A7B49291C2596F50077C044 /* ServiceHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceHandler.m; path = "Utilities/Service Handler/ServiceHandler.m"; sourceTree = "<group>"; };
+		6A7B492C1C25970B0077C044 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = Utilities/MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
+		6A7B492D1C25970B0077C044 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = Utilities/MBProgressHUD/MBProgressHUD.m; sourceTree = "<group>"; };
+		6A7B492F1C2597F40077C044 /* Buses.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Buses.json; path = Utilities/Buses.json; sourceTree = "<group>"; };
 		6A7D2A061C23A89C00B81F60 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginView.h; path = View/Login/LoginView.h; sourceTree = "<group>"; };
 		6A7D2A071C23A89C00B81F60 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginView.m; path = View/Login/LoginView.m; sourceTree = "<group>"; };
 		6A7D2A091C23AA7300B81F60 /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppConstants.h; path = Utilities/AppConstants.h; sourceTree = "<group>"; };
@@ -113,7 +123,6 @@
 		AE5E11BD1C256E3000C5A473 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = Images/Logo.png; sourceTree = "<group>"; };
 		AE5E11BE1C256E3000C5A473 /* Logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Logo@2x.png"; path = "Images/Logo@2x.png"; sourceTree = "<group>"; };
 		AE5E11BF1C256E3000C5A473 /* Logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Logo@3x.png"; path = "Images/Logo@3x.png"; sourceTree = "<group>"; };
-		AE5E11C91C256FBC00C5A473 /* iOSStandardTasks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iOSStandardTasks.framework; sourceTree = "<group>"; };
 		AE5E11CB1C2570A800C5A473 /* Ham.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ham.png; path = Images/Ham.png; sourceTree = "<group>"; };
 		AE5E11CC1C2570A800C5A473 /* Ham@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ham@2x.png"; path = "Images/Ham@2x.png"; sourceTree = "<group>"; };
 		AE5E11CD1C2570A800C5A473 /* Ham@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ham@3x.png"; path = "Images/Ham@3x.png"; sourceTree = "<group>"; };
@@ -137,7 +146,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE5E11CA1C256FBC00C5A473 /* iOSStandardTasks.framework in Frameworks */,
 				736776B6440ED4FBF636EE35 /* libPods-PerkAppsaholic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +167,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A54C3AF1C258D3300FD22A3 /* DataParser */ = {
+			isa = PBXGroup;
+			children = (
+				6A54C3B01C258D5B00FD22A3 /* DataParserOperation.h */,
+				6A54C3B11C258D5B00FD22A3 /* DataParserOperation.m */,
+			);
+			name = DataParser;
+			sourceTree = "<group>";
+		};
+		6A54C3B31C25915600FD22A3 /* BusSearch */ = {
+			isa = PBXGroup;
+			children = (
+				6A54C3B41C25915F00FD22A3 /* New Group */,
+			);
+			name = BusSearch;
+			sourceTree = "<group>";
+		};
+		6A54C3B41C25915F00FD22A3 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		6A7B49271C2596E60077C044 /* ServiceHandler */ = {
+			isa = PBXGroup;
+			children = (
+				6A7B49281C2596F50077C044 /* ServiceHandler.h */,
+				6A7B49291C2596F50077C044 /* ServiceHandler.m */,
+			);
+			name = ServiceHandler;
+			sourceTree = "<group>";
+		};
+		6A7B492B1C2596F90077C044 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				6A7B492C1C25970B0077C044 /* MBProgressHUD.h */,
+				6A7B492D1C25970B0077C044 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		6A7D2A041C23A86D00B81F60 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,7 +252,6 @@
 		6A8E0F641C2104A300EC19D6 /* PerkAppsaholic */ = {
 			isa = PBXGroup;
 			children = (
-				AE5E11C91C256FBC00C5A473 /* iOSStandardTasks.framework */,
 				6A94AD5D1C225B340093DFF3 /* Utilities */,
 				6A8E0FA01C2109E700EC19D6 /* Views */,
 				6A8E0F9E1C21081200EC19D6 /* ViewController */,
@@ -249,6 +298,7 @@
 		6A8E0F9E1C21081200EC19D6 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6A54C3B31C25915600FD22A3 /* BusSearch */,
 				6A7D2A0A1C23ACEF00B81F60 /* Login */,
 				6A8E0F9F1C21081C00EC19D6 /* Base */,
 			);
@@ -305,6 +355,10 @@
 		6A94AD5D1C225B340093DFF3 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				6A7B492F1C2597F40077C044 /* Buses.json */,
+				6A7B492B1C2596F90077C044 /* MBProgressHUD */,
+				6A7B49271C2596E60077C044 /* ServiceHandler */,
+				6A54C3AF1C258D3300FD22A3 /* DataParser */,
 				6A94AD5E1C225B3D0093DFF3 /* UI Catagories */,
 				6A7D2A091C23AA7300B81F60 /* AppConstants.h */,
 				AE5E11AB1C25309700C5A473 /* Utilities.h */,
@@ -469,6 +523,7 @@
 				AE5E11CF1C2570A800C5A473 /* Ham@2x.png in Resources */,
 				AE5E11C71C256E3000C5A473 /* Logo@2x.png in Resources */,
 				AE5E11C21C256E3000C5A473 /* Bus@3x.png in Resources */,
+				6A7B49301C2597F40077C044 /* Buses.json in Resources */,
 				AE5E11C81C256E3000C5A473 /* Logo@3x.png in Resources */,
 				AE5E11C01C256E3000C5A473 /* Bus.png in Resources */,
 				AE5E11C11C256E3000C5A473 /* Bus@2x.png in Resources */,
@@ -563,8 +618,11 @@
 				AE5E11AD1C25309700C5A473 /* Utilities.m in Sources */,
 				AE5E11B31C255D5600C5A473 /* MenuCell.m in Sources */,
 				AE5E11DF1C2575E100C5A473 /* PlanView.m in Sources */,
+				6A54C3B21C258D5B00FD22A3 /* DataParserOperation.m in Sources */,
 				6A94AD671C225B590093DFF3 /* UITextField+MyTextField.m in Sources */,
+				6A7B492E1C25970B0077C044 /* MBProgressHUD.m in Sources */,
 				6A8E0FA41C210A1100EC19D6 /* BaseView.m in Sources */,
+				6A7B492A1C2596F50077C044 /* ServiceHandler.m in Sources */,
 				6A7D2A081C23A89C00B81F60 /* LoginView.m in Sources */,
 				AE5E11D61C25732300C5A473 /* HistoryView.m in Sources */,
 				6A8E0FA71C210AA000EC19D6 /* LandingView.m in Sources */,
@@ -701,9 +759,11 @@
 			baseConfigurationReference = 05455CACC165109E5C831191 /* Pods-PerkAppsaholic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PerkAppsaholic",
+					"$(PROJECT_DIR)/PerkAppsaholic/Framework",
 				);
 				INFOPLIST_FILE = PerkAppsaholic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -718,9 +778,11 @@
 			baseConfigurationReference = DBBD4F0A62C83A2499DEFAA6 /* Pods-PerkAppsaholic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PerkAppsaholic",
+					"$(PROJECT_DIR)/PerkAppsaholic/Framework",
 				);
 				INFOPLIST_FILE = PerkAppsaholic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
