@@ -38,7 +38,7 @@
     self = [super init];
     
     if (self) {
-        self.dataArray = [[NSArray alloc] initWithObjects:@"History", @"Plane New Journey", @"Settings", nil];
+        self.dataArray = [[NSArray alloc] initWithObjects:@"History", @"Plan New Journey", @"Settings", nil];
         [self createViews];
     }
     
@@ -125,7 +125,7 @@
     [self.tableView registerClass:[MenuCell class] forCellReuseIdentifier:[MenuCell reuseIdentifier]];
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
-    [self addSubview:self.tableView];
+    [self.menuView addSubview:self.tableView];
     
     [self.tableView reloadData];
 }
@@ -156,6 +156,8 @@
     NSLog(@"show perk menu");
     
     self.isAnimating = YES;
+    
+    [self bringSubviewToFront:self.menuView];
     
     if (CGRectGetWidth(self.menuView.frame) == 0) {
         [UIView animateWithDuration:0.5
@@ -220,7 +222,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     MenuCell *cell = [tableView dequeueReusableCellWithIdentifier:[MenuCell reuseIdentifier] forIndexPath:indexPath];
-    cell.selectionStyle = UITableViewCellSelectionStyleGray;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.layoutMargins = UIEdgeInsetsZero;
     cell.separatorInset = UIEdgeInsetsMake(0, 20, 0, 0);
     cell.title.text = [self.dataArray objectAtIndex:indexPath.row];
@@ -230,6 +232,28 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     self.lblTitle.text = [self.dataArray objectAtIndex:indexPath.row];
+    
+    MenuStyle menuStyle = kMenuHistory;
+    
+    switch (indexPath.row) {
+        case 0:
+            menuStyle = kMenuHistory;
+            break;
+        case 1:
+            menuStyle = kMenuPlan;
+            break;
+        case 2:
+            menuStyle = kMenuSettings;
+            break;
+            
+        default:
+            break;
+    }
+    
+    if ([self.delegate respondsToSelector:@selector(didSelectMenuWithType:)]) {
+        [self.delegate didSelectMenuWithType:menuStyle];
+    }
+    
     [self showPerkMenu];
 }
 

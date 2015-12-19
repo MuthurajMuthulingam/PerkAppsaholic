@@ -38,6 +38,12 @@
 		AE5E11CE1C2570A800C5A473 /* Ham.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11CB1C2570A800C5A473 /* Ham.png */; };
 		AE5E11CF1C2570A800C5A473 /* Ham@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11CC1C2570A800C5A473 /* Ham@2x.png */; };
 		AE5E11D01C2570A800C5A473 /* Ham@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11CD1C2570A800C5A473 /* Ham@3x.png */; };
+		AE5E11D31C2572AF00C5A473 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11D21C2572AF00C5A473 /* HistoryViewController.m */; };
+		AE5E11D61C25732300C5A473 /* HistoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11D51C25732300C5A473 /* HistoryView.m */; };
+		AE5E11D91C2575B100C5A473 /* PlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11D81C2575B100C5A473 /* PlanViewController.m */; };
+		AE5E11DC1C2575C800C5A473 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11DB1C2575C800C5A473 /* SettingsViewController.m */; };
+		AE5E11DF1C2575E100C5A473 /* PlanView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11DE1C2575E100C5A473 /* PlanView.m */; };
+		AE5E11E21C2575F600C5A473 /* SettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11E11C2575F600C5A473 /* SettingsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +117,18 @@
 		AE5E11CB1C2570A800C5A473 /* Ham.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ham.png; path = Images/Ham.png; sourceTree = "<group>"; };
 		AE5E11CC1C2570A800C5A473 /* Ham@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ham@2x.png"; path = "Images/Ham@2x.png"; sourceTree = "<group>"; };
 		AE5E11CD1C2570A800C5A473 /* Ham@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ham@3x.png"; path = "Images/Ham@3x.png"; sourceTree = "<group>"; };
+		AE5E11D11C2572AF00C5A473 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryViewController.h; path = ViewController/History/HistoryViewController.h; sourceTree = "<group>"; };
+		AE5E11D21C2572AF00C5A473 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryViewController.m; path = ViewController/History/HistoryViewController.m; sourceTree = "<group>"; };
+		AE5E11D41C25732300C5A473 /* HistoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryView.h; path = View/HIstory/HistoryView.h; sourceTree = "<group>"; };
+		AE5E11D51C25732300C5A473 /* HistoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryView.m; path = View/HIstory/HistoryView.m; sourceTree = "<group>"; };
+		AE5E11D71C2575B100C5A473 /* PlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlanViewController.h; path = ViewController/Plan/PlanViewController.h; sourceTree = "<group>"; };
+		AE5E11D81C2575B100C5A473 /* PlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlanViewController.m; path = ViewController/Plan/PlanViewController.m; sourceTree = "<group>"; };
+		AE5E11DA1C2575C800C5A473 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = ViewController/Settings/SettingsViewController.h; sourceTree = "<group>"; };
+		AE5E11DB1C2575C800C5A473 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = ViewController/Settings/SettingsViewController.m; sourceTree = "<group>"; };
+		AE5E11DD1C2575E100C5A473 /* PlanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlanView.h; path = View/Plan/PlanView.h; sourceTree = "<group>"; };
+		AE5E11DE1C2575E100C5A473 /* PlanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlanView.m; path = View/Plan/PlanView.m; sourceTree = "<group>"; };
+		AE5E11E01C2575F600C5A473 /* SettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsView.h; path = View/Settings/SettingsView.h; sourceTree = "<group>"; };
+		AE5E11E11C2575F600C5A473 /* SettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsView.m; path = View/Settings/SettingsView.m; sourceTree = "<group>"; };
 		DBBD4F0A62C83A2499DEFAA6 /* Pods-PerkAppsaholic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerkAppsaholic.release.xcconfig"; path = "Pods/Target Support Files/Pods-PerkAppsaholic/Pods-PerkAppsaholic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -242,6 +260,12 @@
 			children = (
 				6A8E0F9B1C21080C00EC19D6 /* BaseViewController.h */,
 				6A8E0F9C1C21080C00EC19D6 /* BaseViewController.m */,
+				AE5E11D11C2572AF00C5A473 /* HistoryViewController.h */,
+				AE5E11D21C2572AF00C5A473 /* HistoryViewController.m */,
+				AE5E11D71C2575B100C5A473 /* PlanViewController.h */,
+				AE5E11D81C2575B100C5A473 /* PlanViewController.m */,
+				AE5E11DA1C2575C800C5A473 /* SettingsViewController.h */,
+				AE5E11DB1C2575C800C5A473 /* SettingsViewController.m */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -259,6 +283,12 @@
 				AE5E11AF1C2559B200C5A473 /* MenuView.m */,
 				AE5E11B11C255D5600C5A473 /* MenuCell.h */,
 				AE5E11B21C255D5600C5A473 /* MenuCell.m */,
+				AE5E11D41C25732300C5A473 /* HistoryView.h */,
+				AE5E11D51C25732300C5A473 /* HistoryView.m */,
+				AE5E11DD1C2575E100C5A473 /* PlanView.h */,
+				AE5E11DE1C2575E100C5A473 /* PlanView.m */,
+				AE5E11E01C2575F600C5A473 /* SettingsView.h */,
+				AE5E11E11C2575F600C5A473 /* SettingsView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -519,21 +549,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A8E0F6D1C2104A300EC19D6 /* LandingViewController.m in Sources */,
+				AE5E11E21C2575F600C5A473 /* SettingsView.m in Sources */,
 				6A94AD5C1C2257320093DFF3 /* HeaderView.m in Sources */,
 				6A8E0F9D1C21080C00EC19D6 /* BaseViewController.m in Sources */,
 				6A94AD651C225B590093DFF3 /* UIButton+MyButton.m in Sources */,
 				6A7D2A0D1C23AD1900B81F60 /* LoginToViewController.m in Sources */,
+				AE5E11D31C2572AF00C5A473 /* HistoryViewController.m in Sources */,
 				6A94AD661C225B590093DFF3 /* UILabel+MyLabel.m in Sources */,
+				AE5E11DC1C2575C800C5A473 /* SettingsViewController.m in Sources */,
 				6A8E0F731C2104A300EC19D6 /* PerkAppsaholic.xcdatamodeld in Sources */,
 				6A8E0F6A1C2104A300EC19D6 /* AppDelegate.m in Sources */,
 				6A8E0F671C2104A300EC19D6 /* main.m in Sources */,
 				AE5E11AD1C25309700C5A473 /* Utilities.m in Sources */,
 				AE5E11B31C255D5600C5A473 /* MenuCell.m in Sources */,
+				AE5E11DF1C2575E100C5A473 /* PlanView.m in Sources */,
 				6A94AD671C225B590093DFF3 /* UITextField+MyTextField.m in Sources */,
 				6A8E0FA41C210A1100EC19D6 /* BaseView.m in Sources */,
 				6A7D2A081C23A89C00B81F60 /* LoginView.m in Sources */,
+				AE5E11D61C25732300C5A473 /* HistoryView.m in Sources */,
 				6A8E0FA71C210AA000EC19D6 /* LandingView.m in Sources */,
 				AE5E11B01C2559B200C5A473 /* MenuView.m in Sources */,
+				AE5E11D91C2575B100C5A473 /* PlanViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

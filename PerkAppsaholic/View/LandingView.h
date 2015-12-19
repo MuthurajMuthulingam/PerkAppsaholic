@@ -8,6 +8,20 @@
 
 #import "BaseView.h"
 
+typedef enum {
+    kMenuHistory,
+    kMenuPlan,
+    kMenuSettings
+}MenuStyle;
+
+@protocol LandingViewDelegate <NSObject>
+
+- (void)didSelectMenuWithType:(MenuStyle)menuStyle;
+
+@end
+
 @interface LandingView : UIView
+
+@property (nonatomic, weak) id <LandingViewDelegate> delegate;
 
 @end
