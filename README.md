@@ -11,6 +11,7 @@ Introduction :
       We are majorly focus on Two side of B2C model.
        1. Enaging and retain User Base 
        2. Having growth along with Business partners as well as with User. In other words, Maximixing profit to busines and            their consumers.
+       
 Technical feature of our Product :
 
       1. Appsaholic SDK used in to provide Achivement to varous levels of our product.
@@ -20,3 +21,15 @@ Technical feature of our Product :
       
   Approching Challenges :
   
+       We catagorize consumers into two aspects,
+         1. Who cares about Price of journey
+         2. Who cares about Quality of Service rather than Price.
+         
+         Idea is to, cover all these catgories, Plan to offer more Perk points to Travels which provide more expensive journey than others.
+         Secondly, offering more Perk points to Travels which provides less Quality of service to get them more user base.
+         Hence user wil be retained and To get their engagement towards their usage within application, we used to offer
+         Sharing feature (and referal Program, if time Permits).
+         
+  
+         
+         
