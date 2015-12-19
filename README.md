@@ -2,8 +2,11 @@
 Perk Appsaholic (Rewarding Mobile Agent)
 
 Objective :
-  Application to support Online Travels agent (Like Red Bus)to make use of Appsaholic SDK to engage and retain their user base.
+
+  Application to support Online Travels agent (Like Red Bus)to make use of Appsaholic SDK to engage and retain their user    base.
+  
 Introduction :
+
  Every Tech buisines heavily rely on user base for sucees in their Business model. Considering this, We are also try to develope a product (in fact, ProtoType) to demontrate our Idea of approching this aspect in a Travel domain.
  
  Functionality of Product :
