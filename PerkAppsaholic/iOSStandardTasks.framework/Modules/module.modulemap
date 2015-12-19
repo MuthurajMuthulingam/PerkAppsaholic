@@ -1,6 +1,0 @@
-framework module iOSStandardTasks {
-  umbrella header "iOSStandardTasks.h"
-
-  export *
-  module * { export * }
-}
