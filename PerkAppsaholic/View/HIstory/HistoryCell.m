@@ -125,7 +125,7 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    self.bgView.frame = CGRectMake(30, 5, SCREEN_WIDTH-60, self.frame.size.height-5);
+    self.bgView.frame = CGRectMake(10, 5, SCREEN_WIDTH-20, self.frame.size.height-5);
     self.separator.frame = CGRectMake(20, 30, CGRectGetWidth(self.bgView.frame)-40, 1);
     
     self.imgCalender.frame = CGRectMake(30, 45, 80, 80);

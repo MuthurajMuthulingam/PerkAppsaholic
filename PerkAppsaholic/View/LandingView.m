@@ -93,7 +93,7 @@
     [self.lblUserName sizeToFit];
     
     self.lblUserID = [[UILabel alloc] init];
-    self.lblUserID.text = @"A2Y679HE7EBEHIE03N2J";
+    self.lblUserID.text = @"A2Y679HE7";
     self.lblUserID.textAlignment = NSTextAlignmentLeft;
     self.lblUserID.textColor = [UIColor whiteColor];
     self.lblUserID.font = [UIFont systemFontOfSize:12 weight:UIFontWeightSemibold];

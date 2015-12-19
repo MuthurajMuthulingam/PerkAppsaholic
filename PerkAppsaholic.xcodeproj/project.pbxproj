@@ -48,6 +48,12 @@
 		AE5E11DF1C2575E100C5A473 /* PlanView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11DE1C2575E100C5A473 /* PlanView.m */; };
 		AE5E11E21C2575F600C5A473 /* SettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11E11C2575F600C5A473 /* SettingsView.m */; };
 		AE5E11E51C25877F00C5A473 /* HistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11E41C25877F00C5A473 /* HistoryCell.m */; };
+		AE5E11EF1C25A1A800C5A473 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11EC1C25A1A800C5A473 /* location.png */; };
+		AE5E11F01C25A1A800C5A473 /* location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11ED1C25A1A800C5A473 /* location@2x.png */; };
+		AE5E11F11C25A1A800C5A473 /* location@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11EE1C25A1A800C5A473 /* location@3x.png */; };
+		AE5E11F51C25A9BF00C5A473 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11F21C25A9BF00C5A473 /* calendar.png */; };
+		AE5E11F61C25A9BF00C5A473 /* calendar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11F31C25A9BF00C5A473 /* calendar@2x.png */; };
+		AE5E11F71C25A9BF00C5A473 /* calendar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11F41C25A9BF00C5A473 /* calendar@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +147,12 @@
 		AE5E11E11C2575F600C5A473 /* SettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsView.m; path = View/Settings/SettingsView.m; sourceTree = "<group>"; };
 		AE5E11E31C25877F00C5A473 /* HistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryCell.h; path = View/HIstory/HistoryCell.h; sourceTree = "<group>"; };
 		AE5E11E41C25877F00C5A473 /* HistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryCell.m; path = View/HIstory/HistoryCell.m; sourceTree = "<group>"; };
+		AE5E11EC1C25A1A800C5A473 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		AE5E11ED1C25A1A800C5A473 /* location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location@2x.png"; sourceTree = "<group>"; };
+		AE5E11EE1C25A1A800C5A473 /* location@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "location@3x.png"; sourceTree = "<group>"; };
+		AE5E11F21C25A9BF00C5A473 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		AE5E11F31C25A9BF00C5A473 /* calendar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar@2x.png"; sourceTree = "<group>"; };
+		AE5E11F41C25A9BF00C5A473 /* calendar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar@3x.png"; sourceTree = "<group>"; };
 		DBBD4F0A62C83A2499DEFAA6 /* Pods-PerkAppsaholic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerkAppsaholic.release.xcconfig"; path = "Pods/Target Support Files/Pods-PerkAppsaholic/Pods-PerkAppsaholic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -397,6 +409,12 @@
 				AE5E11BD1C256E3000C5A473 /* Logo.png */,
 				AE5E11BE1C256E3000C5A473 /* Logo@2x.png */,
 				AE5E11BF1C256E3000C5A473 /* Logo@3x.png */,
+				AE5E11EC1C25A1A800C5A473 /* location.png */,
+				AE5E11ED1C25A1A800C5A473 /* location@2x.png */,
+				AE5E11EE1C25A1A800C5A473 /* location@3x.png */,
+				AE5E11F21C25A9BF00C5A473 /* calendar.png */,
+				AE5E11F31C25A9BF00C5A473 /* calendar@2x.png */,
+				AE5E11F41C25A9BF00C5A473 /* calendar@3x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -524,17 +542,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5E11F11C25A1A800C5A473 /* location@3x.png in Resources */,
 				AE5E11C61C256E3000C5A473 /* Logo.png in Resources */,
 				AE5E11CF1C2570A800C5A473 /* Ham@2x.png in Resources */,
 				AE5E11C71C256E3000C5A473 /* Logo@2x.png in Resources */,
 				AE5E11C21C256E3000C5A473 /* Bus@3x.png in Resources */,
 				6A7B49301C2597F40077C044 /* Buses.json in Resources */,
 				AE5E11C81C256E3000C5A473 /* Logo@3x.png in Resources */,
+				AE5E11F71C25A9BF00C5A473 /* calendar@3x.png in Resources */,
 				AE5E11C01C256E3000C5A473 /* Bus.png in Resources */,
 				AE5E11C11C256E3000C5A473 /* Bus@2x.png in Resources */,
+				AE5E11F51C25A9BF00C5A473 /* calendar.png in Resources */,
 				AE5E11D01C2570A800C5A473 /* Ham@3x.png in Resources */,
+				AE5E11F01C25A1A800C5A473 /* location@2x.png in Resources */,
+				AE5E11F61C25A9BF00C5A473 /* calendar@2x.png in Resources */,
 				AE5E11CE1C2570A800C5A473 /* Ham.png in Resources */,
 				6A8E0F781C2104A300EC19D6 /* LaunchScreen.storyboard in Resources */,
+				AE5E11EF1C25A1A800C5A473 /* location.png in Resources */,
 				6A8E0F751C2104A300EC19D6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

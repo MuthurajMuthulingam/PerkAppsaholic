@@ -10,4 +10,6 @@
 
 @interface PlanView : UIView
 
+@property (nonatomic, strong) NSMutableArray *dataArray;
+
 @end
