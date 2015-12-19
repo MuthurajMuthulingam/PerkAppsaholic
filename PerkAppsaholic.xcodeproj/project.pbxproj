@@ -25,6 +25,7 @@
 		6A94AD651C225B590093DFF3 /* UIButton+MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A94AD601C225B590093DFF3 /* UIButton+MyButton.m */; };
 		6A94AD661C225B590093DFF3 /* UILabel+MyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A94AD621C225B590093DFF3 /* UILabel+MyLabel.m */; };
 		6A94AD671C225B590093DFF3 /* UITextField+MyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A94AD641C225B590093DFF3 /* UITextField+MyTextField.m */; };
+		6A9DB64A1C254149003B5558 /* iOSStandardTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9DB6491C254149003B5558 /* iOSStandardTasks.framework */; };
 		736776B6440ED4FBF636EE35 /* libPods-PerkAppsaholic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A30401D44C3B9E59DC26A5F /* libPods-PerkAppsaholic.a */; };
 		AE5E11AD1C25309700C5A473 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11AC1C25309700C5A473 /* Utilities.m */; };
 /* End PBXBuildFile section */
@@ -86,6 +87,7 @@
 		6A94AD621C225B590093DFF3 /* UILabel+MyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+MyLabel.m"; path = "UI Catagories/UILabel+MyLabel.m"; sourceTree = "<group>"; };
 		6A94AD631C225B590093DFF3 /* UITextField+MyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextField+MyTextField.h"; path = "UI Catagories/UITextField+MyTextField.h"; sourceTree = "<group>"; };
 		6A94AD641C225B590093DFF3 /* UITextField+MyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextField+MyTextField.m"; path = "UI Catagories/UITextField+MyTextField.m"; sourceTree = "<group>"; };
+		6A9DB6491C254149003B5558 /* iOSStandardTasks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iOSStandardTasks.framework; sourceTree = "<group>"; };
 		AE5E11AB1C25309700C5A473 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = Utilities/Utilities.h; sourceTree = "<group>"; };
 		AE5E11AC1C25309700C5A473 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = Utilities/Utilities.m; sourceTree = "<group>"; };
 		DBBD4F0A62C83A2499DEFAA6 /* Pods-PerkAppsaholic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerkAppsaholic.release.xcconfig"; path = "Pods/Target Support Files/Pods-PerkAppsaholic/Pods-PerkAppsaholic.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A9DB64A1C254149003B5558 /* iOSStandardTasks.framework in Frameworks */,
 				736776B6440ED4FBF636EE35 /* libPods-PerkAppsaholic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +163,7 @@
 		6A8E0F641C2104A300EC19D6 /* PerkAppsaholic */ = {
 			isa = PBXGroup;
 			children = (
+				6A9DB6491C254149003B5558 /* iOSStandardTasks.framework */,
 				6A94AD5D1C225B340093DFF3 /* Utilities */,
 				6A8E0FA01C2109E700EC19D6 /* Views */,
 				6A8E0F9E1C21081200EC19D6 /* ViewController */,
@@ -611,6 +615,10 @@
 			baseConfigurationReference = 05455CACC165109E5C831191 /* Pods-PerkAppsaholic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PerkAppsaholic",
+				);
 				INFOPLIST_FILE = PerkAppsaholic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -624,6 +632,10 @@
 			baseConfigurationReference = DBBD4F0A62C83A2499DEFAA6 /* Pods-PerkAppsaholic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PerkAppsaholic",
+				);
 				INFOPLIST_FILE = PerkAppsaholic/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
