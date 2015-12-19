@@ -44,6 +44,7 @@
 		AE5E11DC1C2575C800C5A473 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11DB1C2575C800C5A473 /* SettingsViewController.m */; };
 		AE5E11DF1C2575E100C5A473 /* PlanView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11DE1C2575E100C5A473 /* PlanView.m */; };
 		AE5E11E21C2575F600C5A473 /* SettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11E11C2575F600C5A473 /* SettingsView.m */; };
+		AE5E11E51C25877F00C5A473 /* HistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11E41C25877F00C5A473 /* HistoryCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,8 @@
 		AE5E11DE1C2575E100C5A473 /* PlanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlanView.m; path = View/Plan/PlanView.m; sourceTree = "<group>"; };
 		AE5E11E01C2575F600C5A473 /* SettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsView.h; path = View/Settings/SettingsView.h; sourceTree = "<group>"; };
 		AE5E11E11C2575F600C5A473 /* SettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsView.m; path = View/Settings/SettingsView.m; sourceTree = "<group>"; };
+		AE5E11E31C25877F00C5A473 /* HistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HistoryCell.h; path = View/HIstory/HistoryCell.h; sourceTree = "<group>"; };
+		AE5E11E41C25877F00C5A473 /* HistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HistoryCell.m; path = View/HIstory/HistoryCell.m; sourceTree = "<group>"; };
 		DBBD4F0A62C83A2499DEFAA6 /* Pods-PerkAppsaholic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerkAppsaholic.release.xcconfig"; path = "Pods/Target Support Files/Pods-PerkAppsaholic/Pods-PerkAppsaholic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -285,6 +288,8 @@
 				AE5E11B21C255D5600C5A473 /* MenuCell.m */,
 				AE5E11D41C25732300C5A473 /* HistoryView.h */,
 				AE5E11D51C25732300C5A473 /* HistoryView.m */,
+				AE5E11E31C25877F00C5A473 /* HistoryCell.h */,
+				AE5E11E41C25877F00C5A473 /* HistoryCell.m */,
 				AE5E11DD1C2575E100C5A473 /* PlanView.h */,
 				AE5E11DE1C2575E100C5A473 /* PlanView.m */,
 				AE5E11E01C2575F600C5A473 /* SettingsView.h */,
@@ -554,6 +559,7 @@
 				6A8E0F9D1C21080C00EC19D6 /* BaseViewController.m in Sources */,
 				6A94AD651C225B590093DFF3 /* UIButton+MyButton.m in Sources */,
 				6A7D2A0D1C23AD1900B81F60 /* LoginToViewController.m in Sources */,
+				AE5E11E51C25877F00C5A473 /* HistoryCell.m in Sources */,
 				AE5E11D31C2572AF00C5A473 /* HistoryViewController.m in Sources */,
 				6A94AD661C225B590093DFF3 /* UILabel+MyLabel.m in Sources */,
 				AE5E11DC1C2575C800C5A473 /* SettingsViewController.m in Sources */,

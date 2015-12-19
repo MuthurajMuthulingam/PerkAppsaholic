@@ -9,12 +9,11 @@
 #import "HistoryView.h"
 #import "AppConstants.h"
 #import "Utilities.h"
-#import "MenuCell.h"
+#import "HistoryCell.h"
 
 @interface HistoryView ()<UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) NSArray *dataArray;
+@property (nonatomic, strong) UISegmentedControl *segment;
 
 @end
 
@@ -24,7 +23,7 @@
     self = [super init];
     
     if (self) {
-        self.dataArray = [[NSArray alloc] initWithObjects:@"History", @"Plan New Journey", @"Settings", nil];
+        self.dataArray = [[NSMutableArray alloc] init];
         [self createViews];
     }
     
@@ -35,23 +34,51 @@
     
     self.backgroundColor = APP_THEME_COLOUR;
     
+    self.segment = [[UISegmentedControl alloc] initWithItems:@[@"PAST",@"UPCOMING",@"CANCELED"]];
+    self.segment.backgroundColor = UIAppThemeWhiteColor;
+    self.segment.layer.cornerRadius = 4.0f;
+    self.segment.clipsToBounds = YES;
+    self.segment.tintColor = UIColorFromRGB(0xbababa);
+    
+    NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                [Utilities regularFontHeaderTwo], NSFontAttributeName,
+                                UIAppThemeFontColor, NSForegroundColorAttributeName,
+                                nil];
+    [self.segment setTitleTextAttributes:attributes forState:UIControlStateNormal];
+    NSDictionary *highlightedAttributes = [NSDictionary dictionaryWithObject:UIAppThemeFontColor forKey:NSForegroundColorAttributeName];
+    [self.segment setTitleTextAttributes:highlightedAttributes forState:UIControlStateHighlighted];
+    [self.segment addTarget:self action:@selector(segmentChanged) forControlEvents:UIControlEventValueChanged];
+    
+    [self.segment setSelectedSegmentIndex:1];
+    [self segmentChanged];
+    
+    [self addSubview:self.segment];
+    
+    self.segment.layer.shadowOffset = CGSizeMake(0, 0.5);
+    self.segment.layer.shadowColor = [[UIColor blackColor] CGColor];
+    self.segment.layer.shadowRadius = 0.5;
+    self.segment.layer.shadowOpacity = .25;
+    self.segment.layer.rasterizationScale = [[UIScreen mainScreen] scale];
+    self.segment.layer.shouldRasterize = YES;
+    
     self.tableView = [[UITableView alloc] init];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.layoutMargins = UIEdgeInsetsZero;
     self.tableView.separatorInset = UIEdgeInsetsMake(0, 20, 0, 20);
-    self.tableView.separatorColor = UIColorFromRGB(0xbababa);
+    self.tableView.separatorColor = [UIColor clearColor];
     self.tableView.backgroundColor = [UIColor clearColor];
     [self addSubview:self.tableView];
     
-    [self.tableView registerClass:[MenuCell class] forCellReuseIdentifier:[MenuCell reuseIdentifier]];
+    [self.tableView registerClass:[HistoryCell class] forCellReuseIdentifier:[HistoryCell reuseIdentifier]];
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    self.tableView.frame = self.bounds;
+    self.segment.frame = CGRectMake(15, 10, SCREEN_WIDTH-30, 35);
+    self.tableView.frame = CGRectMake(0, 55, SCREEN_WIDTH, CGRectGetHeight(self.frame)-60);
 }
 
 
@@ -65,19 +92,25 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 40;
+    return 150;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    MenuCell *cell = [tableView dequeueReusableCellWithIdentifier:[MenuCell reuseIdentifier] forIndexPath:indexPath];
+    HistoryCell *cell = [tableView dequeueReusableCellWithIdentifier:[HistoryCell reuseIdentifier] forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.layoutMargins = UIEdgeInsetsZero;
     cell.separatorInset = UIEdgeInsetsMake(0, 20, 0, 20);
-    cell.title.text = [self.dataArray objectAtIndex:indexPath.row];
-    cell.title.textColor = [UIColor blackColor];
-    cell.title.textAlignment = NSTextAlignmentCenter;
     return cell;
+}
+
+- (void)segmentChanged {
+    
+    NSLog(@"segmentChanged");
+    
+    if ([self.delegate respondsToSelector:@selector(segmentChangedToIndex:)]) {
+        [self.delegate segmentChangedToIndex:(HistoryType)self.segment.selectedSegmentIndex];
+    }
 }
 
 @end

@@ -9,7 +9,7 @@
 #import "HistoryViewController.h"
 #import "HistoryView.h"
 
-@interface HistoryViewController ()
+@interface HistoryViewController ()<HistoryViewDelegate>
 
 @property (nonatomic, strong) HistoryView *view;
 
@@ -27,10 +27,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.view.dataArray removeAllObjects];
+    [self.view.dataArray addObjectsFromArray:@[@"History", @"Plan New Journey", @"Settings"]];
+    [self.view.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+#pragma mark HistoryViewDelegate Methods
+- (void)segmentChangedToIndex:(HistoryType)historyType {
+    NSLog(@"segement changed to index %d",historyType);
 }
 
 @end

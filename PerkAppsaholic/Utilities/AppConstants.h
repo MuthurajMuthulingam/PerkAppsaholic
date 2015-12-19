@@ -21,6 +21,8 @@
 #define UIAppThemeFontColor UIColorFromRGB(0x404040)
 #define UIAppThemeLightGreyColor UIColorFromRGB(0xC1C3C7)
 #define UIAppThemeGreyColor UIColorFromRGB(0xe7e7e7)
+#define UIAppThemeDarkGreyColor UIColorFromRGB(0xcacaca)
+#define UIAppThemeWhiteColor UIColorFromRGB(0xfafafa)
 
 
 #endif /* AppConstants_h */
