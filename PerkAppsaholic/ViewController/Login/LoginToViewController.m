@@ -11,23 +11,24 @@
 
 @interface LoginToViewController ()<LoginViewDelegate>
 
-@property (nonatomic,strong) LoginView *loginView;
+@property (nonatomic,strong) LoginView *view;
 
 @end
 
 @implementation LoginToViewController
 
+@dynamic view;
+
 - (void)createViews {
+    
     [super createViews];
-    self.view.backgroundColor = [UIColor greenColor];
-    self.loginView = [[LoginView alloc] init];
-    self.loginView.delegate = self;
-    [self.view addSubview:self.loginView];
+    
+    self.view = [[LoginView alloc] init];
+    self.view.delegate = self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 #pragma mark - Login View Delegate
@@ -40,14 +41,8 @@
     }];
 }
 
-- (void)viewWillLayoutSubviews {
-    [super viewWillLayoutSubviews];
-    self.loginView.frame = self.view.bounds;
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
