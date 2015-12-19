@@ -21,11 +21,11 @@ Technical feature of our Product :
       
   Approching Challenges :
   
-       We catagorize consumers into two aspects,
+       We catagorize consumers in two aspects,
          1. Who cares about Price of journey
          2. Who cares about Quality of Service rather than Price.
          
-         Idea is to, cover all these catgories, Plan to offer more Perk points to Travels which provide more expensive journey than others.
+         Idea is to, cover all these catgories, Plan to offer more Perk points to Travels which provide more expensive      journey than others.
          Secondly, offering more Perk points to Travels which provides less Quality of service to get them more user base.
          Hence user wil be retained and To get their engagement towards their usage within application, we used to offer
          Sharing feature (and referal Program, if time Permits).
