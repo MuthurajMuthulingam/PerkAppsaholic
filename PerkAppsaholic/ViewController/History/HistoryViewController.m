@@ -23,14 +23,13 @@
     [super loadView];
     
     self.view = [[HistoryView alloc] init];
+    self.view.delegate = self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.view.dataArray removeAllObjects];
-    [self.view.dataArray addObjectsFromArray:@[@"History", @"Plan New Journey", @"Settings"]];
-    [self.view.tableView reloadData];
+    [self segmentChangedToIndex:kHistoryUpcoming];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,6 +39,28 @@
 #pragma mark HistoryViewDelegate Methods
 - (void)segmentChangedToIndex:(HistoryType)historyType {
     NSLog(@"segement changed to index %d",historyType);
+    
+    [self.view.dataArray removeAllObjects];
+    
+    switch (historyType) {
+        case kHistoryPast: {
+            
+            [self.view.dataArray addObjectsFromArray:@[@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About"]];
+        }
+            break;
+        case kHistoryUpcoming: {
+            [self.view.dataArray addObjectsFromArray:@[@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About"]];
+        }
+            break;
+        case kHistoryCanceled: {
+            [self.view.dataArray addObjectsFromArray:@[@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About"]];
+        }
+            break;
+            
+        default:
+            break;
+    }
+    [self.view.tableView reloadData];
 }
 
 @end

@@ -101,6 +101,7 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.layoutMargins = UIEdgeInsetsZero;
     cell.separatorInset = UIEdgeInsetsMake(0, 20, 0, 20);
+//    [cell layoutIfNeeded];
     return cell;
 }
 
@@ -108,6 +109,7 @@
     
     NSLog(@"segmentChanged");
     
+//    [self.tableView setContentOffset:CGPointZero animated:YES];
     if ([self.delegate respondsToSelector:@selector(segmentChangedToIndex:)]) {
         [self.delegate segmentChangedToIndex:(HistoryType)self.segment.selectedSegmentIndex];
     }

@@ -136,7 +136,8 @@
     self.lblTime.frame = CGRectMake(CGRectGetMaxX(self.imgCalender.frame)+10, CGRectGetMaxY(self.lblFromTo.frame), CGRectGetWidth(self.bgView.frame)-(CGRectGetMaxX(self.imgCalender.frame)+15), 20);
     self.lblName.frame = CGRectMake(CGRectGetMaxX(self.imgCalender.frame)+10, CGRectGetMaxY(self.lblTime.frame), CGRectGetWidth(self.bgView.frame)-(CGRectGetMaxX(self.imgCalender.frame)+15), 30);
     self.imgPerk.frame = CGRectMake(CGRectGetMaxX(self.imgCalender.frame)+10, CGRectGetMaxY(self.lblName.frame), 20, 20);
-    self.lblPerkPoints.frame = CGRectMake(CGRectGetMaxX(self.imgPerk.frame)+5, CGRectGetMaxY(self.lblName.frame), CGRectGetWidth(self.bgView.frame)-(CGRectGetMaxX(self.lblPerkPoints.frame)+10), 20);
+    
+    self.lblPerkPoints.frame = CGRectMake(CGRectGetMaxX(self.imgPerk.frame)+5, CGRectGetMaxY(self.lblName.frame), CGRectGetWidth(self.bgView.frame)-(CGRectGetMaxX(self.imgPerk.frame)+10), 20);
 }
 
 @end
