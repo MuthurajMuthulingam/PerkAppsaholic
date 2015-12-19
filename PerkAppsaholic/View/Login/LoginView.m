@@ -29,6 +29,8 @@
 
 @property (nonatomic, strong) UIView *separator1;
 
+@property (nonatomic) BOOL isAnimating;
+
 
 @end
 
@@ -143,14 +145,28 @@
 
 - (void)loginClicked:(UIButton *)sender {
     
-    [self.delegate loginView:self userName:self.userName.text password:self.password.text];
+    self.isAnimating = YES;
+    self.appImage.frame = CGRectMake((SCREEN_WIDTH/2)-75, 70, 150, 100);
     
+    
+    [UIView animateWithDuration:1.0
+                          delay:0
+                        options:UIViewAnimationOptionCurveLinear
+                     animations:^{
+                         self.appImage.frame = CGRectMake(SCREEN_WIDTH, 50, 100, 70);
+                     }
+                     completion:^(BOOL finished){
+                         self.isAnimating = NO;
+                         [self.delegate loginView:self userName:self.userName.text password:self.password.text];
+                     }];
 }
 
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    self.appImage.frame = CGRectMake((CGRectGetWidth(self.frame)/2)-75, 70, 150, 100);
+//    if (!self.isAnimating) {
+//        self.appImage.frame = CGRectMake((CGRectGetWidth(self.frame)/2)-75, 70, 150, 100);
+//    }
     
     self.bgView.frame = CGRectMake(10, CGRectGetMaxY(self.appImage.frame)+20, SCREEN_WIDTH-20, 100);
     
@@ -164,6 +180,24 @@
     self.userName.frame = CGRectMake(20, 0 , CGRectGetWidth(self.bgView.frame)-40, 50);
     self.separator1.frame = CGRectMake(20, CGRectGetMaxY(self.userName.frame), CGRectGetWidth(self.bgView.frame)-20, 1);
     self.password.frame = CGRectMake(20, CGRectGetMaxY(self.separator1.frame), CGRectGetWidth(self.bgView.frame)-20, 49);
+}
+
+- (void)animateBus {
+    
+    self.isAnimating = YES;
+    self.appImage.frame = CGRectMake(-100, 50, 100, 70);
+    
+    
+    [UIView animateWithDuration:1.0
+                          delay:0
+                        options:UIViewAnimationOptionCurveLinear
+                     animations:^{
+                         self.appImage.frame = CGRectMake((SCREEN_WIDTH/2)-75, 70, 150, 100);
+                     }
+                     completion:^(BOOL finished){
+                         self.isAnimating = NO;
+                     }];
+    
 }
 
 @end
