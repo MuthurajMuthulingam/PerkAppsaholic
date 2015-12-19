@@ -160,7 +160,7 @@
     [self bringSubviewToFront:self.menuView];
     
     if (CGRectGetWidth(self.menuView.frame) == 0) {
-        [UIView animateWithDuration:0.5
+        [UIView animateWithDuration:0.2
                               delay:0
                             options:UIViewAnimationOptionCurveLinear
                          animations:^{
@@ -183,7 +183,7 @@
                              self.isAnimating = NO;
                          }];
     } else {
-        [UIView animateWithDuration:0.5
+        [UIView animateWithDuration:0.2
                               delay:0
                             options:UIViewAnimationOptionCurveLinear
                          animations:^{

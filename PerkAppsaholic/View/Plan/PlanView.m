@@ -33,6 +33,12 @@
 
 @property (nonatomic, strong) UITableView *tableView;
 
+@property (nonatomic, strong) UIControl *alphaview;
+@property (nonatomic, strong) UIView *pickerBG;
+@property (nonatomic, strong) UIDatePicker *pickerView;
+
+@property (nonatomic, strong) NSDate *currentDate;
+
 @end
 
 @implementation PlanView
@@ -134,12 +140,12 @@
     self.imgeCalender.backgroundColor = [UIColor clearColor];
     [self.dateView addSubview:self.imgeCalender];
     
-    NSDate *today = [NSDate date];
+    self.currentDate = [NSDate date];
     self.dateFormatter = [[NSDateFormatter alloc] init];
     [self.dateFormatter setDateFormat:@"dd MMM YY"];
     
     self.lbldate = [[UILabel alloc] init];
-    self.lbldate.text = [self.dateFormatter stringFromDate:today];
+    self.lbldate.text = [self.dateFormatter stringFromDate:self.currentDate];
     self.lbldate.textAlignment = NSTextAlignmentLeft;
     self.lbldate.textColor = UIAppThemeLightGreyColor;
     self.lbldate.font = [Utilities regularFontHeaderOne];
@@ -207,6 +213,69 @@
 - (void)selectDate {
     
     NSLog(@"select date");
+    
+    self.alphaview = [[UIControl alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    self.alphaview.backgroundColor = [UIColor blackColor];
+    self.alphaview.alpha = 0.3;
+    [self.alphaview addTarget:self action:@selector(hidePicker) forControlEvents:UIControlEventTouchUpInside];
+    [self.window addSubview:self.alphaview];
+    self.alphaview.hidden = YES;
+    
+    self.pickerBG = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, 0)];
+    self.pickerBG.backgroundColor = UIAppThemeWhiteColor;
+    [self.window addSubview:self.pickerBG];
+    
+    self.pickerView = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 50, SCREEN_WIDTH, 200)];
+    self.pickerView.datePickerMode = UIDatePickerModeDate;
+    self.pickerView.hidden = NO;
+    self.pickerView.date = self.currentDate;
+    [self.pickerView setMinimumDate:[NSDate date]];
+    [self.pickerBG addSubview:self.pickerView];
+    
+    UIButton *btnDone = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH-100, 5, 90, 40)];
+    [btnDone setBackgroundColor:UIColorFromRGB(0xe55656)];
+    btnDone.layer.cornerRadius = 8.0f;
+    [btnDone setTitle:@"Done" forState:UIControlStateNormal];
+    [btnDone setTitleColor:UIAppThemeWhiteColor forState:UIControlStateNormal];
+    [btnDone addTarget:self action:@selector(doneTapped) forControlEvents:UIControlEventTouchUpInside];
+    [self.pickerBG addSubview:btnDone];
+    
+    
+    [UIView animateWithDuration:0.1
+                          delay:0
+                        options:UIViewAnimationOptionCurveLinear
+                     animations:^{
+                         self.pickerBG.frame = CGRectMake(0, SCREEN_HEIGHT-250, SCREEN_WIDTH, 250);
+                     }
+                     completion:^(BOOL finished){
+                         self.alphaview.hidden = NO;
+                     }];
+    
+}
+
+- (void)doneTapped {
+    
+    self.currentDate = self.pickerView.date;
+    self.lbldate.text = [self.dateFormatter stringFromDate:self.currentDate];
+    [self hidePicker];
+    
+}
+
+- (void)hidePicker {
+    
+    [UIView animateWithDuration:0.1
+                          delay:0
+                        options:UIViewAnimationOptionCurveLinear
+                     animations:^{
+                         self.pickerBG.frame = CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, 0);
+                     }
+                     completion:^(BOOL finished){
+                         self.alphaview.hidden = YES;
+                         self.pickerBG.hidden = YES;
+                         self.alphaview = nil;
+                         self.pickerBG = nil;
+                     }];
+    
 }
 
 - (void)searchForBuses {
@@ -272,6 +341,25 @@
     cell.layoutMargins = UIEdgeInsetsZero;
     cell.separatorInset = UIEdgeInsetsMake(0, 20, 0, 20);
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    HistoryCell *cell = (HistoryCell*)[self tableView:self.tableView cellForRowAtIndexPath:indexPath];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:cell.lblFromTo.text
+                                                    message:[NSString stringWithFormat:@"Confirm the tickets for this bus departing at %@ on %@ %@",cell.lblTime.text,cell.lblDate.text,cell.lblYear.text]
+                                                   delegate:self
+                                          cancelButtonTitle:@"No"
+                                          otherButtonTitles:@"YES", nil];
+    [alert show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    if (buttonIndex == 1) {
+        NSLog(@"ticket booked");
+    }
 }
 
 

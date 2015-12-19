@@ -8,6 +8,13 @@
 
 @interface HistoryCell : UITableViewCell
 
+@property (nonatomic, strong) UILabel *lblFromTo;
+@property (nonatomic, strong) UILabel *lblTime;
+@property (nonatomic, strong) UILabel *lblName;
+@property (nonatomic, strong) UILabel *lblDate;
+@property (nonatomic, strong) UILabel *lblYear;
+@property (nonatomic, strong) UILabel *lblPerkPoints;
+
 + (NSString *)reuseIdentifier;
 
 @end

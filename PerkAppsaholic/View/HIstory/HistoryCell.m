@@ -15,14 +15,8 @@
 @property (nonatomic, strong) UIView *bgView;
 
 @property (nonatomic, strong) UIView *separator;
-@property (nonatomic, strong) UILabel *lblFromTo;
-@property (nonatomic, strong) UILabel *lblTime;
-@property (nonatomic, strong) UILabel *lblName;
 @property (nonatomic, strong) UIImageView *imgCalender;
-@property (nonatomic, strong) UILabel *lblDate;
-@property (nonatomic, strong) UILabel *lblYear;
 @property (nonatomic, strong) UIImageView *imgPerk;
-@property (nonatomic, strong) UILabel *lblPerkPoints;
 
 @property (nonatomic, strong) UIView *calView1;
 @property (nonatomic, strong) UIView *calView2;
