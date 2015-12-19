@@ -28,13 +28,16 @@
 		AE5E11AD1C25309700C5A473 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11AC1C25309700C5A473 /* Utilities.m */; };
 		AE5E11B01C2559B200C5A473 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11AF1C2559B200C5A473 /* MenuView.m */; };
 		AE5E11B31C255D5600C5A473 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11B21C255D5600C5A473 /* MenuCell.m */; };
-		AE5E11B51C256DBF00C5A473 /* iOSStandardTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5E11B41C256DBF00C5A473 /* iOSStandardTasks.framework */; };
 		AE5E11C01C256E3000C5A473 /* Bus.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11B71C256E3000C5A473 /* Bus.png */; };
 		AE5E11C11C256E3000C5A473 /* Bus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11B81C256E3000C5A473 /* Bus@2x.png */; };
 		AE5E11C21C256E3000C5A473 /* Bus@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11B91C256E3000C5A473 /* Bus@3x.png */; };
 		AE5E11C61C256E3000C5A473 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11BD1C256E3000C5A473 /* Logo.png */; };
 		AE5E11C71C256E3000C5A473 /* Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11BE1C256E3000C5A473 /* Logo@2x.png */; };
 		AE5E11C81C256E3000C5A473 /* Logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11BF1C256E3000C5A473 /* Logo@3x.png */; };
+		AE5E11CA1C256FBC00C5A473 /* iOSStandardTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5E11C91C256FBC00C5A473 /* iOSStandardTasks.framework */; };
+		AE5E11CE1C2570A800C5A473 /* Ham.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11CB1C2570A800C5A473 /* Ham.png */; };
+		AE5E11CF1C2570A800C5A473 /* Ham@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11CC1C2570A800C5A473 /* Ham@2x.png */; };
+		AE5E11D01C2570A800C5A473 /* Ham@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11CD1C2570A800C5A473 /* Ham@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,13 +101,16 @@
 		AE5E11AF1C2559B200C5A473 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuView.m; path = View/MenuView.m; sourceTree = "<group>"; };
 		AE5E11B11C255D5600C5A473 /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuCell.h; path = View/MenuCell.h; sourceTree = "<group>"; };
 		AE5E11B21C255D5600C5A473 /* MenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuCell.m; path = View/MenuCell.m; sourceTree = "<group>"; };
-		AE5E11B41C256DBF00C5A473 /* iOSStandardTasks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iOSStandardTasks.framework; sourceTree = "<group>"; };
 		AE5E11B71C256E3000C5A473 /* Bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bus.png; path = Images/Bus.png; sourceTree = "<group>"; };
 		AE5E11B81C256E3000C5A473 /* Bus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bus@2x.png"; path = "Images/Bus@2x.png"; sourceTree = "<group>"; };
 		AE5E11B91C256E3000C5A473 /* Bus@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bus@3x.png"; path = "Images/Bus@3x.png"; sourceTree = "<group>"; };
 		AE5E11BD1C256E3000C5A473 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = Images/Logo.png; sourceTree = "<group>"; };
 		AE5E11BE1C256E3000C5A473 /* Logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Logo@2x.png"; path = "Images/Logo@2x.png"; sourceTree = "<group>"; };
 		AE5E11BF1C256E3000C5A473 /* Logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Logo@3x.png"; path = "Images/Logo@3x.png"; sourceTree = "<group>"; };
+		AE5E11C91C256FBC00C5A473 /* iOSStandardTasks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iOSStandardTasks.framework; sourceTree = "<group>"; };
+		AE5E11CB1C2570A800C5A473 /* Ham.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Ham.png; path = Images/Ham.png; sourceTree = "<group>"; };
+		AE5E11CC1C2570A800C5A473 /* Ham@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ham@2x.png"; path = "Images/Ham@2x.png"; sourceTree = "<group>"; };
+		AE5E11CD1C2570A800C5A473 /* Ham@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Ham@3x.png"; path = "Images/Ham@3x.png"; sourceTree = "<group>"; };
 		DBBD4F0A62C83A2499DEFAA6 /* Pods-PerkAppsaholic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerkAppsaholic.release.xcconfig"; path = "Pods/Target Support Files/Pods-PerkAppsaholic/Pods-PerkAppsaholic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE5E11B51C256DBF00C5A473 /* iOSStandardTasks.framework in Frameworks */,
+				AE5E11CA1C256FBC00C5A473 /* iOSStandardTasks.framework in Frameworks */,
 				736776B6440ED4FBF636EE35 /* libPods-PerkAppsaholic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,7 +184,7 @@
 		6A8E0F641C2104A300EC19D6 /* PerkAppsaholic */ = {
 			isa = PBXGroup;
 			children = (
-				AE5E11B41C256DBF00C5A473 /* iOSStandardTasks.framework */,
+				AE5E11C91C256FBC00C5A473 /* iOSStandardTasks.framework */,
 				6A94AD5D1C225B340093DFF3 /* Utilities */,
 				6A8E0FA01C2109E700EC19D6 /* Views */,
 				6A8E0F9E1C21081200EC19D6 /* ViewController */,
@@ -296,6 +302,9 @@
 				AE5E11B71C256E3000C5A473 /* Bus.png */,
 				AE5E11B81C256E3000C5A473 /* Bus@2x.png */,
 				AE5E11B91C256E3000C5A473 /* Bus@3x.png */,
+				AE5E11CB1C2570A800C5A473 /* Ham.png */,
+				AE5E11CC1C2570A800C5A473 /* Ham@2x.png */,
+				AE5E11CD1C2570A800C5A473 /* Ham@3x.png */,
 				AE5E11BD1C256E3000C5A473 /* Logo.png */,
 				AE5E11BE1C256E3000C5A473 /* Logo@2x.png */,
 				AE5E11BF1C256E3000C5A473 /* Logo@3x.png */,
@@ -427,11 +436,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE5E11C61C256E3000C5A473 /* Logo.png in Resources */,
+				AE5E11CF1C2570A800C5A473 /* Ham@2x.png in Resources */,
 				AE5E11C71C256E3000C5A473 /* Logo@2x.png in Resources */,
 				AE5E11C21C256E3000C5A473 /* Bus@3x.png in Resources */,
 				AE5E11C81C256E3000C5A473 /* Logo@3x.png in Resources */,
 				AE5E11C01C256E3000C5A473 /* Bus.png in Resources */,
 				AE5E11C11C256E3000C5A473 /* Bus@2x.png in Resources */,
+				AE5E11D01C2570A800C5A473 /* Ham@3x.png in Resources */,
+				AE5E11CE1C2570A800C5A473 /* Ham.png in Resources */,
 				6A8E0F781C2104A300EC19D6 /* LaunchScreen.storyboard in Resources */,
 				6A8E0F751C2104A300EC19D6 /* Assets.xcassets in Resources */,
 			);

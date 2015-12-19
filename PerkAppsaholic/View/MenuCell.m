@@ -36,6 +36,7 @@
     self.title.textAlignment = NSTextAlignmentLeft;
     self.title.textColor = [UIColor whiteColor];
     self.title.font = [Utilities regularFontHeaderTwo];
+    self.title.lineBreakMode = NSLineBreakByTruncatingMiddle;
     [self addSubview:self.title];
     
 }

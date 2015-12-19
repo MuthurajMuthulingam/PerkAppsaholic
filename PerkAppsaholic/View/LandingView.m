@@ -54,7 +54,7 @@
     [self addSubview:self.headerView];
     
     self.lblTitle = [[UILabel alloc] init];
-    self.lblTitle.text = @"Title";
+    self.lblTitle.text = [self.dataArray objectAtIndex:0];
     self.lblTitle.textAlignment = NSTextAlignmentCenter;
     self.lblTitle.textColor = [UIColor whiteColor];
     self.lblTitle.font = [UIFont systemFontOfSize:18 weight:UIFontWeightSemibold];
@@ -128,7 +128,6 @@
     [self addSubview:self.tableView];
     
     [self.tableView reloadData];
-    [self tableView:self.tableView didSelectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
 }
 
 - (void)layoutSubviews {
@@ -231,6 +230,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     self.lblTitle.text = [self.dataArray objectAtIndex:indexPath.row];
+    [self showPerkMenu];
 }
 
 @end
