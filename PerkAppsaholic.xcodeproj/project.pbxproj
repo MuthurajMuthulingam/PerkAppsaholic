@@ -11,7 +11,7 @@
 		6A7D2A0D1C23AD1900B81F60 /* LoginToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7D2A0C1C23AD1900B81F60 /* LoginToViewController.m */; };
 		6A8E0F671C2104A300EC19D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F661C2104A300EC19D6 /* main.m */; };
 		6A8E0F6A1C2104A300EC19D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F691C2104A300EC19D6 /* AppDelegate.m */; };
-		6A8E0F6D1C2104A300EC19D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F6C1C2104A300EC19D6 /* ViewController.m */; };
+		6A8E0F6D1C2104A300EC19D6 /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F6C1C2104A300EC19D6 /* LandingViewController.m */; };
 		6A8E0F731C2104A300EC19D6 /* PerkAppsaholic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F711C2104A300EC19D6 /* PerkAppsaholic.xcdatamodeld */; };
 		6A8E0F751C2104A300EC19D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A8E0F741C2104A300EC19D6 /* Assets.xcassets */; };
 		6A8E0F781C2104A300EC19D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A8E0F761C2104A300EC19D6 /* LaunchScreen.storyboard */; };
@@ -19,8 +19,7 @@
 		6A8E0F8E1C2104A300EC19D6 /* PerkAppsaholicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F8D1C2104A300EC19D6 /* PerkAppsaholicUITests.m */; };
 		6A8E0F9D1C21080C00EC19D6 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0F9C1C21080C00EC19D6 /* BaseViewController.m */; };
 		6A8E0FA41C210A1100EC19D6 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0FA31C210A1100EC19D6 /* BaseView.m */; };
-		6A8E0FA71C210AA000EC19D6 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0FA61C210AA000EC19D6 /* MyView.m */; };
-		6A8E0FAA1C210BEA00EC19D6 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0FA91C210BEA00EC19D6 /* MenuView.m */; };
+		6A8E0FA71C210AA000EC19D6 /* LandingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E0FA61C210AA000EC19D6 /* LandingView.m */; };
 		6A94AD5C1C2257320093DFF3 /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A94AD5B1C2257320093DFF3 /* HeaderView.m */; };
 		6A94AD651C225B590093DFF3 /* UIButton+MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A94AD601C225B590093DFF3 /* UIButton+MyButton.m */; };
 		6A94AD661C225B590093DFF3 /* UILabel+MyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A94AD621C225B590093DFF3 /* UILabel+MyLabel.m */; };
@@ -28,6 +27,8 @@
 		6A9DB64A1C254149003B5558 /* iOSStandardTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9DB6491C254149003B5558 /* iOSStandardTasks.framework */; };
 		736776B6440ED4FBF636EE35 /* libPods-PerkAppsaholic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A30401D44C3B9E59DC26A5F /* libPods-PerkAppsaholic.a */; };
 		AE5E11AD1C25309700C5A473 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11AC1C25309700C5A473 /* Utilities.m */; };
+		AE5E11B01C2559B200C5A473 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11AF1C2559B200C5A473 /* MenuView.m */; };
+		AE5E11B31C255D5600C5A473 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11B21C255D5600C5A473 /* MenuCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +60,8 @@
 		6A8E0F661C2104A300EC19D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A8E0F681C2104A300EC19D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6A8E0F691C2104A300EC19D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6A8E0F6B1C2104A300EC19D6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6A8E0F6C1C2104A300EC19D6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6A8E0F6B1C2104A300EC19D6 /* LandingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LandingViewController.h; sourceTree = "<group>"; };
+		6A8E0F6C1C2104A300EC19D6 /* LandingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LandingViewController.m; sourceTree = "<group>"; };
 		6A8E0F721C2104A300EC19D6 /* PerkAppsaholic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PerkAppsaholic.xcdatamodel; sourceTree = "<group>"; };
 		6A8E0F741C2104A300EC19D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A8E0F771C2104A300EC19D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,10 +76,8 @@
 		6A8E0F9C1C21080C00EC19D6 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseViewController.m; path = ViewController/Base/BaseViewController.m; sourceTree = "<group>"; };
 		6A8E0FA21C210A1100EC19D6 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseView.h; path = View/Base/BaseView.h; sourceTree = "<group>"; };
 		6A8E0FA31C210A1100EC19D6 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseView.m; path = View/Base/BaseView.m; sourceTree = "<group>"; };
-		6A8E0FA51C210AA000EC19D6 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyView.h; path = View/MyView.h; sourceTree = "<group>"; };
-		6A8E0FA61C210AA000EC19D6 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyView.m; path = View/MyView.m; sourceTree = "<group>"; };
-		6A8E0FA81C210BEA00EC19D6 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuView.h; path = View/Menu/MenuView.h; sourceTree = "<group>"; };
-		6A8E0FA91C210BEA00EC19D6 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuView.m; path = View/Menu/MenuView.m; sourceTree = "<group>"; };
+		6A8E0FA51C210AA000EC19D6 /* LandingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LandingView.h; path = View/LandingView.h; sourceTree = "<group>"; };
+		6A8E0FA61C210AA000EC19D6 /* LandingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LandingView.m; path = View/LandingView.m; sourceTree = "<group>"; };
 		6A94AD5A1C2257320093DFF3 /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderView.h; path = View/Header/HeaderView.h; sourceTree = "<group>"; };
 		6A94AD5B1C2257320093DFF3 /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderView.m; path = View/Header/HeaderView.m; sourceTree = "<group>"; };
 		6A94AD5F1C225B590093DFF3 /* UIButton+MyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+MyButton.h"; path = "UI Catagories/UIButton+MyButton.h"; sourceTree = "<group>"; };
@@ -90,6 +89,10 @@
 		6A9DB6491C254149003B5558 /* iOSStandardTasks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iOSStandardTasks.framework; sourceTree = "<group>"; };
 		AE5E11AB1C25309700C5A473 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = Utilities/Utilities.h; sourceTree = "<group>"; };
 		AE5E11AC1C25309700C5A473 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = Utilities/Utilities.m; sourceTree = "<group>"; };
+		AE5E11AE1C2559B200C5A473 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuView.h; path = View/MenuView.h; sourceTree = "<group>"; };
+		AE5E11AF1C2559B200C5A473 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuView.m; path = View/MenuView.m; sourceTree = "<group>"; };
+		AE5E11B11C255D5600C5A473 /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuCell.h; path = View/MenuCell.h; sourceTree = "<group>"; };
+		AE5E11B21C255D5600C5A473 /* MenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuCell.m; path = View/MenuCell.m; sourceTree = "<group>"; };
 		DBBD4F0A62C83A2499DEFAA6 /* Pods-PerkAppsaholic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerkAppsaholic.release.xcconfig"; path = "Pods/Target Support Files/Pods-PerkAppsaholic/Pods-PerkAppsaholic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,8 +172,8 @@
 				6A8E0F9E1C21081200EC19D6 /* ViewController */,
 				6A8E0F681C2104A300EC19D6 /* AppDelegate.h */,
 				6A8E0F691C2104A300EC19D6 /* AppDelegate.m */,
-				6A8E0F6B1C2104A300EC19D6 /* ViewController.h */,
-				6A8E0F6C1C2104A300EC19D6 /* ViewController.m */,
+				6A8E0F6B1C2104A300EC19D6 /* LandingViewController.h */,
+				6A8E0F6C1C2104A300EC19D6 /* LandingViewController.m */,
 				6A8E0F741C2104A300EC19D6 /* Assets.xcassets */,
 				6A8E0F761C2104A300EC19D6 /* LaunchScreen.storyboard */,
 				6A8E0F791C2104A300EC19D6 /* Info.plist */,
@@ -229,12 +232,14 @@
 			children = (
 				6A7D2A041C23A86D00B81F60 /* Login */,
 				6A8E0FA11C2109ED00EC19D6 /* Base */,
-				6A8E0FA51C210AA000EC19D6 /* MyView.h */,
-				6A8E0FA61C210AA000EC19D6 /* MyView.m */,
+				6A8E0FA51C210AA000EC19D6 /* LandingView.h */,
+				6A8E0FA61C210AA000EC19D6 /* LandingView.m */,
 				6A94AD5A1C2257320093DFF3 /* HeaderView.h */,
 				6A94AD5B1C2257320093DFF3 /* HeaderView.m */,
-				6A8E0FA81C210BEA00EC19D6 /* MenuView.h */,
-				6A8E0FA91C210BEA00EC19D6 /* MenuView.m */,
+				AE5E11AE1C2559B200C5A473 /* MenuView.h */,
+				AE5E11AF1C2559B200C5A473 /* MenuView.m */,
+				AE5E11B11C255D5600C5A473 /* MenuCell.h */,
+				AE5E11B21C255D5600C5A473 /* MenuCell.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -469,7 +474,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A8E0F6D1C2104A300EC19D6 /* ViewController.m in Sources */,
+				6A8E0F6D1C2104A300EC19D6 /* LandingViewController.m in Sources */,
 				6A94AD5C1C2257320093DFF3 /* HeaderView.m in Sources */,
 				6A8E0F9D1C21080C00EC19D6 /* BaseViewController.m in Sources */,
 				6A94AD651C225B590093DFF3 /* UIButton+MyButton.m in Sources */,
@@ -479,11 +484,12 @@
 				6A8E0F6A1C2104A300EC19D6 /* AppDelegate.m in Sources */,
 				6A8E0F671C2104A300EC19D6 /* main.m in Sources */,
 				AE5E11AD1C25309700C5A473 /* Utilities.m in Sources */,
-				6A8E0FAA1C210BEA00EC19D6 /* MenuView.m in Sources */,
+				AE5E11B31C255D5600C5A473 /* MenuCell.m in Sources */,
 				6A94AD671C225B590093DFF3 /* UITextField+MyTextField.m in Sources */,
 				6A8E0FA41C210A1100EC19D6 /* BaseView.m in Sources */,
 				6A7D2A081C23A89C00B81F60 /* LoginView.m in Sources */,
-				6A8E0FA71C210AA000EC19D6 /* MyView.m in Sources */,
+				6A8E0FA71C210AA000EC19D6 /* LandingView.m in Sources */,
+				AE5E11B01C2559B200C5A473 /* MenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
