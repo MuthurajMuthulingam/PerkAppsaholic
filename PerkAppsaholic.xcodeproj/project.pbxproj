@@ -26,6 +26,7 @@
 		6A94AD661C225B590093DFF3 /* UILabel+MyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A94AD621C225B590093DFF3 /* UILabel+MyLabel.m */; };
 		6A94AD671C225B590093DFF3 /* UITextField+MyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A94AD641C225B590093DFF3 /* UITextField+MyTextField.m */; };
 		736776B6440ED4FBF636EE35 /* libPods-PerkAppsaholic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A30401D44C3B9E59DC26A5F /* libPods-PerkAppsaholic.a */; };
+		AE5E11AD1C25309700C5A473 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11AC1C25309700C5A473 /* Utilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		6A94AD621C225B590093DFF3 /* UILabel+MyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+MyLabel.m"; path = "UI Catagories/UILabel+MyLabel.m"; sourceTree = "<group>"; };
 		6A94AD631C225B590093DFF3 /* UITextField+MyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextField+MyTextField.h"; path = "UI Catagories/UITextField+MyTextField.h"; sourceTree = "<group>"; };
 		6A94AD641C225B590093DFF3 /* UITextField+MyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextField+MyTextField.m"; path = "UI Catagories/UITextField+MyTextField.m"; sourceTree = "<group>"; };
+		AE5E11AB1C25309700C5A473 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = Utilities/Utilities.h; sourceTree = "<group>"; };
+		AE5E11AC1C25309700C5A473 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = Utilities/Utilities.m; sourceTree = "<group>"; };
 		DBBD4F0A62C83A2499DEFAA6 /* Pods-PerkAppsaholic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerkAppsaholic.release.xcconfig"; path = "Pods/Target Support Files/Pods-PerkAppsaholic/Pods-PerkAppsaholic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -246,6 +249,8 @@
 			children = (
 				6A94AD5E1C225B3D0093DFF3 /* UI Catagories */,
 				6A7D2A091C23AA7300B81F60 /* AppConstants.h */,
+				AE5E11AB1C25309700C5A473 /* Utilities.h */,
+				AE5E11AC1C25309700C5A473 /* Utilities.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -469,6 +474,7 @@
 				6A8E0F731C2104A300EC19D6 /* PerkAppsaholic.xcdatamodeld in Sources */,
 				6A8E0F6A1C2104A300EC19D6 /* AppDelegate.m in Sources */,
 				6A8E0F671C2104A300EC19D6 /* main.m in Sources */,
+				AE5E11AD1C25309700C5A473 /* Utilities.m in Sources */,
 				6A8E0FAA1C210BEA00EC19D6 /* MenuView.m in Sources */,
 				6A94AD671C225B590093DFF3 /* UITextField+MyTextField.m in Sources */,
 				6A8E0FA41C210A1100EC19D6 /* BaseView.m in Sources */,
