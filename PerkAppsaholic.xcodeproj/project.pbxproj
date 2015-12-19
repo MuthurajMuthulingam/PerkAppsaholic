@@ -24,11 +24,17 @@
 		6A94AD651C225B590093DFF3 /* UIButton+MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A94AD601C225B590093DFF3 /* UIButton+MyButton.m */; };
 		6A94AD661C225B590093DFF3 /* UILabel+MyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A94AD621C225B590093DFF3 /* UILabel+MyLabel.m */; };
 		6A94AD671C225B590093DFF3 /* UITextField+MyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A94AD641C225B590093DFF3 /* UITextField+MyTextField.m */; };
-		6A9DB64A1C254149003B5558 /* iOSStandardTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9DB6491C254149003B5558 /* iOSStandardTasks.framework */; };
 		736776B6440ED4FBF636EE35 /* libPods-PerkAppsaholic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A30401D44C3B9E59DC26A5F /* libPods-PerkAppsaholic.a */; };
 		AE5E11AD1C25309700C5A473 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11AC1C25309700C5A473 /* Utilities.m */; };
 		AE5E11B01C2559B200C5A473 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11AF1C2559B200C5A473 /* MenuView.m */; };
 		AE5E11B31C255D5600C5A473 /* MenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11B21C255D5600C5A473 /* MenuCell.m */; };
+		AE5E11B51C256DBF00C5A473 /* iOSStandardTasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5E11B41C256DBF00C5A473 /* iOSStandardTasks.framework */; };
+		AE5E11C01C256E3000C5A473 /* Bus.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11B71C256E3000C5A473 /* Bus.png */; };
+		AE5E11C11C256E3000C5A473 /* Bus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11B81C256E3000C5A473 /* Bus@2x.png */; };
+		AE5E11C21C256E3000C5A473 /* Bus@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11B91C256E3000C5A473 /* Bus@3x.png */; };
+		AE5E11C61C256E3000C5A473 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11BD1C256E3000C5A473 /* Logo.png */; };
+		AE5E11C71C256E3000C5A473 /* Logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11BE1C256E3000C5A473 /* Logo@2x.png */; };
+		AE5E11C81C256E3000C5A473 /* Logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE5E11BF1C256E3000C5A473 /* Logo@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,13 +92,19 @@
 		6A94AD621C225B590093DFF3 /* UILabel+MyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+MyLabel.m"; path = "UI Catagories/UILabel+MyLabel.m"; sourceTree = "<group>"; };
 		6A94AD631C225B590093DFF3 /* UITextField+MyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITextField+MyTextField.h"; path = "UI Catagories/UITextField+MyTextField.h"; sourceTree = "<group>"; };
 		6A94AD641C225B590093DFF3 /* UITextField+MyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextField+MyTextField.m"; path = "UI Catagories/UITextField+MyTextField.m"; sourceTree = "<group>"; };
-		6A9DB6491C254149003B5558 /* iOSStandardTasks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iOSStandardTasks.framework; sourceTree = "<group>"; };
 		AE5E11AB1C25309700C5A473 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = Utilities/Utilities.h; sourceTree = "<group>"; };
 		AE5E11AC1C25309700C5A473 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = Utilities/Utilities.m; sourceTree = "<group>"; };
 		AE5E11AE1C2559B200C5A473 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuView.h; path = View/MenuView.h; sourceTree = "<group>"; };
 		AE5E11AF1C2559B200C5A473 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuView.m; path = View/MenuView.m; sourceTree = "<group>"; };
 		AE5E11B11C255D5600C5A473 /* MenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuCell.h; path = View/MenuCell.h; sourceTree = "<group>"; };
 		AE5E11B21C255D5600C5A473 /* MenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuCell.m; path = View/MenuCell.m; sourceTree = "<group>"; };
+		AE5E11B41C256DBF00C5A473 /* iOSStandardTasks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iOSStandardTasks.framework; sourceTree = "<group>"; };
+		AE5E11B71C256E3000C5A473 /* Bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Bus.png; path = Images/Bus.png; sourceTree = "<group>"; };
+		AE5E11B81C256E3000C5A473 /* Bus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bus@2x.png"; path = "Images/Bus@2x.png"; sourceTree = "<group>"; };
+		AE5E11B91C256E3000C5A473 /* Bus@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bus@3x.png"; path = "Images/Bus@3x.png"; sourceTree = "<group>"; };
+		AE5E11BD1C256E3000C5A473 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = Images/Logo.png; sourceTree = "<group>"; };
+		AE5E11BE1C256E3000C5A473 /* Logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Logo@2x.png"; path = "Images/Logo@2x.png"; sourceTree = "<group>"; };
+		AE5E11BF1C256E3000C5A473 /* Logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Logo@3x.png"; path = "Images/Logo@3x.png"; sourceTree = "<group>"; };
 		DBBD4F0A62C83A2499DEFAA6 /* Pods-PerkAppsaholic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerkAppsaholic.release.xcconfig"; path = "Pods/Target Support Files/Pods-PerkAppsaholic/Pods-PerkAppsaholic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A9DB64A1C254149003B5558 /* iOSStandardTasks.framework in Frameworks */,
+				AE5E11B51C256DBF00C5A473 /* iOSStandardTasks.framework in Frameworks */,
 				736776B6440ED4FBF636EE35 /* libPods-PerkAppsaholic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,7 +178,7 @@
 		6A8E0F641C2104A300EC19D6 /* PerkAppsaholic */ = {
 			isa = PBXGroup;
 			children = (
-				6A9DB6491C254149003B5558 /* iOSStandardTasks.framework */,
+				AE5E11B41C256DBF00C5A473 /* iOSStandardTasks.framework */,
 				6A94AD5D1C225B340093DFF3 /* Utilities */,
 				6A8E0FA01C2109E700EC19D6 /* Views */,
 				6A8E0F9E1C21081200EC19D6 /* ViewController */,
@@ -177,6 +189,7 @@
 				6A8E0F741C2104A300EC19D6 /* Assets.xcassets */,
 				6A8E0F761C2104A300EC19D6 /* LaunchScreen.storyboard */,
 				6A8E0F791C2104A300EC19D6 /* Info.plist */,
+				AE5E11B61C256E0400C5A473 /* Images */,
 				6A8E0F711C2104A300EC19D6 /* PerkAppsaholic.xcdatamodeld */,
 				6A8E0F651C2104A300EC19D6 /* Supporting Files */,
 			);
@@ -275,6 +288,19 @@
 				6A94AD641C225B590093DFF3 /* UITextField+MyTextField.m */,
 			);
 			name = "UI Catagories";
+			sourceTree = "<group>";
+		};
+		AE5E11B61C256E0400C5A473 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AE5E11B71C256E3000C5A473 /* Bus.png */,
+				AE5E11B81C256E3000C5A473 /* Bus@2x.png */,
+				AE5E11B91C256E3000C5A473 /* Bus@3x.png */,
+				AE5E11BD1C256E3000C5A473 /* Logo.png */,
+				AE5E11BE1C256E3000C5A473 /* Logo@2x.png */,
+				AE5E11BF1C256E3000C5A473 /* Logo@3x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		B1919A390A4468EAF7FFE7E3 /* Pods */ = {
@@ -400,6 +426,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5E11C61C256E3000C5A473 /* Logo.png in Resources */,
+				AE5E11C71C256E3000C5A473 /* Logo@2x.png in Resources */,
+				AE5E11C21C256E3000C5A473 /* Bus@3x.png in Resources */,
+				AE5E11C81C256E3000C5A473 /* Logo@3x.png in Resources */,
+				AE5E11C01C256E3000C5A473 /* Bus.png in Resources */,
+				AE5E11C11C256E3000C5A473 /* Bus@2x.png in Resources */,
 				6A8E0F781C2104A300EC19D6 /* LaunchScreen.storyboard in Resources */,
 				6A8E0F751C2104A300EC19D6 /* Assets.xcassets in Resources */,
 			);
