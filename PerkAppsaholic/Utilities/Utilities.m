@@ -36,4 +36,21 @@
     return [UIFont systemFontOfSize:size weight:UIFontWeightRegular];
 }
 
++ (void)showAlert {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"From and To should not be blank."
+                                                    message:@"You must choose a place to start your journey and a destination."
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+
++ (NSString *)getDateStringFromDate:(NSDate *)date {
+    if (date) {
+        NSDateFormatter *formater = [[NSDateFormatter alloc] init];
+        [formater setDateFormat:@"yyyy-MM-dd"];
+        return [formater stringFromDate:date];
+    }
+    return nil;
+}
 @end

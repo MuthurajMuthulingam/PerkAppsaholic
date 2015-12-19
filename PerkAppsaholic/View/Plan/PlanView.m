@@ -32,6 +32,8 @@
 
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSArray *dataArray;
+
 
 @end
 
@@ -41,7 +43,7 @@
     self = [super init];
     
     if (self) {
-        self.dataArray = [[NSMutableArray alloc] init];
+        self.dataArray = [NSArray array];
         [self createViews];
     }
     
@@ -214,22 +216,17 @@
     
     [self.scrollview setContentOffset:CGPointZero];
     self.scrollview.contentSize = CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT-75);
-    [self.dataArray removeAllObjects];
     self.tableView.hidden = YES;
     
     if (self.txtFrom.text.length == 0 || self.txtTo.text.length == 0) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"From and To should not be blank."
-                                                        message:@"You must choose a place to start your journey and a destination."
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];
-        [alert show];
+        
     } else {
+        
+        NSDictionary *detailsdict = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:self.txtFrom.text,self.txtTo.text,, nil] forKeys:@"FromPoint",@"ToPoint",@"Date",nil];
+        
         self.tableView.hidden = NO;
         [self.txtFrom resignFirstResponder];
         [self.txtTo resignFirstResponder];
-        
-        [self.dataArray addObjectsFromArray:@[@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About"]];
         
         self.tableView.frame = CGRectMake(0, CGRectGetMaxY(self.btnSearch.frame)+50, SCREEN_WIDTH, self.dataArray.count*[self tableView:self.tableView heightForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]]);
         self.scrollview.contentSize = CGSizeMake(SCREEN_WIDTH, SCREEN_HEIGHT-75+CGRectGetHeight(self.tableView.frame));
@@ -274,6 +271,14 @@
     return cell;
 }
 
+#pragma mark  - reload Table Data
 
+- (void)reloadTableData:(NSArray *)dataArray {
+    self.dataArray = dataArray;
+    __weak PlanView *weakSelf = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [weakSelf.tableView reloadData];
+    });
+}
 
 @end

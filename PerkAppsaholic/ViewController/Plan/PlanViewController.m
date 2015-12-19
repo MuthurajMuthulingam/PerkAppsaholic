@@ -29,8 +29,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSString *requestParameterString = [NSString stringWithFormat:@"startPoint=%@&endPoint=%@&date=%@",@"Chennai",@"Bangalore",@"2015-12-19"];
     
-    ServiceHandler *serviceHandler = [[ServiceHandler alloc] initWithURL:@"www.google.com" withRequestParameter:@"" andRequestType:@"GET" andTimeout:20 andPostDict:nil];
+    ServiceHandler *serviceHandler = [[ServiceHandler alloc] initWithURL:@"http://localhost//BusServices/" withRequestParameter:requestParameterString andRequestType:@"GET" andTimeout:20 andPostDict:nil];
     serviceHandler.delegate = self;
     [serviceHandler start];
     
@@ -57,7 +58,7 @@
 
 - (void)serviceHandler:(ServiceHandler *)serverHandler andRequestStatus:(BOOL)status andReponseData:(id)responseData andErrorMessage:(NSString *)errorMessage {
     NSLog(@"Server Response %@",responseData);
-//    responseData = [self readDataFromLocal];
+    //responseData = [self readDataFromLocal];
     if (responseData) {
         DataParserOperation *dataOperation = [[DataParserOperation alloc] initWithRawData:responseData];
         dataOperation.delegate = self;
@@ -69,6 +70,7 @@
 
 - (void)dataParser:(DataParserOperation *)dataParser parsedData:(NSArray *)parsedData {
     NSLog(@"response Data after Parsing %@",parsedData);
+    [self.view reloadInputViews];
 }
 
 
