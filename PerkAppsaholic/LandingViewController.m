@@ -16,7 +16,7 @@
 #import "AppConstants.h"
 #import "Utilities.h"
 
-@interface LandingViewController ()<LandingViewDelegate>
+@interface LandingViewController ()<LandingViewDelegate,planViewControllerDelegate>
 
 @property (nonatomic,strong) LandingView *view;
 @property (nonatomic, strong) UIViewController *childController;
@@ -79,6 +79,7 @@
             
             PlanViewController *planController = [[PlanViewController alloc] init];
             [self.view addSubview:planController.view];
+            planController.delegate = self;
             planController.view.frame = CGRectMake(0, 75, SCREEN_WIDTH, SCREEN_HEIGHT-75);
             self.childController = planController;
             
@@ -100,7 +101,21 @@
         default:
             break;
     }
+    [self showingMenu:NO];
     
+}
+
+- (void)showingMenu:(BOOL)flag {
+//    self.childController.view.userInteractionEnabled = flag;
+}
+
+#pragma mark planViewControllerDelegate Metjhods
+
+- (void)addPoints {
+    [[AppsaholicSDK sharedManager] trackEvent:@"d989f7d005b3701b1ca170f4e3382ceaaee05dc6" withSubID:@"nil" notificationType:NO withController:self withSuccess:^(BOOL success, NSString *notificationtext, NSNumber *pointEarned) {
+        NSLog(@"Achivement !!! Points Earned : %d,NotificationText %@",pointEarned.intValue,notificationtext);
+    }];
+
 }
 
 @end

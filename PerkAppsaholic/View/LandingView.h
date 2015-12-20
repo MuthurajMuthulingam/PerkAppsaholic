@@ -17,6 +17,7 @@ typedef enum {
 @protocol LandingViewDelegate <NSObject>
 
 - (void)didSelectMenuWithType:(MenuStyle)menuStyle;
+- (void)showingMenu:(BOOL)flag;
 
 @end
 
