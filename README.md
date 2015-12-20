@@ -69,5 +69,8 @@ Technical feature of our Product :
       7. User can book new ticket from Menu.
       8. User can Navigate to Perk Portal from our Menu with the product.
       
+  Suggestions to Appsaholic SDK :
+  
+      1. LoginViewController used in the SDK may be renamed.(to avoid collision with consumer application)
       
          
