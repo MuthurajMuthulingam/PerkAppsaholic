@@ -9,6 +9,7 @@
 #import "HistoryCell.h"
 #import "AppConstants.h"
 #import "Utilities.h"
+#import "UIButton+MyButton.h"
 
 @interface HistoryCell ()
 
@@ -127,6 +128,9 @@
     self.lblPerkPoints.textColor = UIAppThemeFontColor;
     self.lblPerkPoints.font = [UIFont systemFontOfSize:14.0 weight:UIFontWeightRegular];
     [self.bgView addSubview:self.lblPerkPoints];
+    
+    self.fbShare = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 29, 30) andTitleText:@"FB" titleColor:[UIColor blackColor] image:nil selectedImage:nil];
+    [self.bgView addSubview:self.fbShare];
 
     
 }
@@ -151,8 +155,15 @@
     self.imgPerk.frame = CGRectMake(CGRectGetMaxX(self.imgCalender.frame)+10, CGRectGetMaxY(self.lblName.frame), 20, 20);
     
     self.lblPerkPoints.frame = CGRectMake(CGRectGetMaxX(self.imgPerk.frame)+5, CGRectGetMaxY(self.lblName.frame), CGRectGetWidth(self.bgView.frame)-(CGRectGetMaxX(self.imgPerk.frame)+10), 20);
+    
+    self.fbShare.frame = CGRectMake(self.lblPerkPoints.frame.origin.x + self.lblPerkPoints.frame.size.width, self.lblPerkPoints.frame.origin.y, 50, 40);
 }
 
+#pragma mark - FB Share action
+
+- (void)fbSharedClicked:(UIButton *)sender {
+    
+}
 #pragma mark - Update Cell With Data
 
 - (void)updateCellWithData:(NSDictionary *)dataDictionary {
