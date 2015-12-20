@@ -32,21 +32,21 @@
     // Do any additional setup after loading the view.
 }
 
-//- (id)readDataFromLocal {
-//
-//    NSError *error;
-//    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Buses" ofType:@"json"];
-//    NSString *jsonStringFromFile = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&error];
-//    if (!error) {
-//        NSData *rawJSONData = [jsonStringFromFile dataUsingEncoding:NSUTF8StringEncoding];
-//
-//        id jsonSerialisedData = [NSJSONSerialization JSONObjectWithData:rawJSONData options:NSJSONReadingMutableLeaves error:&error];
-//        if (!error) {
-//            return jsonSerialisedData;
-//        }
-//    }
-//    return nil;
-//}
+- (id)readDataFromLocal {
+
+    NSError *error;
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Buses" ofType:@"json"];
+    NSString *jsonStringFromFile = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:&error];
+    if (!error) {
+        NSData *rawJSONData = [jsonStringFromFile dataUsingEncoding:NSUTF8StringEncoding];
+
+        id jsonSerialisedData = [NSJSONSerialization JSONObjectWithData:rawJSONData options:NSJSONReadingMutableLeaves error:&error];
+        if (!error) {
+            return jsonSerialisedData;
+        }
+    }
+    return nil;
+}
 
 
 #pragma mark - Plan View delegate
@@ -55,7 +55,7 @@
     
     NSString *requestParameterString = [NSString stringWithFormat:@"startPoint=%@&endPoint=%@&date=%@",[selectedDataDict objectForKey:@"StartPoint"],[selectedDataDict objectForKey:@"ToPoint"],[selectedDataDict objectForKey:@"Date"]];
     
-    ServiceHandler *serviceHandler = [[ServiceHandler alloc] initWithURL:@"http://localhost//BusServices/" withRequestParameter:requestParameterString andRequestType:@"GET" andTimeout:20 andPostDict:nil];
+    ServiceHandler *serviceHandler = [[ServiceHandler alloc] initWithURL:@"http:/localhost/BusServices/" withRequestParameter:requestParameterString andRequestType:@"GET" andTimeout:20 andPostDict:nil];
     serviceHandler.delegate = self;
     [serviceHandler start];
 }
@@ -64,7 +64,7 @@
 
 - (void)serviceHandler:(ServiceHandler *)serverHandler andRequestStatus:(BOOL)status andReponseData:(id)responseData andErrorMessage:(NSString *)errorMessage {
     NSLog(@"Server Response %@",responseData);
-    //responseData = [self readDataFromLocal];
+    responseData = [self readDataFromLocal];
     if (responseData) {
         DataParserOperation *dataOperation = [[DataParserOperation alloc] initWithRawData:responseData];
         dataOperation.delegate = self;

@@ -8,6 +8,7 @@
 
 #import "HistoryViewController.h"
 #import "HistoryView.h"
+#import "HistoryModel.h"
 
 @interface HistoryViewController ()<HistoryViewDelegate>
 
@@ -62,6 +63,7 @@
         default:
             break;
     }
+    dataArray = [[HistoryModel sharedInstance] getHistory];
     [self.view reloadDataWithData:dataArray];
 }
 

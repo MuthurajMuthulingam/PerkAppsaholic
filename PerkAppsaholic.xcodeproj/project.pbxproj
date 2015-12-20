@@ -30,6 +30,7 @@
 		6A94AD671C225B590093DFF3 /* UITextField+MyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A94AD641C225B590093DFF3 /* UITextField+MyTextField.m */; };
 		6AE490C91C25F07A00FB66B0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE490C81C25F07A00FB66B0 /* FBSDKCoreKit.framework */; };
 		6AE490CB1C25F29400FB66B0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE490CA1C25F29400FB66B0 /* FBSDKLoginKit.framework */; };
+		6AE490CE1C26016400FB66B0 /* HistoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE490CD1C26016400FB66B0 /* HistoryModel.m */; };
 		736776B6440ED4FBF636EE35 /* libPods-PerkAppsaholic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A30401D44C3B9E59DC26A5F /* libPods-PerkAppsaholic.a */; };
 		AE5E11AD1C25309700C5A473 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11AC1C25309700C5A473 /* Utilities.m */; };
 		AE5E11B01C2559B200C5A473 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11AF1C2559B200C5A473 /* MenuView.m */; };
@@ -123,6 +124,8 @@
 		6A94AD641C225B590093DFF3 /* UITextField+MyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITextField+MyTextField.m"; path = "UI Catagories/UITextField+MyTextField.m"; sourceTree = "<group>"; };
 		6AE490C81C25F07A00FB66B0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		6AE490CA1C25F29400FB66B0 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		6AE490CC1C26016400FB66B0 /* HistoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryModel.h; sourceTree = "<group>"; };
+		6AE490CD1C26016400FB66B0 /* HistoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryModel.m; sourceTree = "<group>"; };
 		AE5E11AB1C25309700C5A473 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = Utilities/Utilities.h; sourceTree = "<group>"; };
 		AE5E11AC1C25309700C5A473 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = Utilities/Utilities.m; sourceTree = "<group>"; };
 		AE5E11AE1C2559B200C5A473 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuView.h; path = View/MenuView.h; sourceTree = "<group>"; };
@@ -216,6 +219,8 @@
 		6A78DD111C259F2500E6C80C /* BookedHistory */ = {
 			isa = PBXGroup;
 			children = (
+				6AE490CC1C26016400FB66B0 /* HistoryModel.h */,
+				6AE490CD1C26016400FB66B0 /* HistoryModel.m */,
 			);
 			name = BookedHistory;
 			sourceTree = "<group>";
@@ -681,6 +686,7 @@
 				6A7B492A1C2596F50077C044 /* ServiceHandler.m in Sources */,
 				6A7D2A081C23A89C00B81F60 /* LoginView.m in Sources */,
 				AE5E11D61C25732300C5A473 /* HistoryView.m in Sources */,
+				6AE490CE1C26016400FB66B0 /* HistoryModel.m in Sources */,
 				6A8E0FA71C210AA000EC19D6 /* LandingView.m in Sources */,
 				AE5E11B01C2559B200C5A473 /* MenuView.m in Sources */,
 				AE5E11D91C2575B100C5A473 /* PlanViewController.m in Sources */,

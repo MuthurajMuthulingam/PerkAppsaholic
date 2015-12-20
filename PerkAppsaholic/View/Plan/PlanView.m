@@ -10,6 +10,7 @@
 #import "HistoryCell.h"
 #import "AppConstants.h"
 #import "Utilities.h"
+#import "HistoryModel.h"
 
 @interface PlanView ()<UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
 
@@ -40,6 +41,8 @@
 @property (nonatomic, strong) UIDatePicker *pickerView;
 
 @property (nonatomic, strong) NSDate *currentDate;
+
+@property (nonatomic, strong) NSDictionary *dicSelectedData;
 
 @end
 
@@ -295,7 +298,7 @@
         [self.txtFrom resignFirstResponder];
         [self.txtTo resignFirstResponder];
         
-        NSDictionary *detailsdict = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:self.txtFrom.text,self.txtTo.text,[Utilities getDateStringFromDate:self.currentDate], nil] forKeys:[NSArray arrayWithObjects:@"FromPoint",@"ToPoint",@"Date",nil]];
+        NSDictionary *detailsdict = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:self.txtFrom.text,self.txtTo.text,[Utilities getDateStringFromDate:self.currentDate], nil] forKeys:[NSArray arrayWithObjects:@"StartPoint",@"ToPoint",@"Date",nil]];
         [self.delegate planView:self selectedDictDetails:detailsdict];
     }
 }
@@ -340,6 +343,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     HistoryCell *cell = (HistoryCell*)[self tableView:self.tableView cellForRowAtIndexPath:indexPath];
+    self.dicSelectedData = [self.dataArray objectAtIndex:indexPath.row];
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:cell.lblFromTo.text
                                                     message:[NSString stringWithFormat:@"Confirm the tickets for this bus departing at %@ on %@ %@",cell.lblTime.text,cell.lblDate.text,cell.lblYear.text]
@@ -352,7 +356,8 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     
     if (buttonIndex == 1) {
-        NSLog(@"ticket booked");
+//        NSLog(@"ticket booked");
+        [[HistoryModel sharedInstance] addData:self.dicSelectedData];
     }
 }
 

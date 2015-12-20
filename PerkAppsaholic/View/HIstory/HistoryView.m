@@ -10,6 +10,7 @@
 #import "AppConstants.h"
 #import "Utilities.h"
 #import "HistoryCell.h"
+#import "HistoryModel.h"
 
 @interface HistoryView ()<UITableViewDelegate, UITableViewDataSource,UIAlertViewDelegate>
 
@@ -89,13 +90,20 @@
     return self.dataArray.count;
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 150;
 }
+
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//    HistoryCell *cell = [tableView dequeueReusableCellWithIdentifier:[HistoryCell reuseIdentifier] forIndexPath:indexPath];
+//    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+//    cell.layoutMargins = UIEdgeInsetsZero;
+//    cell.separatorInset = UIEdgeInsetsMake(0, 20, 0, 20);
+//    [cell updateCellWithData:[self.dataArray objectAtIndex:indexPath.row]];
+//    return cell;
+//}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -103,6 +111,7 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.layoutMargins = UIEdgeInsetsZero;
     cell.separatorInset = UIEdgeInsetsMake(0, 20, 0, 20);
+    [cell updateCellWithData:[[[HistoryModel sharedInstance] getHistory] objectAtIndex:indexPath.row]];
     return cell;
 }
 
