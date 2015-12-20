@@ -114,8 +114,17 @@
     cell.layoutMargins = UIEdgeInsetsZero;
     cell.separatorInset = UIEdgeInsetsMake(0, 20, 0, 20);
     [cell updateCellWithData:[self.dataArray objectAtIndex:indexPath.row]];
+    if (self.segment.selectedSegmentIndex == 1) {
+        cell.fbShare.hidden = NO;
+    }
     cell.delegate = self;
     return cell;
+}
+
+- (void)fbShared {
+    if ([self.delegate respondsToSelector:@selector(historyView:fbShareButtonClicked:)]) {
+        [self.delegate historyView:self fbShareButtonClicked:nil];
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

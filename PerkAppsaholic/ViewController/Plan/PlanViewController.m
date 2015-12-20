@@ -11,6 +11,7 @@
 #import "DataParserOperation.h"
 #import "ServiceHandler.h"
 #import "AppsaholicSDK.h"
+#import <FBSDKShareKit/FBSDKShareKit.h>
 
 @interface PlanViewController ()<ServiceHandlerDelegate,DataParserDelegate,planViewDelegate>
 
@@ -95,5 +96,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (void)planView:(PlanView *)planView fbShareButtonClicked:(UIButton *)fbButton {
+    FBSDKShareLinkContent *content = [[FBSDKShareLinkContent alloc] init];
+    content.contentURL = [NSURL URLWithString:@"http://www.google.com"];
+    content.contentDescription = @"Perk Appsaholic Testing...";
+    [FBSDKShareDialog showFromViewController:self
+                                 withContent:content
+                                    delegate:nil];
+}
 @end

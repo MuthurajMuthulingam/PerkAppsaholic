@@ -19,6 +19,8 @@
 @property (nonatomic, strong) UILabel *lblYear;
 @property (nonatomic, strong) UILabel *lblPerkPoints;
 
+@property (nonatomic,strong) UIButton *fbShare;
+
 
 @property (nonatomic) NSInteger rewardPoints;
 @property(nonatomic, weak)id<HistoryCellDelegate>delegate;

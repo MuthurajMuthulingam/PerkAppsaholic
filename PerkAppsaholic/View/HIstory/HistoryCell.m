@@ -23,8 +23,6 @@
 @property (nonatomic, strong) UIView *calView2;
 @property (nonatomic, strong) UIView *calView3;
 
-@property (nonatomic,strong) UIButton *fbShare;
-
 @end
 
 @implementation HistoryCell
@@ -131,8 +129,14 @@
     self.lblPerkPoints.font = [UIFont systemFontOfSize:14.0 weight:UIFontWeightRegular];
     [self.bgView addSubview:self.lblPerkPoints];
     
-    self.fbShare = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 29, 30) andTitleText:@"FB" titleColor:[UIColor blackColor] image:nil selectedImage:nil];
+    self.fbShare = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 29, 30) andTitleText:@"f" titleColor:[UIColor blackColor] image:nil selectedImage:nil];
+    
+    self.fbShare.layer.cornerRadius = 5;
+    self.fbShare.titleLabel.font = [UIFont boldSystemFontOfSize:40];
+    [self.fbShare setTitleColor:UIAppThemeWhiteColor forState:UIControlStateNormal];
+    self.fbShare.backgroundColor = UIColorFromRGB(0x465798);
     [self.fbShare addTarget:self action:@selector(fbSharedClicked:) forControlEvents:UIControlEventTouchUpInside];
+    self.fbShare.hidden = YES;
     [self.bgView addSubview:self.fbShare];
 
     
@@ -159,7 +163,7 @@
     
     self.lblPerkPoints.frame = CGRectMake(CGRectGetMaxX(self.imgPerk.frame)+5, CGRectGetMaxY(self.lblName.frame), CGRectGetWidth(self.bgView.frame)/2 - 50, 20);
     
-    self.fbShare.frame = CGRectMake(self.lblPerkPoints.frame.origin.x + self.lblPerkPoints.frame.size.width, self.lblPerkPoints.frame.origin.y, 50, 40);
+    self.fbShare.frame = CGRectMake(self.lblPerkPoints.frame.origin.x + self.lblPerkPoints.frame.size.width, self.imgPerk.frame.origin.y - 20, 35, 35);
 }
 
 #pragma mark - FB Share action

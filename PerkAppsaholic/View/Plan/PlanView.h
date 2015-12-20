@@ -10,6 +10,7 @@
 @protocol planViewDelegate <NSObject>
 
 - (void)planView:(PlanView *)planView selectedDictDetails:(NSDictionary *)selectedDataDict;
+- (void)planView:(PlanView *)planView fbShareButtonClicked:(UIButton *)fbButton;
 - (void)addPoints:(NSInteger)points;
 
 @end

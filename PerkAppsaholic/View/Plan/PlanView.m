@@ -380,8 +380,8 @@
     });
 }
 - (void)fbShared {
-    if ([self.delegate respondsToSelector:@selector(planView:selectedDictDetails:)]) {
-        [self.delegate planView:self selectedDictDetails:nil];
+    if ([self.delegate respondsToSelector:@selector(planView:fbShareButtonClicked:)]) {
+        [self.delegate planView:self fbShareButtonClicked:nil];
     }
 }
 @end
