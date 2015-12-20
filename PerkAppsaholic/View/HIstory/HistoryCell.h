@@ -19,5 +19,4 @@
 
 + (NSString *)reuseIdentifier;
 - (void)updateCellWithData:(NSDictionary *)dataDictionary;
-
 @end

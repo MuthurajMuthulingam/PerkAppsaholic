@@ -64,7 +64,7 @@
 
 - (void)serviceHandler:(ServiceHandler *)serverHandler andRequestStatus:(BOOL)status andReponseData:(id)responseData andErrorMessage:(NSString *)errorMessage {
     NSLog(@"Server Response %@",responseData);
-    responseData = [self readDataFromLocal];
+    //responseData = [self readDataFromLocal];
     if (responseData) {
         DataParserOperation *dataOperation = [[DataParserOperation alloc] initWithRawData:responseData];
         dataOperation.delegate = self;

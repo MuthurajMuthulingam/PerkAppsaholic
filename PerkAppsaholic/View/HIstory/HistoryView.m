@@ -120,8 +120,7 @@
     
     self.dicSelectedCancel = [self.dataArray objectAtIndex:indexPath.row];
     if (self.segment.selectedSegmentIndex == 1) {
-        HistoryCell *cell = (HistoryCell*)[self tableView:self.tableView cellForRowAtIndexPath:indexPath];
-        
+        HistoryCell *cell = [tableView cellForRowAtIndexPath:indexPath];
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:cell.lblFromTo.text
                                                         message:[NSString stringWithFormat:@"Cancel the tickets for this bus departing at %@ on %@ %@",cell.lblTime.text,cell.lblDate.text,cell.lblYear.text]
                                                        delegate:self
@@ -145,9 +144,7 @@
     
     NSLog(@"segmentChanged");
     
-    if ([self.delegate respondsToSelector:@selector(segmentChangedToIndex:)]) {
-        [self.delegate segmentChangedToIndex:(HistoryType)self.segment.selectedSegmentIndex];
-    }
+        [self.delegate historyView:self segmentChangedToIndex:(HistoryType)self.segment.selectedSegmentIndex];
 }
 
 #pragma mark - reloading Data Table
