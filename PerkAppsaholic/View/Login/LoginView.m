@@ -159,20 +159,28 @@
 
 - (void)loginClicked:(UIButton *)sender {
     
-    self.isAnimating = YES;
-    self.appImage.frame = CGRectMake((SCREEN_WIDTH/2)-75, 70, 150, 100);
-    
-    
-    [UIView animateWithDuration:1.0
-                          delay:0
-                        options:UIViewAnimationOptionCurveLinear
-                     animations:^{
-                         self.appImage.frame = CGRectMake(SCREEN_WIDTH, 50, 100, 70);
-                     }
-                     completion:^(BOOL finished){
-                         self.isAnimating = NO;
-                         [self.delegate loginView:self userName:self.userName.text password:self.password.text];
-                     }];
+    if (self.userName.text.length == 0 ||self.password.text.length == 0) {
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Username and password cannot be empty." delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alert show];
+        
+    } else {
+        self.isAnimating = YES;
+        self.appImage.frame = CGRectMake((SCREEN_WIDTH/2)-75, 70, 150, 100);
+        
+        
+        [UIView animateWithDuration:1.0
+                              delay:0
+                            options:UIViewAnimationOptionCurveLinear
+                         animations:^{
+                             self.appImage.frame = CGRectMake(SCREEN_WIDTH, 50, 100, 70);
+                         }
+                         completion:^(BOOL finished){
+                             self.isAnimating = NO;
+                             [self.delegate loginView:self userName:self.userName.text password:self.password.text];
+                         }];
+
+    }
 }
 
 - (void)layoutSubviews {

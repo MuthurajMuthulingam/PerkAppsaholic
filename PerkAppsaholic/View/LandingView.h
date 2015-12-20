@@ -22,6 +22,8 @@ typedef enum {
 
 @interface LandingView : UIView
 
+@property (nonatomic, strong) UILabel *lblPerks;
+
 @property (nonatomic, weak) id <LandingViewDelegate> delegate;
 
 @end

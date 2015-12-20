@@ -11,6 +11,7 @@
 #import "Utilities.h"
 #import "MenuView.h"
 #import "MenuCell.h"
+#import "AppsaholicSDK.h"
 
 @interface LandingView ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -28,7 +29,6 @@
 @property (nonatomic, strong) UILabel *lblUserName;
 @property (nonatomic, strong) UILabel *lblUserID;
 @property (nonatomic, strong) UIImageView *imgPerks;
-@property (nonatomic, strong) UILabel *lblPerks;
 
 @end
 
@@ -100,14 +100,13 @@
     [self.menuView addSubview:self.lblUserID];
     [self.lblUserID sizeToFit];
     
-    self.imgPerks = [[UIImageView alloc] initWithImage:nil];
-    self.imgPerks.tintColor = [UIColor blackColor];
+    self.imgPerks = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"perkpoint"]];
     self.imgPerks.backgroundColor = [UIColor whiteColor];
     self.imgPerks.layer.cornerRadius = 10;
     [self.menuView addSubview:self.imgPerks];
     
     self.lblPerks = [[UILabel alloc] init];
-    self.lblPerks.text = @"5628";
+    self.lblPerks.text = @"0";
     self.lblPerks.textAlignment = NSTextAlignmentLeft;
     self.lblPerks.textColor = [UIColor whiteColor];
     self.lblPerks.font = [UIFont systemFontOfSize:12 weight:UIFontWeightSemibold];
@@ -181,6 +180,17 @@
                          }
                          completion:^(BOOL finished){
                              self.isAnimating = NO;
+                             
+                             [[AppsaholicSDK sharedManager] getUserInformation:^(BOOL success, NSDictionary *info){
+                                 NSLog(@"info %@", info);
+                                 
+                                 if ([[[info objectForKey:@"data"] objectForKey:@"user"] objectForKey:@"available_points"]) {
+                                     self.lblPerks.text = [NSString stringWithFormat:@"%@",[[[info objectForKey:@"data"] objectForKey:@"user"] objectForKey:@"available_points"]];
+                                     [self.lblPerks sizeToFit];
+                                     self.lblPerks.frame = CGRectMake(CGRectGetMaxX(self.imgPerks.frame)+5, CGRectGetMaxY(self.imgProfilePic.frame)+10, CGRectGetWidth(self.lblPerks.frame), 20);
+                                 }
+                                 
+                             }];
                          }];
     } else {
         [UIView animateWithDuration:0.2

@@ -26,10 +26,6 @@
     
     self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    [[AppsaholicSDK sharedManager] startSession:@"a6baa7402d43fea95c1df341dd66567e78902732" withSuccess:^(BOOL success, NSString *status) {
-        NSLog(@"App ready to use Perk SDK Status : %@",status);
-    }];
-    
     UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(menuClicked:)];
     self.navigationItem.leftBarButtonItem = leftBarButton;
 }

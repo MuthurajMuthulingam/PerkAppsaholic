@@ -118,9 +118,7 @@
     self.lblName.font = [UIFont systemFontOfSize:14.0 weight:UIFontWeightRegular];
     [self.bgView addSubview:self.lblName];
     
-    self.imgPerk = [[UIImageView alloc] initWithImage:nil];
-    self.imgPerk.backgroundColor = [UIColor orangeColor];
-    self.imgPerk.layer.cornerRadius = 10.0;
+    self.imgPerk = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"perkpoint"]];
     [self.bgView addSubview:self.imgPerk];
     
     self.lblPerkPoints = [[UILabel alloc] init];
@@ -163,7 +161,8 @@
         self.lblYear.text = @"2015";
         self.lblFromTo.text = [dataDictionary objectForKey:@"StartPoint"];
         self.lblName.text = [dataDictionary objectForKey:@"TravelsName"];
-        self.lblPerkPoints.text = [NSString stringWithFormat:@"%@",[dataDictionary objectForKey:@"PerkPoints"]];
+        self.lblPerkPoints.text = [NSString stringWithFormat:@"Perk Points: %@",[dataDictionary objectForKey:@"PerkPoints"]];
+        self.rewardPoints = [[dataDictionary objectForKey:@"PerkPoints"] integerValue];
     }
 }
 

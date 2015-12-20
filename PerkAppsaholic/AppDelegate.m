@@ -23,6 +23,9 @@
     // Override point for customization after application launch.
     
     // Facebook Integration
+    [[AppsaholicSDK sharedManager] startSession:@"a6baa7402d43fea95c1df341dd66567e78902732" withSuccess:^(BOOL success, NSString *status) {
+        NSLog(@"App ready to use Perk SDK with Status : %@",status);
+    }];
     
     [[FBSDKApplicationDelegate sharedInstance] application:application
                              didFinishLaunchingWithOptions:launchOptions];

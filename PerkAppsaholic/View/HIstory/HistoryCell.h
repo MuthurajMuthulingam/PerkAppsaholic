@@ -15,6 +15,8 @@
 @property (nonatomic, strong) UILabel *lblYear;
 @property (nonatomic, strong) UILabel *lblPerkPoints;
 
+@property (nonatomic) NSInteger rewardPoints;
+
 + (NSString *)reuseIdentifier;
 - (void)updateCellWithData:(NSDictionary *)dataDictionary;
 
