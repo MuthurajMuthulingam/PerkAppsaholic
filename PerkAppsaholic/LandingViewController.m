@@ -42,7 +42,7 @@
     
     // Do any additional setup after loading the view, typically from a nib.
     
-//    ((AppsaholicSDK *)[AppsaholicSDK sharedManager]).appsaholic_rootViewController  = self;
+    ((AppsaholicSDK *)[AppsaholicSDK sharedManager]).appsaholic_rootViewController  = self;
 
 }
 
@@ -86,10 +86,13 @@
             break;
         case kMenuSettings: {
             
-            SettingsViewController *settingsController = [[SettingsViewController alloc] init];
-            [self.view addSubview:settingsController.view];
-            settingsController.view.frame = CGRectMake(0, 75, SCREEN_WIDTH, SCREEN_HEIGHT-75);
-            self.childController = settingsController;
+//            SettingsViewController *settingsController = [[SettingsViewController alloc] init];
+//            [self.view addSubview:settingsController.view];
+//            settingsController.view.frame = CGRectMake(0, 75, SCREEN_WIDTH, SCREEN_HEIGHT-75);
+//            self.childController = settingsController;
+            
+            //((AppsaholicSDK *)[AppsaholicSDK sharedManager]).appsaholic_rootViewController = self;
+            [[AppsaholicSDK sharedManager] showPortal];
             
         }
             break;

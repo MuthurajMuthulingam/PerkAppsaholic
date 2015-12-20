@@ -54,19 +54,19 @@
 - (void)loginView:(LoginView *)loginView userName:(NSString *)userName password:(NSString *)password {
     NSLog(@"Entered user Name : %@ and Password : %@",userName,password);
     
-//    [[AppsaholicSDK sharedManager] trackEvent:@"ba9c033948020fa049c93f57a216bcb0674e5a4a" withSubID:@"nil" notificationType:NO withController:self withSuccess:^(BOOL success, NSString *notificationtext, NSNumber *pointEarned) {
+//    [[AppsaholicSDK sharedManager] trackEvent:@"d989f7d005b3701b1ca170f4e3382ceaaee05dc6" withSubID:@"nil" notificationType:NO withController:self withSuccess:^(BOOL success, NSString *notificationtext, NSNumber *pointEarned) {
 //        NSLog(@"Achivement !!! Points Earned : %d,NotificationText %@",pointEarned.intValue,notificationtext);
 //    }];
     
-//    LandingViewController *ctrl = [LandingViewController new];
-//    [self.navigationController pushViewController:ctrl animated:YES];
+    LandingViewController *ctrl = [LandingViewController new];
+    [self.navigationController pushViewController:ctrl animated:YES];
     
-    FBSDKShareLinkContent *content = [[FBSDKShareLinkContent alloc] init];
-    content.contentURL = [NSURL URLWithString:@"http://www.google.com"];
-    content.contentDescription = @"Perk Appsaholic Testing...";
-    [FBSDKShareDialog showFromViewController:self
-                                 withContent:content
-                                    delegate:nil];
+//    FBSDKShareLinkContent *content = [[FBSDKShareLinkContent alloc] init];
+//    content.contentURL = [NSURL URLWithString:@"http://www.google.com"];
+//    content.contentDescription = @"Perk Appsaholic Testing...";
+//    [FBSDKShareDialog showFromViewController:self
+//                                 withContent:content
+//                                    delegate:nil];
 
 }
 

@@ -26,7 +26,7 @@
     self = [super init];
     
     if (self) {
-        self.dataArray = [[NSArray alloc] initWithObjects:@"History", @"Plane New Journey", @"About", nil];
+        self.dataArray = [[NSArray alloc] initWithObjects:@"History", @"Plane New Journey", @"View Portal", nil];
         [self createViews];
     }
     return self;
