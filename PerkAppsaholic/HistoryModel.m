@@ -9,7 +9,9 @@
 #import "HistoryModel.h"
 
 @implementation HistoryModel
-static NSMutableArray *aryHistory;
+static NSMutableArray *aryUpcomingHistory;
+static NSMutableArray *aryPastHistory;
+static NSMutableArray *aryCancelHistory;
 + (HistoryModel *)sharedInstance
 {
     //  Static local predicate must be initialized to 0
@@ -18,17 +20,38 @@ static NSMutableArray *aryHistory;
     dispatch_once(&onceToken, ^{
         sharedInstance = [[HistoryModel alloc] init];
         // Do any other initialisation stuff here
-        aryHistory = [[NSMutableArray alloc] init];
+        aryUpcomingHistory = [[NSMutableArray alloc] init];
+        aryPastHistory = [[NSMutableArray alloc] init];
+        aryCancelHistory = [[NSMutableArray alloc] init];
     });
     return sharedInstance;
 }
-- (void)addData:(NSDictionary *)dic {
-    [aryHistory addObject:dic];
+- (void)addUpcomingHistroyData:(NSDictionary *)dic {
+    [aryUpcomingHistory addObject:dic];
 }
-- (void)cancelData:(NSDictionary *)dic {
-    [aryHistory removeObject:dic];
+- (void)removeUpcomingHistroyData:(NSDictionary *)dic {
+    [aryUpcomingHistory removeObject:dic];
 }
-- (NSArray *)getHistory {
-    return aryHistory;
+- (void)addCancelHistoryData:(NSDictionary *)dic {
+    [aryCancelHistory addObject:dic];
+}
+- (void)removeCancelHistoryData:(NSDictionary *)dic {
+    [aryCancelHistory removeObject:dic];
+}
+- (void)addPastHistoryData:(NSDictionary *)dic {
+    [aryPastHistory addObject:dic];
+}
+- (void)removePastHistoryData:(NSDictionary *)dic {
+    [aryPastHistory removeObject:dic];
+}
+
+- (NSArray *)getUpcomingHistory {
+    return aryUpcomingHistory;
+}
+- (NSArray *)getCancelHistory {
+    return aryCancelHistory;
+}
+- (NSArray *)getPastHistory {
+    return aryPastHistory;
 }
 @end

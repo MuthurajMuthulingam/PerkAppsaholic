@@ -17,6 +17,7 @@
 @property (nonatomic, strong) UISegmentedControl *segment;
 @property (nonatomic, strong) NSArray *dataArray;
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSDictionary *dicSelectedCancel;
 
 @end
 
@@ -111,13 +112,21 @@
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.layoutMargins = UIEdgeInsetsZero;
     cell.separatorInset = UIEdgeInsetsMake(0, 20, 0, 20);
-    [cell updateCellWithData:[[[HistoryModel sharedInstance] getHistory] objectAtIndex:indexPath.row]];
+    [cell updateCellWithData:[self.dataArray objectAtIndex:indexPath.row]];
+//    if (self.segment.selected == 0) {//Past
+//        [cell updateCellWithData:[[[HistoryModel sharedInstance] getUpcomingHistory] objectAtIndex:indexPath.row]];
+//    }else if (self.segment.selected == 1) {//Upcoming
+//        [cell updateCellWithData:[[[HistoryModel sharedInstance] getUpcomingHistory] objectAtIndex:indexPath.row]];
+//    }else if (self.segment.selected == 2) {//Cancel
+//        [cell updateCellWithData:[[[HistoryModel sharedInstance] getUpcomingHistory] objectAtIndex:indexPath.row]];
+//    }
+    
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    
+    self.dicSelectedCancel = [self.dataArray objectAtIndex:indexPath.row];
     if (self.segment.selectedSegmentIndex == 1) {
         HistoryCell *cell = (HistoryCell*)[self tableView:self.tableView cellForRowAtIndexPath:indexPath];
         
@@ -134,6 +143,9 @@
     
     if (buttonIndex == 1) {
         NSLog(@"ticket booked");
+        [[HistoryModel sharedInstance] addCancelHistoryData:self.dicSelectedCancel];
+        [[HistoryModel sharedInstance] removeUpcomingHistroyData:self.dicSelectedCancel];
+        [self.tableView reloadData];
     }
 }
 

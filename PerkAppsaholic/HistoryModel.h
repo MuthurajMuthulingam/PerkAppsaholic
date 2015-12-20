@@ -10,7 +10,15 @@
 
 @interface HistoryModel : NSObject
 + (HistoryModel *)sharedInstance;
+- (NSArray*)getUpcomingHistory;
+- (NSArray*)getCancelHistory;
+- (NSArray*)getPastHistory;
 - (void)addData:(NSDictionary *)dic;
 - (void)cancelData:(NSDictionary *)dic;
-- (NSArray *)getHistory;
+- (void)addUpcomingHistroyData:(NSDictionary *)dic;
+- (void)removeUpcomingHistroyData:(NSDictionary *)dic;
+- (void)addCancelHistoryData:(NSDictionary *)dic;
+- (void)removeCancelHistoryData:(NSDictionary *)dic;
+- (void)addPastHistoryData:(NSDictionary *)dic;
+- (void)removePastHistoryData:(NSDictionary *)dic;
 @end

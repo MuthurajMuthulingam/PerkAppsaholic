@@ -50,20 +50,23 @@
             
             dataArray = @[@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About"];
             }
+            dataArray = [[HistoryModel sharedInstance] getPastHistory];
             break;
         case kHistoryUpcoming: {
             dataArray = @[@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About"];
         }
+            dataArray = [[HistoryModel sharedInstance] getUpcomingHistory];
             break;
         case kHistoryCanceled: {
             dataArray = @[@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About"];
         }
+            dataArray = [[HistoryModel sharedInstance] getCancelHistory];
             break;
             
         default:
             break;
     }
-    dataArray = [[HistoryModel sharedInstance] getHistory];
+    
     [self.view reloadDataWithData:dataArray];
 }
 

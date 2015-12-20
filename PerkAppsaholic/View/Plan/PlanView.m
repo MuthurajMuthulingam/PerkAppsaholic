@@ -356,8 +356,7 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     
     if (buttonIndex == 1) {
-//        NSLog(@"ticket booked");
-        [[HistoryModel sharedInstance] addData:self.dicSelectedData];
+        [[HistoryModel sharedInstance] addUpcomingHistroyData:self.dicSelectedData];
     }
 }
 
