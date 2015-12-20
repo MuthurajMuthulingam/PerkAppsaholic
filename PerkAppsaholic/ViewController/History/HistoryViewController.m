@@ -35,7 +35,7 @@
     
     self.dataArray = [NSArray array];
     
-    [self segmentChangedToIndex:kHistoryUpcoming];
+    [self historyView:self.view segmentChangedToIndex:kHistoryUpcoming];
 }
 
 - (void)didReceiveMemoryWarning {
