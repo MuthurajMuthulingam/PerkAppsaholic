@@ -12,7 +12,7 @@
 #import "HistoryCell.h"
 #import "HistoryModel.h"
 
-@interface HistoryView ()<UITableViewDelegate, UITableViewDataSource,UIAlertViewDelegate>
+@interface HistoryView ()<UITableViewDelegate, UITableViewDataSource,UIAlertViewDelegate, HistoryCellDelegate>
 
 @property (nonatomic, strong) UISegmentedControl *segment;
 @property (nonatomic, strong) NSArray *dataArray;
@@ -110,10 +110,11 @@
     
     HistoryCell *cell = [tableView dequeueReusableCellWithIdentifier:[HistoryCell reuseIdentifier] forIndexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    [cell.fbShare addTarget:self action:@selector(fbSharedClicked:) forControlEvents:UIControlEventTouchUpInside];
+//    [cell.fbShare addTarget:self action:@selector(fbSharedClicked:) forControlEvents:UIControlEventTouchUpInside];
     cell.layoutMargins = UIEdgeInsetsZero;
     cell.separatorInset = UIEdgeInsetsMake(0, 20, 0, 20);
     [cell updateCellWithData:[self.dataArray objectAtIndex:indexPath.row]];
+    cell.delegate = self;
     return cell;
 }
 
@@ -141,9 +142,6 @@
     }
 }
 
-- (void)fbSharedClicked:(UIButton *)sender {
-    [self.delegate historyView:self fbShareButtonClicked:sender];
-}
 
 - (void)segmentChanged {
     
