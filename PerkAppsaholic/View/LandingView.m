@@ -180,6 +180,7 @@
                          }
                          completion:^(BOOL finished){
                              self.isAnimating = NO;
+                             [self.delegate showingMenu:NO];
                              
                              [[AppsaholicSDK sharedManager] getUserInformation:^(BOOL success, NSDictionary *info){
                                  NSLog(@"info %@", info);
@@ -188,7 +189,6 @@
                                      self.lblPerks.text = [NSString stringWithFormat:@"%@",[[[info objectForKey:@"data"] objectForKey:@"user"] objectForKey:@"available_points"]];
                                      [self.lblPerks sizeToFit];
                                      self.lblPerks.frame = CGRectMake(CGRectGetMaxX(self.imgPerks.frame)+5, CGRectGetMaxY(self.imgProfilePic.frame)+10, CGRectGetWidth(self.lblPerks.frame), 20);
-                                     [self.delegate showingMenu:YES];
                                  }
                                  
                              }];
@@ -214,7 +214,7 @@
                          }
                          completion:^(BOOL finished){
                              self.isAnimating = NO;
-                             [self.delegate showingMenu:NO];
+                             [self.delegate showingMenu:YES];
                          }];
     }
 }

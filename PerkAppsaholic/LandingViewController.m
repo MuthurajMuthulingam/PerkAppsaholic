@@ -86,13 +86,6 @@
         }
             break;
         case kMenuSettings: {
-            
-//            SettingsViewController *settingsController = [[SettingsViewController alloc] init];
-//            [self.view addSubview:settingsController.view];
-//            settingsController.view.frame = CGRectMake(0, 75, SCREEN_WIDTH, SCREEN_HEIGHT-75);
-//            self.childController = settingsController;
-            
-            //((AppsaholicSDK *)[AppsaholicSDK sharedManager]).appsaholic_rootViewController = self;
             [[AppsaholicSDK sharedManager] showPortal];
             
         }
@@ -101,12 +94,13 @@
         default:
             break;
     }
-    [self showingMenu:NO];
     
+    [self showingMenu:YES];
 }
 
 - (void)showingMenu:(BOOL)flag {
-//    self.childController.view.userInteractionEnabled = flag;
+    
+    self.childController.view.userInteractionEnabled = flag;
 }
 
 #pragma mark planViewControllerDelegate Metjhods
