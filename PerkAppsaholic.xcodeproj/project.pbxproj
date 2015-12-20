@@ -31,6 +31,7 @@
 		6AE490C91C25F07A00FB66B0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE490C81C25F07A00FB66B0 /* FBSDKCoreKit.framework */; };
 		6AE490CB1C25F29400FB66B0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE490CA1C25F29400FB66B0 /* FBSDKLoginKit.framework */; };
 		6AE490CE1C26016400FB66B0 /* HistoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE490CD1C26016400FB66B0 /* HistoryModel.m */; };
+		6AE490D01C26396500FB66B0 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE490CF1C26396500FB66B0 /* FBSDKShareKit.framework */; };
 		736776B6440ED4FBF636EE35 /* libPods-PerkAppsaholic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A30401D44C3B9E59DC26A5F /* libPods-PerkAppsaholic.a */; };
 		AE5E11AD1C25309700C5A473 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11AC1C25309700C5A473 /* Utilities.m */; };
 		AE5E11B01C2559B200C5A473 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5E11AF1C2559B200C5A473 /* MenuView.m */; };
@@ -126,6 +127,7 @@
 		6AE490CA1C25F29400FB66B0 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		6AE490CC1C26016400FB66B0 /* HistoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryModel.h; sourceTree = "<group>"; };
 		6AE490CD1C26016400FB66B0 /* HistoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryModel.m; sourceTree = "<group>"; };
+		6AE490CF1C26396500FB66B0 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		AE5E11AB1C25309700C5A473 /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = Utilities/Utilities.h; sourceTree = "<group>"; };
 		AE5E11AC1C25309700C5A473 /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = Utilities/Utilities.m; sourceTree = "<group>"; };
 		AE5E11AE1C2559B200C5A473 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuView.h; path = View/MenuView.h; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AE490D01C26396500FB66B0 /* FBSDKShareKit.framework in Frameworks */,
 				736776B6440ED4FBF636EE35 /* libPods-PerkAppsaholic.a in Frameworks */,
 				6AE490C91C25F07A00FB66B0 /* FBSDKCoreKit.framework in Frameworks */,
 				6AE490CB1C25F29400FB66B0 /* FBSDKLoginKit.framework in Frameworks */,
@@ -422,6 +425,7 @@
 		6AE490C71C25F04E00FB66B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6AE490CF1C26396500FB66B0 /* FBSDKShareKit.framework */,
 				6AE490CA1C25F29400FB66B0 /* FBSDKLoginKit.framework */,
 				6AE490C81C25F07A00FB66B0 /* FBSDKCoreKit.framework */,
 			);

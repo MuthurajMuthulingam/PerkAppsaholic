@@ -27,6 +27,10 @@
     [[FBSDKApplicationDelegate sharedInstance] application:application
                              didFinishLaunchingWithOptions:launchOptions];
     
+    [FBSDKProfile enableUpdatesOnAccessTokenChange:YES];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:FBSDKAccessTokenDidChangeNotification selector:@selector(profileChanges:) name:@"fbProfileChanges" object:nil];
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     LoginToViewController *login = [[LoginToViewController alloc] init];
@@ -69,6 +73,10 @@
                                                 sourceApplication:sourceApplication
                                                        annotation:annotation
             ];
+}
+
+- (void)profileChanges:(NSNotificationCenter *)notificationCenter {
+    NSLog(@"Profile Pics Changes");
 }
 
 #pragma mark - Core Data stack

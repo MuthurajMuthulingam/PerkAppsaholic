@@ -7,6 +7,9 @@
 //
 
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKShareKit/FBSDKShareKit.h>
+
 #import "LoginToViewController.h"
 #import "LoginView.h"
 #import "LandingViewController.h"
@@ -34,6 +37,17 @@
     
     [self.view animateBus];
 }
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    if ([FBSDKAccessToken currentAccessToken]) {
+        // User is logged in, do work such as go to next view controller.
+        NSLog(@"User is Already Login...");
+        
+        //LandingViewController *ctrl = [LandingViewController new];
+        //[self.navigationController pushViewController:ctrl animated:YES];
+    }
+}
 
 #pragma mark - Login View Delegate
 
@@ -44,8 +58,16 @@
 //        NSLog(@"Achivement !!! Points Earned : %d,NotificationText %@",pointEarned.intValue,notificationtext);
 //    }];
     
-    LandingViewController *ctrl = [LandingViewController new];
-    [self.navigationController pushViewController:ctrl animated:YES];
+//    LandingViewController *ctrl = [LandingViewController new];
+//    [self.navigationController pushViewController:ctrl animated:YES];
+    
+    FBSDKShareLinkContent *content = [[FBSDKShareLinkContent alloc] init];
+    content.contentURL = [NSURL URLWithString:@"http://www.google.com"];
+    content.contentDescription = @"Perk Appsaholic Testing...";
+    [FBSDKShareDialog showFromViewController:self
+                                 withContent:content
+                                    delegate:nil];
+
 }
 
 - (void)didReceiveMemoryWarning {
