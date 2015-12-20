@@ -10,6 +10,7 @@
 @protocol planViewDelegate <NSObject>
 
 - (void)planView:(PlanView *)planView selectedDictDetails:(NSDictionary *)selectedDataDict;
+- (void)addPoints:(NSInteger)points;
 
 @end
 @interface PlanView : UIView

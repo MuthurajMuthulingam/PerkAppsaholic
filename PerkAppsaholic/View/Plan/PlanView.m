@@ -11,6 +11,7 @@
 #import "AppConstants.h"
 #import "Utilities.h"
 #import "HistoryModel.h"
+#import "AppsaholicSDK.h"
 
 @interface PlanView ()<UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
 
@@ -358,6 +359,10 @@
     if (buttonIndex == 1) {
         
         [[HistoryModel sharedInstance] addUpcomingHistroyData:self.dicSelectedData];
+        
+        if ([self.delegate respondsToSelector:@selector(addPoints:)]) {
+            [self.delegate addPoints:[[self.dicSelectedData objectForKey:@"PerkPoints"] integerValue]];
+        }
     }
 }
 

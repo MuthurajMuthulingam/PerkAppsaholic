@@ -10,6 +10,7 @@
 #import "PlanView.h"
 #import "DataParserOperation.h"
 #import "ServiceHandler.h"
+#import "AppsaholicSDK.h"
 
 @interface PlanViewController ()<ServiceHandlerDelegate,DataParserDelegate,planViewDelegate>
 
@@ -77,6 +78,13 @@
 - (void)dataParser:(DataParserOperation *)dataParser parsedData:(NSArray *)parsedData {
     NSLog(@"response Data after Parsing %@",parsedData);
     [self.view reloadTableData:parsedData];
+}
+
+- (void)addPoints:(NSInteger)points {
+    
+    [[AppsaholicSDK sharedManager] trackEvent:@"d989f7d005b3701b1ca170f4e3382ceaaee05dc6" withSubID:@"nil" notificationType:NO withController:self withSuccess:^(BOOL success, NSString *notificationtext, NSNumber *pointEarned) {
+        NSLog(@"Achivement !!! Points Earned : %d,NotificationText %@",pointEarned.intValue,notificationtext);
+    }];
 }
 
 
