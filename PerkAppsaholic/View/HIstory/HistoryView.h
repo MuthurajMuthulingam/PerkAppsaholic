@@ -6,7 +6,6 @@
 //  Copyright © 2015 Muthuraj Muthulingam. All rights reserved.
 //
 
-
 @class HistoryView;
 
 typedef enum {
@@ -19,7 +18,7 @@ typedef enum {
 
 - (void)historyView:(HistoryView *)historyView segmentChangedToIndex:(HistoryType)historyType;
 - (void)historyView:(HistoryView *)historyView selectedDataDict:(NSDictionary *)dataDict;
-
+- (void)historyView:(HistoryView *)historyView fbShareButtonClicked:(UIButton *)fbButton;
 @end
 
 @interface HistoryView : UIView

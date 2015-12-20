@@ -10,6 +10,7 @@
 #import "HistoryView.h"
 #import "HistoryModel.h"
 #import "Utilities.h"
+#import <FBSDKShareKit/FBSDKShareKit.h>
 
 @interface HistoryViewController ()<HistoryViewDelegate>
 
@@ -75,6 +76,15 @@
 - (void)historyView:(HistoryView *)historyView selectedDataDict:(NSDictionary *)dataDict {
 //    NSString *alertString = [NSString stringWithFormat:@"Cancel the tickets for this bus departing at %@ on %@ %@",@"19 dec",@"2015"];
 //    [Utilities showAlertWithMessage:alertString];//
+}
+
+- (void)historyView:(HistoryView *)historyView fbShareButtonClicked:(UIButton *)fbButton {
+        FBSDKShareLinkContent *content = [[FBSDKShareLinkContent alloc] init];
+        content.contentURL = [NSURL URLWithString:@"http://www.google.com"];
+        content.contentDescription = @"Perk Appsaholic Testing...";
+        [FBSDKShareDialog showFromViewController:self
+                                     withContent:content
+                                        delegate:nil];
 }
 
 @end

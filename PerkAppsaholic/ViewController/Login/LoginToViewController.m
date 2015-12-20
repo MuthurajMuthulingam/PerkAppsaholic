@@ -61,13 +61,6 @@
     LandingViewController *ctrl = [LandingViewController new];
     [self.navigationController pushViewController:ctrl animated:YES];
     
-//    FBSDKShareLinkContent *content = [[FBSDKShareLinkContent alloc] init];
-//    content.contentURL = [NSURL URLWithString:@"http://www.google.com"];
-//    content.contentDescription = @"Perk Appsaholic Testing...";
-//    [FBSDKShareDialog showFromViewController:self
-//                                 withContent:content
-//                                    delegate:nil];
-
 }
 
 - (void)didReceiveMemoryWarning {
