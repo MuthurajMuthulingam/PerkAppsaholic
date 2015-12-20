@@ -60,13 +60,13 @@
 
 - (void)didSelectMenuWithType:(MenuStyle)menuStyle {
     
-    if (self.childController) {
-        [self.childController.view removeFromSuperview];
-        self.childController = nil;
-    }
-    
     switch (menuStyle) {
         case kMenuHistory: {
+            
+            if (self.childController) {
+                [self.childController.view removeFromSuperview];
+                self.childController = nil;
+            }
             
             HistoryViewController *historyController = [[HistoryViewController alloc] init];
             [self.view addSubview:historyController.view];
@@ -76,6 +76,11 @@
         }
             break;
         case kMenuPlan: {
+            
+            if (self.childController) {
+                [self.childController.view removeFromSuperview];
+                self.childController = nil;
+            }
             
             PlanViewController *planController = [[PlanViewController alloc] init];
             [self.view addSubview:planController.view];
@@ -87,6 +92,14 @@
             break;
         case kMenuSettings: {
             [[AppsaholicSDK sharedManager] showPortal];
+            
+        }
+            break;
+        case kMenuAbout: {
+            SettingsViewController *settingsController = [[SettingsViewController alloc] init];
+            [self.view addSubview:settingsController.view];
+            settingsController.view.frame = CGRectMake(0, 75, SCREEN_WIDTH, SCREEN_HEIGHT-75);
+            self.childController = settingsController;
             
         }
             break;

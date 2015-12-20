@@ -61,6 +61,9 @@
 		AECFE3491C264CBF00DFF70B /* perkpoint.png in Resources */ = {isa = PBXBuildFile; fileRef = AECFE3461C264CBF00DFF70B /* perkpoint.png */; };
 		AECFE34A1C264CBF00DFF70B /* perkpoint@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AECFE3471C264CBF00DFF70B /* perkpoint@2x.png */; };
 		AECFE34B1C264CBF00DFF70B /* perkpoint@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AECFE3481C264CBF00DFF70B /* perkpoint@3x.png */; };
+		AECFE34F1C266D9800DFF70B /* team.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AECFE34C1C266D9800DFF70B /* team.jpeg */; };
+		AECFE3501C266D9800DFF70B /* team@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AECFE34D1C266D9800DFF70B /* team@2x.jpeg */; };
+		AECFE3511C266D9800DFF70B /* team@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AECFE34E1C266D9800DFF70B /* team@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +172,9 @@
 		AECFE3461C264CBF00DFF70B /* perkpoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = perkpoint.png; sourceTree = "<group>"; };
 		AECFE3471C264CBF00DFF70B /* perkpoint@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "perkpoint@2x.png"; sourceTree = "<group>"; };
 		AECFE3481C264CBF00DFF70B /* perkpoint@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "perkpoint@3x.png"; sourceTree = "<group>"; };
+		AECFE34C1C266D9800DFF70B /* team.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = team.jpeg; sourceTree = "<group>"; };
+		AECFE34D1C266D9800DFF70B /* team@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "team@2x.jpeg"; sourceTree = "<group>"; };
+		AECFE34E1C266D9800DFF70B /* team@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "team@3x.png"; sourceTree = "<group>"; };
 		DBBD4F0A62C83A2499DEFAA6 /* Pods-PerkAppsaholic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PerkAppsaholic.release.xcconfig"; path = "Pods/Target Support Files/Pods-PerkAppsaholic/Pods-PerkAppsaholic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -459,6 +465,9 @@
 				AE5E11F21C25A9BF00C5A473 /* calendar.png */,
 				AE5E11F31C25A9BF00C5A473 /* calendar@2x.png */,
 				AE5E11F41C25A9BF00C5A473 /* calendar@3x.png */,
+				AECFE34C1C266D9800DFF70B /* team.jpeg */,
+				AECFE34D1C266D9800DFF70B /* team@2x.jpeg */,
+				AECFE34E1C266D9800DFF70B /* team@3x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -594,14 +603,17 @@
 				AECFE34A1C264CBF00DFF70B /* perkpoint@2x.png in Resources */,
 				6A7B49301C2597F40077C044 /* Buses.json in Resources */,
 				AE5E11C81C256E3000C5A473 /* Logo@3x.png in Resources */,
+				AECFE3511C266D9800DFF70B /* team@3x.png in Resources */,
 				AECFE3491C264CBF00DFF70B /* perkpoint.png in Resources */,
 				AE5E11F71C25A9BF00C5A473 /* calendar@3x.png in Resources */,
 				AE5E11C01C256E3000C5A473 /* Bus.png in Resources */,
+				AECFE3501C266D9800DFF70B /* team@2x.jpeg in Resources */,
 				AE5E11C11C256E3000C5A473 /* Bus@2x.png in Resources */,
 				AE5E11F51C25A9BF00C5A473 /* calendar.png in Resources */,
 				AE5E11D01C2570A800C5A473 /* Ham@3x.png in Resources */,
 				AE5E11F01C25A1A800C5A473 /* location@2x.png in Resources */,
 				AE5E11F61C25A9BF00C5A473 /* calendar@2x.png in Resources */,
+				AECFE34F1C266D9800DFF70B /* team.jpeg in Resources */,
 				AE5E11CE1C2570A800C5A473 /* Ham.png in Resources */,
 				6A8E0F781C2104A300EC19D6 /* LaunchScreen.storyboard in Resources */,
 				AE5E11EF1C25A1A800C5A473 /* location.png in Resources */,

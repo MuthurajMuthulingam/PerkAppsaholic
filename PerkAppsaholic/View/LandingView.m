@@ -38,7 +38,7 @@
     self = [super init];
     
     if (self) {
-        self.dataArray = [[NSArray alloc] initWithObjects:@"History", @"Plan New Journey", @"View Perk Portal", nil];
+        self.dataArray = [[NSArray alloc] initWithObjects:@"History", @"Plan New Journey", @"View Perk Portal", @"About", nil];
         [self createViews];
     }
     
@@ -187,8 +187,10 @@
                                  
                                  if ([[[info objectForKey:@"data"] objectForKey:@"user"] objectForKey:@"available_points"]) {
                                      self.lblPerks.text = [NSString stringWithFormat:@"%@",[[[info objectForKey:@"data"] objectForKey:@"user"] objectForKey:@"available_points"]];
-                                     [self.lblPerks sizeToFit];
-                                     self.lblPerks.frame = CGRectMake(CGRectGetMaxX(self.imgPerks.frame)+5, CGRectGetMaxY(self.imgProfilePic.frame)+10, CGRectGetWidth(self.lblPerks.frame), 20);
+                                     if (CGRectGetWidth(self.menuView.frame) != 0) {
+                                         [self.lblPerks sizeToFit];
+                                         self.lblPerks.frame = CGRectMake(CGRectGetMaxX(self.imgPerks.frame)+5, CGRectGetMaxY(self.imgProfilePic.frame)+10, CGRectGetWidth(self.lblPerks.frame), 20);
+                                     }
                                  }
                                  
                              }];
@@ -243,20 +245,26 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    self.lblTitle.text = [self.dataArray objectAtIndex:indexPath.row];
-    
     MenuStyle menuStyle = kMenuHistory;
     
     switch (indexPath.row) {
-        case 0:
+        case 0: {
+            self.lblTitle.text = [self.dataArray objectAtIndex:indexPath.row];
             menuStyle = kMenuHistory;
+        }
             break;
-        case 1:
+        case 1: {
+            self.lblTitle.text = [self.dataArray objectAtIndex:indexPath.row];
             menuStyle = kMenuPlan;
+        }
             break;
         case 2:
             menuStyle = kMenuSettings;
             break;
+        case 3: {
+            self.lblTitle.text = [self.dataArray objectAtIndex:indexPath.row];
+            menuStyle = kMenuAbout;
+        }
             
         default:
             break;
