@@ -291,7 +291,7 @@
     self.tableView.hidden = YES;
     
     if (self.txtFrom.text.length == 0 || self.txtTo.text.length == 0) {
-        [Utilities showAlert];
+        [Utilities showAlertWithMessage:@"You must choose a place to start your journey and a destination."];
     } else {
         
         self.tableView.hidden = NO;

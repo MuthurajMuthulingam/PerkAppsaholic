@@ -36,9 +36,9 @@
     return [UIFont systemFontOfSize:size weight:UIFontWeightRegular];
 }
 
-+ (void)showAlert {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"From and To should not be blank."
-                                                    message:@"You must choose a place to start your journey and a destination."
++ (void)showAlertWithMessage:(NSString *)message {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"PerkAppsaholic"
+                                                    message:message
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];

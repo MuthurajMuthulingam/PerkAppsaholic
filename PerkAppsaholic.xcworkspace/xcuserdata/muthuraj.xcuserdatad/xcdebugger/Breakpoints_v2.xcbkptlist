@@ -73,22 +73,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PerkAppsaholic/ViewController/Plan/PlanViewController.m"
-            timestampString = "472251089.755478"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "-planView:selectedDictDetails:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "PerkAppsaholic/View/Plan/PlanView.m"
             timestampString = "472254697.607608"
             startingColumnNumber = "9223372036854775807"

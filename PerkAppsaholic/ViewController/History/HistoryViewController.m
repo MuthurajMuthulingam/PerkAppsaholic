@@ -9,6 +9,7 @@
 #import "HistoryViewController.h"
 #import "HistoryView.h"
 #import "HistoryModel.h"
+#import "Utilities.h"
 
 @interface HistoryViewController ()<HistoryViewDelegate>
 
@@ -42,6 +43,7 @@
 }
 
 #pragma mark HistoryViewDelegate Methods
+
 - (void)segmentChangedToIndex:(HistoryType)historyType {
     NSLog(@"segement changed to index %d",historyType);
     NSArray *dataArray = [NSArray array];
@@ -68,6 +70,11 @@
     }
     
     [self.view reloadDataWithData:dataArray];
+}
+
+- (void)historyView:(HistoryView *)historyView selectedDataDict:(NSDictionary *)dataDict {
+//    NSString *alertString = [NSString stringWithFormat:@"Cancel the tickets for this bus departing at %@ on %@ %@",@"19 dec",@"2015"];
+//    [Utilities showAlertWithMessage:alertString];//
 }
 
 @end

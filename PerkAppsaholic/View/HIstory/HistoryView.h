@@ -6,6 +6,9 @@
 //  Copyright © 2015 Muthuraj Muthulingam. All rights reserved.
 //
 
+
+@class HistoryView;
+
 typedef enum {
     kHistoryPast,
     kHistoryUpcoming,
@@ -14,7 +17,8 @@ typedef enum {
 
 @protocol HistoryViewDelegate <NSObject>
 
-- (void)segmentChangedToIndex:(HistoryType)historyType;
+- (void)historyView:(HistoryView *)historyView segmentChangedToIndex:(HistoryType)historyType;
+- (void)historyView:(HistoryView *)historyView selectedDataDict:(NSDictionary *)dataDict;
 
 @end
 
