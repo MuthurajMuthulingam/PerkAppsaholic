@@ -31,6 +31,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.view animateBus];
 }
 
 #pragma mark - Login View Delegate

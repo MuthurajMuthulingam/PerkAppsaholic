@@ -18,4 +18,6 @@
 
 @property (nonatomic,weak)id<LoginViewDelegate>delegate;
 
+- (void)animateBus;
+
 @end
