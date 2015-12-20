@@ -11,7 +11,8 @@
 typedef enum {
     kMenuHistory,
     kMenuPlan,
-    kMenuSettings
+    kMenuSettings,
+    kMenuAbout
 }MenuStyle;
 
 @protocol LandingViewDelegate <NSObject>

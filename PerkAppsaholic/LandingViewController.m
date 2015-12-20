@@ -38,7 +38,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self didSelectMenuWithType:kMenuHistory];
+    [self didSelectMenuWithType:kMenuPlan];
     
     // Do any additional setup after loading the view, typically from a nib.
     
@@ -60,13 +60,13 @@
 
 - (void)didSelectMenuWithType:(MenuStyle)menuStyle {
     
-    if (self.childController) {
-        [self.childController.view removeFromSuperview];
-        self.childController = nil;
-    }
-    
     switch (menuStyle) {
         case kMenuHistory: {
+            
+            if (self.childController) {
+                [self.childController.view removeFromSuperview];
+                self.childController = nil;
+            }
             
             HistoryViewController *historyController = [[HistoryViewController alloc] init];
             [self.view addSubview:historyController.view];
@@ -77,6 +77,11 @@
             break;
         case kMenuPlan: {
             
+            if (self.childController) {
+                [self.childController.view removeFromSuperview];
+                self.childController = nil;
+            }
+            
             PlanViewController *planController = [[PlanViewController alloc] init];
             [self.view addSubview:planController.view];
             planController.delegate = self;
@@ -86,14 +91,15 @@
         }
             break;
         case kMenuSettings: {
-            
-//            SettingsViewController *settingsController = [[SettingsViewController alloc] init];
-//            [self.view addSubview:settingsController.view];
-//            settingsController.view.frame = CGRectMake(0, 75, SCREEN_WIDTH, SCREEN_HEIGHT-75);
-//            self.childController = settingsController;
-            
-            //((AppsaholicSDK *)[AppsaholicSDK sharedManager]).appsaholic_rootViewController = self;
             [[AppsaholicSDK sharedManager] showPortal];
+            
+        }
+            break;
+        case kMenuAbout: {
+            SettingsViewController *settingsController = [[SettingsViewController alloc] init];
+            [self.view addSubview:settingsController.view];
+            settingsController.view.frame = CGRectMake(0, 75, SCREEN_WIDTH, SCREEN_HEIGHT-75);
+            self.childController = settingsController;
             
         }
             break;
@@ -101,12 +107,13 @@
         default:
             break;
     }
-    [self showingMenu:NO];
     
+    [self showingMenu:YES];
 }
 
 - (void)showingMenu:(BOOL)flag {
-//    self.childController.view.userInteractionEnabled = flag;
+    
+    self.childController.view.userInteractionEnabled = flag;
 }
 
 #pragma mark planViewControllerDelegate Metjhods
