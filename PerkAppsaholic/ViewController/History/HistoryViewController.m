@@ -48,22 +48,22 @@
 - (void)historyView:(HistoryView *)historyView segmentChangedToIndex:(HistoryType)historyType  {
     NSLog(@"segement changed to index %d",historyType);
     NSArray *dataArray = [NSArray array];
+    
     switch (historyType) {
         case kHistoryPast: {
-            
-            dataArray = @[@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About"];
-            }
             dataArray = [[HistoryModel sharedInstance] getPastHistory];
+            }
+            
             break;
         case kHistoryUpcoming: {
-            dataArray = @[@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About"];
-        }
             dataArray = [[HistoryModel sharedInstance] getUpcomingHistory];
+        }
+            
             break;
         case kHistoryCanceled: {
-            dataArray = @[@"History", @"Plan New Journey", @"About",@"History", @"Plan New Journey", @"About"];
-        }
             dataArray = [[HistoryModel sharedInstance] getCancelHistory];
+        }
+            
             break;
             
         default:

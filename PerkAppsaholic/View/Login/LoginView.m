@@ -186,11 +186,11 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-//    if (!self.isAnimating) {
-//        self.appImage.frame = CGRectMake((CGRectGetWidth(self.frame)/2)-75, 70, 150, 100);
-//    }
+    if (!self.isAnimating) {
+        self.appImage.frame = CGRectMake((CGRectGetWidth(self.frame)/2)-75, 70, 150, 100);
+    }
     
-    self.bgView.frame = CGRectMake(10, CGRectGetMaxY(self.appImage.frame)+20, SCREEN_WIDTH-20, 100);
+    self.bgView.frame = CGRectMake(10, 190, SCREEN_WIDTH-20, 100);
     
     CGFloat buttonHeight = 54.0f;
     self.loginBtn.frame = CGRectMake(10, CGRectGetMaxY(self.bgView.frame)+10, CGRectGetWidth(self.bounds)-20, buttonHeight);

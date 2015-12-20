@@ -38,7 +38,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self didSelectMenuWithType:kMenuHistory];
+    [self didSelectMenuWithType:kMenuPlan];
     
     // Do any additional setup after loading the view, typically from a nib.
     
