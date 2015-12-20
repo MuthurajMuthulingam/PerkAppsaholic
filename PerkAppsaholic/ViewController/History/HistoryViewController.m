@@ -44,7 +44,7 @@
 
 #pragma mark HistoryViewDelegate Methods
 
-- (void)segmentChangedToIndex:(HistoryType)historyType {
+- (void)historyView:(HistoryView *)historyView segmentChangedToIndex:(HistoryType)historyType  {
     NSLog(@"segement changed to index %d",historyType);
     NSArray *dataArray = [NSArray array];
     switch (historyType) {
