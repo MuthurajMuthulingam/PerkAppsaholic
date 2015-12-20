@@ -62,6 +62,12 @@ Technical feature of our Product :
   
       1. Initially, After Launching application, User directed to Login Page.
       2. Where user enter their Login Details,(Dummy login, due to Time Contrains) or can use FB instead to login.
-      3. After Successful Login,
+      3. After Successful Login, History page will be listed as  landing page.
+      4. Where users can look into hidtory of Journey and can delete booked entry.
+      5. Share their booking to social media (As of now, we uses Facebook), (Of course, To earn a rewards from Perk)
+      6. There was a Menu based nevigation followd in our product, Hence Elegant Menu pop in from Left.
+      7. User can book new ticket from Menu.
+      8. User can Navigate to Perk Portal from our Menu with the product.
+      
       
          
