@@ -113,14 +113,6 @@
     cell.layoutMargins = UIEdgeInsetsZero;
     cell.separatorInset = UIEdgeInsetsMake(0, 20, 0, 20);
     [cell updateCellWithData:[self.dataArray objectAtIndex:indexPath.row]];
-//    if (self.segment.selected == 0) {//Past
-//        [cell updateCellWithData:[[[HistoryModel sharedInstance] getUpcomingHistory] objectAtIndex:indexPath.row]];
-//    }else if (self.segment.selected == 1) {//Upcoming
-//        [cell updateCellWithData:[[[HistoryModel sharedInstance] getUpcomingHistory] objectAtIndex:indexPath.row]];
-//    }else if (self.segment.selected == 2) {//Cancel
-//        [cell updateCellWithData:[[[HistoryModel sharedInstance] getUpcomingHistory] objectAtIndex:indexPath.row]];
-//    }
-    
     return cell;
 }
 

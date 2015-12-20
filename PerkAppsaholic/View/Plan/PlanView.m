@@ -356,6 +356,7 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     
     if (buttonIndex == 1) {
+        
         [[HistoryModel sharedInstance] addUpcomingHistroyData:self.dicSelectedData];
     }
 }
