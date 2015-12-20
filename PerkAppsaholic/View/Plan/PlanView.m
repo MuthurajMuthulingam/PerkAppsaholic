@@ -336,6 +336,7 @@
     cell.layoutMargins = UIEdgeInsetsZero;
     cell.separatorInset = UIEdgeInsetsMake(0, 20, 0, 20);
     [cell updateCellWithData:[self.dataArray objectAtIndex:indexPath.row]];
+    cell.delegate = self;
     return cell;
 }
 
@@ -378,5 +379,9 @@
         [weakSelf.scrollview setContentOffset:CGPointMake(0, self.tableView.frame.origin.y) animated:YES];
     });
 }
-
+- (void)fbShared {
+    if ([self.delegate respondsToSelector:@selector(planView:selectedDictDetails:)]) {
+        [self.delegate planView:self selectedDictDetails:nil];
+    }
+}
 @end

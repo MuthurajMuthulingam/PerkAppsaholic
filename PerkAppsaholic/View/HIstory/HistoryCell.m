@@ -23,6 +23,8 @@
 @property (nonatomic, strong) UIView *calView2;
 @property (nonatomic, strong) UIView *calView3;
 
+@property (nonatomic,strong) UIButton *fbShare;
+
 @end
 
 @implementation HistoryCell
@@ -130,6 +132,7 @@
     [self.bgView addSubview:self.lblPerkPoints];
     
     self.fbShare = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 29, 30) andTitleText:@"FB" titleColor:[UIColor blackColor] image:nil selectedImage:nil];
+    [self.fbShare addTarget:self action:@selector(fbSharedClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.bgView addSubview:self.fbShare];
 
     
@@ -154,7 +157,7 @@
     self.lblName.frame = CGRectMake(CGRectGetMaxX(self.imgCalender.frame)+10, CGRectGetMaxY(self.lblTime.frame), CGRectGetWidth(self.bgView.frame)-(CGRectGetMaxX(self.imgCalender.frame)+15), 30);
     self.imgPerk.frame = CGRectMake(CGRectGetMaxX(self.imgCalender.frame)+10, CGRectGetMaxY(self.lblName.frame), 20, 20);
     
-    self.lblPerkPoints.frame = CGRectMake(CGRectGetMaxX(self.imgPerk.frame)+5, CGRectGetMaxY(self.lblName.frame), CGRectGetWidth(self.bgView.frame)-(CGRectGetMaxX(self.imgPerk.frame)+10), 20);
+    self.lblPerkPoints.frame = CGRectMake(CGRectGetMaxX(self.imgPerk.frame)+5, CGRectGetMaxY(self.lblName.frame), CGRectGetWidth(self.bgView.frame)/2 - 50, 20);
     
     self.fbShare.frame = CGRectMake(self.lblPerkPoints.frame.origin.x + self.lblPerkPoints.frame.size.width, self.lblPerkPoints.frame.origin.y, 50, 40);
 }
@@ -162,7 +165,9 @@
 #pragma mark - FB Share action
 
 - (void)fbSharedClicked:(UIButton *)sender {
-    
+    if ([self.delegate respondsToSelector:@selector(fbShared)]) {
+        [self.delegate fbShared];
+    }
 }
 #pragma mark - Update Cell With Data
 
